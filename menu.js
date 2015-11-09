@@ -1,0 +1,13 @@
+document.write('<a href="index.html" class="image image-full"><img src="images/logo.png" height="90px" alt=""></a>');
+document.write('<nav id="nav">');
+document.write('<a href="index.html">Home</a>');
+document.write('<a href="plans.html">Plans</a>');
+document.write('<a href="services.html">Services</a>');
+document.write('<a href="process.html">Process</a>');
+document.write('<a href="distribution.html">Distribution</a>');
+document.write('<a href="http://store.self-publish.in">Book Store</a>');
+document.write('<a href="http://platform.self-publish.in" target="_blank">Platform</a>');
+document.write('<a href="royaltycalculator.html">Royalty Calculator</a>');
+document.write('<a href="faq.html">FAQ</a>');
+document.write('<a href="contact.html">Contact</a>');
+document.write('</nav>');
