@@ -37,18 +37,18 @@ document.write('                            <div class="3u">');
 document.write('                                <section>');
 document.write('                                    <h2>Follow us</h2>');
 
-document.write('<a href="http://facebook.com/whitefalconpublishing" target="_blank" ><img src="https://cdn.shopify.com/s/files/1/0585/1653/files/fb.jpg?3075908017149296117" ></a><br>');
+document.write('<a href="http://facebook.com/whitefalconpublishing" target="_blank" ><img src="images/fb.jpg" ></a><br>');
 
-document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0585/1653/files/twitter.jpg?3075908017149296117" ></a><br>');
+document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><img src="images/twitter.jpg" ></a><br>');
 
-document.write('<a href="https://plus.google.com/116649724837582317540/posts" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0585/1653/files/gplus.jpg?3075908017149296117" ></a><br>');
+document.write('<a href="https://plus.google.com/116649724837582317540/posts" target="_blank"><img src="images/gplus.jpg" ></a><br>');
   
 document.write('                                </section>');
 document.write('                            </div>');
 document.write('                    <div class="3u">');
 document.write('                        <!-- Blurb -->');
 document.write('                        <section>');
-document.write('                            <a href="index.html" class="image image-full"><img width="70%" src="https://cdn.shopify.com/s/files/1/0585/1653/files/logo.png?3075908017149296117" alt=""></a>');
+document.write('                            <a href="index.html" class="image image-full"><img width="70%" src="images/logo.png" alt=""></a>');
 document.write('                            <p>White Falcon Publishing Solutions LLP<br/> ');
 document.write('                                Registered Address:<br/>');
 document.write('                                No. 335, Sector 48A<br/>');
