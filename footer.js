@@ -12,7 +12,6 @@ document.write('                                        <li><a href="process.htm
 document.write('                                        <li><a href="distribution.html">Distribution</a></li>');
 document.write('                                        <li><a href="http://store.self-publish.in/">Book Store</a></li>');
 document.write('                                        <li><a href="http://platform.self-publish.in/">Publishing Platform</a></li>');
-document.write('                                        <li><a href="portfolio.html">Portfolio</a></li>');
 document.write('                                        <li><a href="royaltycalculator.html">Royalty Calculator</a></li>');
 document.write('                                        <li><a href="faq.html">FAQs</a></li>');
 document.write('                                        <li><a href="careers.html">Careers</a></li>');
