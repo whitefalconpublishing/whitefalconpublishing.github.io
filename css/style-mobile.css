@@ -187,13 +187,13 @@ body, input, textarea, select
 		
 		#content h3
 		{
-			color: #96a9b5;
+			color: #000;
 			font-size: 1em;
 		}
 		
 		#content a
 		{
-			color: #ED391B;
+			color: #3A8EB5;
 		}
 		
 		#content header
