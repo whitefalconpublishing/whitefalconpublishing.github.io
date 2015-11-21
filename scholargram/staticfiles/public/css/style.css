@@ -1240,7 +1240,7 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("/static/public/images/overlay.png"), url("/static/public/images/sg.png");
+		background-image: url("http://www.self-publish.in/scholargram/staticfiles/public/images/overlay.png"), url("http://www.self-publish.in/scholargram/staticfiles/public/images/sg.png");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -1333,7 +1333,7 @@
 /* Footer */
 
 	#footer {
-		background: #f7f7f7 url('/static/public/images/bg04.jpg');
+		background: #f7f7f7 url('http://www.self-publish.in/scholargram/staticfiles/public/images/bg04.jpg');
 		padding: 4em 0 6em 0;
 		text-align: left;
 	}
