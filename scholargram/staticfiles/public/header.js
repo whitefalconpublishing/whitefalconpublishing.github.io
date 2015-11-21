@@ -1,7 +1,7 @@
 var buttonlabel = document.getElementById("buttonlabel").value;
 
 document.write('<header id="header" class="alt">');
-document.write('				<h1><a href="/"><img src="/static/public/images/sglogo.png" height="95%"></a></h1>');
+document.write('				<h1><a href="/"><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/sglogo.png" height="95%"></a></h1>');
 document.write('				<div id="ctaa">');
 document.write('				<form class="form-horizontal" action="/search/" method="post" role="form" >');
 document.write('							<input type="text" name="query" id="query" placeholder="Search" />');

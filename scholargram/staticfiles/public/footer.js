@@ -32,18 +32,18 @@ document.write('                            <div class="2u">');
 document.write('                                <section>');
 document.write('                                    <h2>Follow us</h2>');
 
-document.write('<a href="http://facebook.com/whitefalconpublishing" target="_blank" ><img src="/static/public/images/fb.jpg" ></a><br>');
+document.write('<a href="http://facebook.com/whitefalconpublishing" target="_blank" ><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/fb.jpg" ></a><br>');
 
-document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><img src="/static/public/images/twitter.jpg" ></a><br>');
+document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/twitter.jpg" ></a><br>');
 
-document.write('<a href="https://plus.google.com/116649724837582317540/posts" target="_blank"><img src="/static/public/images/gplus.jpg" ></a><br>');
+document.write('<a href="https://plus.google.com/116649724837582317540/posts" target="_blank"><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/gplus.jpg" ></a><br>');
   
 document.write('                                </section>');
 document.write('                            </div>');
 document.write('                    <div class="2u">');
 document.write('                        <!-- Blurb -->');
 document.write('                        <section>');
-document.write('                            <a href="http://www.self-publish.in" class="image image-full"><img width="100%" src="/static/public/images/sglogo.png" alt=""></a>');
+document.write('                            <a href="http://www.self-publish.in" class="image image-full"><img width="100%" src="http://www.self-publish.in/scholargram/staticfiles/public/images/sglogo.png" alt=""></a>');
 document.write('                            <p>Powered by: <br><a href="http://www.self-publish.in">White Falcon Publishing Solutions LLP</a><br/> ');
 document.write('                                Registered Address:<br/>');
 document.write('                                No. 335, Sector 48A<br/>');
