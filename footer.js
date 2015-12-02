@@ -29,7 +29,7 @@ document.write('                            <h2>Get in touch</h2>');
 document.write('                            Email:<br>');
 document.write('                            contact@whitefalconpublishing.com<br>');
 document.write('                            whitefalconpublish@gmail.com<br><br>');
-document.write('                            Ph: +91-828-384-3446<br><br>');
+document.write('                            Ph: +91-911-589-2986, +91-828-384-3446<br><br>');
 document.write('                        </section>');
 document.write('                    </div>');
 document.write('                            <div class="3u">');
