@@ -32,7 +32,7 @@ document.write('                            <div class="2u">');
 document.write('                                <section>');
 document.write('                                    <h2>Follow us</h2>');
 
-document.write('<a href="http://facebook.com/whitefalconpublishing" target="_blank" ><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/fb.jpg" ></a><br>');
+document.write('<a href="https://www.facebook.com/profile.php?id=100009987823230" target="_blank" ><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/fb.jpg" ></a><br>');
 
 document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><img src="http://www.self-publish.in/scholargram/staticfiles/public/images/twitter.jpg" ></a><br>');
 
