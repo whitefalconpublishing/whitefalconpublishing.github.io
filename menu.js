@@ -1,4 +1,4 @@
-document.write('<a href="index.html" class="image image-full"><img src="images/logo.png" height="90px" alt=""></a>');
+document.write('<a href="index.html" class="image image-full"><img src="http://self-publish.in/images/logo.png" height="90px" alt=""></a>');
 document.write('<nav id="nav">');
 document.write('<a href="index.html">Home</a>');
 document.write('<a href="plans.html">Plans</a>');
