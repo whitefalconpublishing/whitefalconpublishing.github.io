@@ -16,7 +16,7 @@ document.write('                                        <li><a href="http://self
 document.write('                                        <li><a href="http://self-publish.in/faq.html">FAQs</a></li>');
 document.write('                                        <li><a href="http://self-publish.in/careers.html">Careers</a></li>');
 document.write('                                        <li><a href="http://scholargram.com" target="_blank">ScholarGram</a></li>');
-document.write('                                        <li><a href="http://self-publish.in/giveaways.html">Giveaways</a></li>');
+document.write('                                        <li><a href="http://booksfundr.self-publish.in">BooksFundr</a></li>');
 document.write('                                        <li><a href="http://blog.self-publish.in/">Blog</a></li>');
 document.write('                                        <li><a href="http://self-publish.in/contact.html">Contact</a></li>');
 document.write('                                    </ul>');
