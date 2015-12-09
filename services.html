@@ -12,6 +12,10 @@
         <script src="js/skel.min.js"></script>
         <script src="js/skel-layers.min.js"></script>
         <script src="js/init.js"></script>
+        <link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/pop-up-gallery1.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/pop-up-gallery1.js"></script>
+
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -87,24 +91,42 @@
 
         </style>
         
-        <script>
-        $(document).ready(function() {
-    $("#contenttab div").hide(); // Initially hide all content
+      <script>
+    $(document).ready(function() {
+    //$("#contenttab div").hide(); // Initially hide all content
+    $('#contenttab div').not("#sampletab").hide();
     $("#tabs li:first").attr("id","current"); // Activate first tab
     $("#contenttab div:first").fadeIn(); // Show first tab content
-    
-    $('#tabs a').click(function(e) {
-        e.preventDefault();        
-        $("#contenttab div").hide(); //Hide all content
-        $("#tabs li").attr("id",""); //Reset id's
-        $(this).parent().attr("id","current"); // Activate this
-        $('#' + $(this).attr('title')).fadeIn(); // Show content for current tab
-    });
-})();
+    $("#sampletab div").fadeIn();      
 
-        </script>
+    $('#tabs a').click(function(e) {
+    e.preventDefault();            
+    $('#contenttab div').not("#sampletab").hide();   
+    $("#tabs li").attr("id",""); //Reset id's
+    $(this).parent().attr("id","current"); // Activate this
+    $('#' + $(this).attr('title')).fadeIn(); // Show content for current tab
+    $("#sampletab div").fadeIn();
+    });
+    })();
+</script>
+
     </head>
     <body class="subpage">
+    
+    <div id="fullscreen">
+<div id="fullscreen-inner">
+<div id="fullscreen-inner-left" class="fullscreen-inner-button"><span class="icon-caret-left"></span></div>
+<div id="fullscreen-inner-right" class="fullscreen-inner-button"><span class="icon-caret-right"></span></div>
+<div id="fullscreen-inner-close" class="fullscreen-inner-button"><span class="icon-close"></span></div>
+<div id="fullscreen-image">
+
+
+</div>
+
+
+</div>
+</div>
+
         <!-- Header -->
         <div id="header-wrapper">
             <header id="header" >
@@ -150,6 +172,27 @@
                                             Price: From Rs. 3,000 onwards (based on complexity)<br>
                                             (already included in Bronze, Silver, Gold Plans)
                                             </p>
+                                            <h3>See Samples</h3><br> 
+                                            <div class="wrapper-inner-content" id="sampletab">
+                                            <div class="wrapper-inner-content-image">   
+                                            <img src="images/samples/basic-interior/1.jpg"/>
+                                            <img src="images/samples/basic-interior/2.jpg"/>
+                                            <img src="images/samples/basic-interior/3.jpg"/>
+                                            <img src="images/samples/basic-interior/4.jpg"/>
+                                            <img src="images/samples/basic-interior/5.jpg"/>
+                                            <img src="images/samples/basic-interior/6.jpg"/>
+                                            <img src="images/samples/basic-interior/7.jpg"/>
+                                            <img src="images/samples/basic-interior/8.jpg"/>
+                                            <img src="images/samples/basic-interior/9.jpg"/>
+                                            <img src="images/samples/basic-interior/10.jpg"/>  
+                                            <div class="wrapper-inner-content-image-hover">
+                                            <div class="wrapper-inner-content-image-hover-cercle">
+                                            <span class="icon-search"></span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <br><br><br><br><br><br><br><br>
                                             <hr>
                                             <li><span><h3>Premium Interior Design</h3></span></li>
                                              <p>
@@ -159,6 +202,27 @@
                                             Price: From Rs. 6,000 onwards (based on complexity) <br>
                                             (already included in  Diamond and Platinum plans)
                                             </p>
+                                             <h3>See Samples</h3><br> 
+                                            <div class="wrapper-inner-content" id="sampletab">
+                                            <div class="wrapper-inner-content-image">   
+                                            <img src="images/samples/premium-interior/1.jpg"/>
+                                            <img src="images/samples/premium-interior/2.jpg"/>
+                                            <img src="images/samples/premium-interior/3.jpg"/>
+                                            <img src="images/samples/premium-interior/4.jpg"/>
+                                            <img src="images/samples/premium-interior/5.jpg"/>
+                                            <img src="images/samples/premium-interior/6.jpg"/>
+                                            <img src="images/samples/premium-interior/7.jpg"/>
+                                            <img src="images/samples/premium-interior/8.jpg"/>
+                                            <img src="images/samples/premium-interior/9.jpg"/>
+                                            <img src="images/samples/premium-interior/10.jpg"/>  
+                                            <div class="wrapper-inner-content-image-hover">
+                                            <div class="wrapper-inner-content-image-hover-cercle">
+                                            <span class="icon-search"></span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <br><br><br><br><br><br><br><br>
                                             <hr>
                                             <li><span><h3>Basic Cover Design</h3></span></li>
                                              <p>
@@ -168,6 +232,27 @@
                                             Price: Rs. 2,500 <br>
                                             (already included in Bronze Plan)
                                             </p>
+                                            <h3>See Samples</h3><br> 
+                                            <div class="wrapper-inner-content" id="sampletab">
+                                            <div class="wrapper-inner-content-image">   
+                                            <img src="images/samples/basic-covers/1.jpg"/>
+                                            <img src="images/samples/basic-covers/2.jpg"/>
+                                            <img src="images/samples/basic-covers/3.jpg"/>
+                                            <img src="images/samples/basic-covers/4.jpg"/>
+                                            <img src="images/samples/basic-covers/5.jpg"/>
+                                            <img src="images/samples/basic-covers/6.jpg"/>
+                                            <img src="images/samples/basic-covers/7.jpg"/>
+                                            <img src="images/samples/basic-covers/8.jpg"/>
+                                            <img src="images/samples/basic-covers/9.jpg"/>
+                                            <img src="images/samples/basic-covers/10.jpg"/>  
+                                            <div class="wrapper-inner-content-image-hover">
+                                            <div class="wrapper-inner-content-image-hover-cercle">
+                                            <span class="icon-search"></span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <br><br><br><br><br><br><br><br>
                                             <hr>
                                             <li><span><h3>Premium Cover Design</h3></span></li>  
                                              <p>
@@ -178,6 +263,27 @@
                                             Price: Rs. 5,000 <br>
                                             (already included in Silver, Gold, Diamond and Platinum plans)
                                             </p>
+                                            <h3>See Samples</h3><br> 
+                                            <div class="wrapper-inner-content" id="sampletab">
+                                            <div class="wrapper-inner-content-image">   
+                                            <img src="images/samples/premium-covers/1.jpg"/>
+                                            <img src="images/samples/premium-covers/2.jpg"/>
+                                            <img src="images/samples/premium-covers/3.jpg"/>
+                                            <img src="images/samples/premium-covers/4.jpg"/>
+                                            <img src="images/samples/premium-covers/5.jpg"/>
+                                            <img src="images/samples/premium-covers/6.jpg"/>
+                                            <img src="images/samples/premium-covers/7.jpg"/>
+                                            <img src="images/samples/premium-covers/8.jpg"/>
+                                            <img src="images/samples/premium-covers/9.jpg"/>
+                                            <img src="images/samples/premium-covers/10.jpg"/>  
+                                            <div class="wrapper-inner-content-image-hover">
+                                            <div class="wrapper-inner-content-image-hover-cercle">
+                                            <span class="icon-search"></span>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <br><br><br><br><br><br><br><br>
                                             <hr>
                                             <li><span><h3>Custom Illustrations</h3></span></li>       
                                              <p>
