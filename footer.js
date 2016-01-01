@@ -62,5 +62,5 @@ document.write('        <!-- Copyright -->');
 document.write('        <div id="copyright">');
 document.write('            White Falcon Publishing Solutions LLP provides professional services for assisting authors in getting their books self-published for global availability.<br>');
 document.write('            <a href="http://self-publish.in/terms.html">Terms and Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://self-publish.in/privacy.html">Privacy Policy</a><br>');
-document.write('            &copy; 2015 White Falcon Publishing Solutions LLP. All rights reserved');
+document.write('            &copy; 2016 White Falcon Publishing Solutions LLP. All rights reserved');
 document.write('        </div>');
