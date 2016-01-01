@@ -60,7 +60,7 @@ document.write('        <center>');
 document.write('        <div class="copyright">');
 document.write('           <p> ScholarGram powered by <a href="http://www.self-publish.in">White Falcon Publishing Solutions LLP</a><br>');
 document.write('            <a href="/terms/">Terms and Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/privacy/">Privacy Policy</a><br>');
-document.write('            &copy; 2015 <a href="http://www.self-publish.in">White Falcon Publishing Solutions LLP</a>. All rights reserved </p>');
+document.write('            &copy; 2016 <a href="http://www.self-publish.in">White Falcon Publishing Solutions LLP</a>. All rights reserved </p>');
 document.write('        </center>');
 document.write('        </div>');
 document.write('        </div>');
