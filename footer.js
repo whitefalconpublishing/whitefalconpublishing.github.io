@@ -42,6 +42,8 @@ document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><im
 
 document.write('<a href="https://plus.google.com/116649724837582317540/posts" target="_blank"><img src="http://self-publish.in/images/gplus.jpg" ></a><br>');
   
+ document.write('                                    <h2>Android App:</h2>');
+ document.write("<a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width='40%'></a>");
 document.write('                                </section>');
 document.write('                            </div>');
 document.write('                    <div class="3u">');
