@@ -29,10 +29,12 @@ document.write('                            <h2>Get in touch</h2>');
 document.write('                            Email:<br>');
 document.write('                            contact@whitefalconpublishing.com<br>');
 document.write('                            whitefalconpublish@gmail.com<br><br>');
-document.write('                            Ph: +91-911-589-2986, <br>&nbsp;&nbsp;&nbsp;&nbsp;+91-828-384-3446<br>');
+document.write('                            Ph: +91-911-589-2986, <br>&nbsp;&nbsp;&nbsp;&nbsp;+91-828-384-3446<br><br>');
+document.write('                                    <h2>Android App</h2>');
+ document.write("<a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width='60%'></a>");
 document.write('                        </section>');
 document.write('                    </div>');
-document.write('                            <div class="3u">');
+document.write('                            <div class="2u">');
 document.write('                                <section>');
 document.write('                                    <h2>Follow us</h2>');
 
@@ -42,18 +44,21 @@ document.write('<a href="https://twitter.com/WhiteFalconpub" target="_blank"><im
 
 document.write('<a href="https://plus.google.com/116649724837582317540/posts" target="_blank"><img src="http://self-publish.in/images/gplus.jpg" ></a><br><br>');
   
- document.write('                                    <h2>Android App:</h2>');
- document.write("<a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width='50%'></a>");
+ 
 document.write('                                </section>');
 document.write('                            </div>');
-document.write('                    <div class="3u">');
+document.write('                    <div class="4u">');
 document.write('                        <!-- Blurb -->');
-document.write('                        <section>');
-document.write('                            <a href="http://self-publish.in/index.html" class="image image-full"><img width="70%" src="http://self-publish.in/images/logo.png" alt=""></a>');
-document.write('                            <p>White Falcon Publishing Solutions LLP<br/> ');
-document.write('                                Registered Address:<br/>');
-document.write('                                No. 335, Sector 48A<br/>');
-document.write('                                Chandigarh - 160047, INDIA');
+document.write('                        <section><center>');
+document.write('                            <a href="http://self-publish.in/index.html" class="image image-full"><img width="60%" src="http://self-publish.in/images/logo.png" alt=""></a>');
+document.write('                            <p>White Falcon Publishing Solutions LLP<br/>');
+document.write('                                An ISO 9001:2015 Certified Company<br/><img width="90%" src="http://self-publish.in/images/iso.png" alt=""></p></center>');
+document.write('<p style="font-size:12px">      Registered Office:');
+document.write('                                No. 335, Sector 48A, ');
+document.write('                                Chandigarh - 160047, INDIA<br>');
+document.write('                                Branch Office:');
+document.write('                                No. 8/ST1, Savitry Towers, Sector-91, ');
+document.write('                                Mohali - 140307<br>');
 document.write('                            </p>');
 document.write('                        </section>');
 document.write('                    </div>');
