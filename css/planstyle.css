@@ -131,7 +131,7 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
 
 /*bronze*/
 .bronze .title{
-    background: #ed2024;
+    background: #139b49;
 }
 .bronze span{ 
     font-size: 1.8rem;
@@ -140,10 +140,10 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
 }
 
 .bronze .content,.bronze .pt-footer{
-    background: #ed2024;
+    background: #139b49;
 }
 .bronze .content:after{	
-	border-top-color: #ed2024;	
+	border-top-color: #139b49;	
 }
 .bronze .pt-footer:after{
     border-top-color: #FFFFFF;
