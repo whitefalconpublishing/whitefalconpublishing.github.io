@@ -29,7 +29,7 @@ document.write('                            <h2>Get in touch</h2>');
 document.write('                            Email:<br>');
 document.write('                            contact@whitefalconpublishing.com<br>');
 document.write('                            whitefalconpublish@gmail.com<br><br>');
-document.write('                            Ph: +91-911-589-2986, <br>&nbsp;&nbsp;&nbsp;&nbsp;+91-828-384-3446<br><br>');
+document.write('                            Ph: +91-828-384-3446, <br>&nbsp;&nbsp;&nbsp;&nbsp;+91-911-589-2986<br><br>');
 document.write('                                    <h2>Android App</h2>');
  document.write("<a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width='60%'></a>");
 document.write('                        </section>');
