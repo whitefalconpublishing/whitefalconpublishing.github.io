@@ -1,162 +1,139 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Self Book Publishing in India | White Falcon Publishing</title>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="description" content="White Falcon Publishing provides services to authors to self publish books in India for global distribution. Publish a book in India with the help of our professional self publishing services. " />
-        <meta name="keywords" content="how to publish a book, self publisher, how to publish a book in india, publishers, print on demand publishers, how much to self publish, india publishing, publishing a book in india, self publishing in india, book publishing india, how to self publishing, publishing in india, publishing a book, book publishers in india, book publishing in india, publishing self, how to publish book, publishing of books, online book publishing india, how to publish book in india, how to publish a book for free, books publishers in india, publish a book in india" />
-        <meta name="author" content="White Falcon Publishing, India">
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css" />
-        <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
-        <script src="js/jquery.min.js"></script>
-        <script src="js/skel.min.js"></script>
-        <script src="js/skel-layers.min.js"></script>
-        <script src="js/init.js"></script>
-        <script type="text/javascript" src="js/jssor.core.js"></script>
-        <script type="text/javascript" src="js/jssor.utils.js"></script>
-        <script type="text/javascript" src="js/jssor.slider.js"></script>
-         <script src="js/banner.js"></script>
-        <link rel="stylesheet" href="css/alertify.core.css" />
-	    <link rel="stylesheet" href="css/alertify.default.css" id="toggleCSS" />
-         
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            
-            ga('create', 'UA-48537478-1', 'self-publish.in');
-            ga('send', 'pageview');
-            
-        </script>
-        <noscript>
-            <link rel="stylesheet" href="css/skel.css" />
-            <link rel="stylesheet" href="css/style.css" />
-            <link rel="stylesheet" href="css/style-desktop.css" />
-        </noscript>
-        <!--[if lte IE 9]>
-        <link rel="stylesheet" href="css/ie9.css" />
-        <![endif]-->
-        <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-        <style>
-        #photo_container {
-	            width: 100%;
-	            height: 400px;
-	            margin: 0px;
-	            background-color: #ffffff;
-            }
-        </style>
-        <link rel="stylesheet" href="jQuery.isc/jQuery.isc.css" type="text/css" media="screen" charset="utf-8">
-        <script src="jQuery.isc/jquery-image-scale-carousel.js" type="text/javascript" charset="utf-8"></script>
-        <script>
-            var carousel_images = [
-			"images/covers_small/Prabhu.jpg",
-			"images/covers_small/SupreetSingh.jpg",
-			"images/covers_small/Dipali.jpg",
-			"images/covers_small/VarendraJain.jpg",
-			"images/covers_small/KiranChandra.jpg",	
-			"images/covers_small/Firdaus.jpg"
-									];
-            
-             $(window).load(function() {
-            	$("#photo_container").isc({
-            		imgArray: carousel_images,
-            		autoplay: true,
-            		autoplayTimer: 3000 
-            	});	
-            }); 
-        </script>
-        
-    </head>
-    <body>
-        <!-- Header -->
-        <div id="header-wrapper">
-            <header id="header">
-                <div class="row">
-                    <div class="12u">
-                        <script src="menu.js"></script> 
-                    </div>
-                </div>
-            </header>
-        </div>
-        <div id="headdesk">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- HEAD -->
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Self Book Publishing in India | White Falcon Publishing</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="White Falcon Publishing provides services to authors to self publish books in India for global distribution. Publish a book in India with the help of our professional self publishing services. " />
+<meta name="keywords" content="how to publish a book, self publisher, how to publish a book in india, publishers, print on demand publishers, how much to self publish, india publishing, publishing a book in india, self publishing in india, book publishing india, how to self publishing, publishing in india, publishing a book, book publishers in india, book publishing in india, publishing self, how to publish book, publishing of books, online book publishing india, how to publish book in india, how to publish a book for free, books publishers in india, publish a book in india" />
+<meta name="author" content="White Falcon Publishing, India">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- GLOBAL MANDATORY STYLES -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500,300,300italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/et-line/et-line.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/themify/themify.css" rel="stylesheet" type="text/css"/>
+<!-- END GLOBAL MANDATORY STYLES -->
+
+<!-- BEGIN THEME PLUGINS STYLE -->
+<link href="assets/plugins/scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/owl-carousel/assets/owl.carousel.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME PLUGINS STYLE -->
+
+<!-- THEME STYLES -->
+<link href="assets/css/global.css" rel="stylesheet" type="text/css"/>
+<!-- END THEME STYLES -->
+
+<!-- THEME -->
+<link href="assets/css/theme/dark.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/theme/base.css" rel="stylesheet" type="text/css" id="style-color"/>
+<!-- END THEME -->
+
+<!-- BEGIN JQUERY -->
+<script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
+<!-- END JQUERY -->
+
+<!-- BEGIN SLIDER REVOLUTION -->
+<script type="text/javascript" src="js/jssor.core.js"></script>
+<script type="text/javascript" src="js/jssor.utils.js"></script>
+<script type="text/javascript" src="js/jssor.slider.js"></script>
+<script src="js/banner.js"></script>
+
+<!-- FAVICON -->
+<link rel="shortcut icon" href="favicon.ico"/>
+<!-- END FAVICON -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-48537478-1', 'self-publish.in');
+ga('send', 'pageview');
+
+</script>
+</head>
+<!-- END HEAD -->
+<!-- BODY -->
+<body>
+
+<!-- WRAPPER -->
+<div class="wrapper animsition">
+    <!--========== HEADER ==========-->
+    <script src="menu.js"></script> 
+    <!--========== END HEADER ==========-->
+<!--========== BREADCRUMBS V5 ==========-->
+<div id="headdesk">
+    <section class="breadcrumbs-v5 content-top">
+
+    </section>
+    </div>
+    <!--========== END BREADCRUMBS V5 ==========-->
+
+    <!--========== REVOLUTION SLIDER ==========-->
+    <div>
         <!-- Jssor Slider Begin -->
         <div id="slider1_container" style="position: relative; margin: 0 auto;
             top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
             <!-- Loading Screen -->
-            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-                <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
-                    top: 0px; left: 0px; width: 100%; height: 100%;">
-                </div>
-                <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
-                    top: 0px; left: 0px; width: 100%; height: 100%;">
-                </div>
-            </div>
+            
             <!-- Slides Container -->
             <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px;
                 height: 500px; overflow: hidden;">
                 <div>
                     <img u="image" src="images/Banner1.png" width="1300px" height="500px" />
-                    <div class="row">
-                        <div class="1u">
-                        </div>
-                        <div class="9u">
-                            <!-- left column has nothing -->
-                            <br><br><br>
-                            <br><br><br>
-                            <br><br><br>
-                        </div>
-                    </div>
                 </div>
                 <div>
                     <img u="image" src="images/Banner2.png" width="1300px" height="500px" />
-                    <div class="row">
-                        <div class="2u">
-                        </div>
-                        <div class="10u">
-                            <!-- left column has nothing -->
-                            <br><br><br>
-                            <br><br><br>
-                            <br><br><br>
-                            <br><br><br><br>
-                        </div>
-                    </div>
                 </div>
                 <div>
                     <img u="image" src="images/Banner3.png" width="1300px" height="500px" />
-                    <div class="row">
-                        <div class="2u">
-                        </div>
-                        <div class="10u">
-                            <!-- left column has nothing -->
-                            <br><br><br>
-                            <br><br><br>
-                            <br><br><br>
-                            <br><br><br><br>
-                        </div>
-                    </div>
                 </div>
-				
+                
             </div>
             <!-- Bullet Navigator Skin Begin -->
             <style>
-                .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av
-                {
-                background: url(images/b21.png) no-repeat;
-                overflow:hidden;
+            /* jssor slider bullet navigator skin 17 css */
+            /*
+            .jssorb17 div           (normal)
+            .jssorb17 div:hover     (normal mouseover)
+            .jssorb17 .av           (active)
+            .jssorb17 .av:hover     (active mouseover)
+            .jssorb17 .dn           (mousedown)
+            */
+            .jssorb17 {
+                position: absolute;
+            }
+            .jssorb17 div, .jssorb17 div:hover, .jssorb17 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url(images/b17.png) no-repeat;
+                overflow: hidden;
                 cursor: pointer;
-                }
-                .jssorb21 div { background-position: -5px -5px; }
-                .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
-                .jssorb21 .av { background-position: -65px -5px; }
-                .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
-            </style>
+            }
+            .jssorb17 div { background-position: -7px -7px; }
+            .jssorb17 div:hover, .jssorb17 .av:hover { background-position: -37px -7px; }
+            .jssorb17 .av { background-position: -67px -7px; }
+            .jssorb17 .dn, .jssorb17 .dn:hover { background-position: -97px -7px; }
+        </style>
+
             <!-- bullet navigator container -->
-            <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
-                <!-- bullet navigator item prototype -->
-                <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
-            </div>
-            <!-- Bullet Navigator Skin End -->
+        <div u="navigator" class="jssorb17" style="bottom: 6px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+
             <!-- Arrow Navigator Skin Begin -->
             <style>
                 .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
@@ -184,140 +161,178 @@
             
         </div>
         <!-- Jssor Slider End -->
-        </div>
-        
-        <div id="headmob" class="12u">
-        <center>
-        <br><br>
-<a href="index.html"><img id="wfplogom" src="images/Banner-mobile.png" width="100%"></a>
-	<br><br>
-	</center>
-	</div>
-	
-	
-        <!-- Content -->
-        <div id="content-wrapper">
-            <div id="content">
-                <div class="container">
-                    <div class="row">
-                        <div class="4u">
-                            <section>
-                                <header>
-                                    <h2>Recently Published Books</h2>
-                                </header>
-                                <center>
-                                    <div id="photo_container" ></div>
-                                </center>
-                                <br> <br> 
-                                <center>
-                                    <a href="http://store.self-publish.in" class="button fa fa-file-o">View Books</a>
-                                    <br>
-                                </center>
-                            </section>
+    </div>
+    <!--========== END REVOLUTION SLIDER ==========-->
+
+    <!--========== PAGE CONTENT ==========-->   
+     <!-- News v1 -->
+    <div class="bg-color-sky-light">
+        <div class="content-md container">
+            <!-- Heading v1 -->
+            
+            <!-- End Heading v1 -->
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid ">
+                
+                <div class="masonry-grid-item col-3">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Recently Published Books</a></h3>
                         </div>
-                        <div class="4u">
-                            <!-- Box #2 -->
-                            <section>
-                                <header>
-                                    <h2>Publish to Succeed</h2>
-                                </header>
-                                <ul class="check-list1">
-                                    <li>Worldwide distribution</li>
-                                    <li>Author gets 100% profit</li>
-                                    <li>Track Sales & Royalties</li>
-                                    <li>Author decides the book list price</li>
-                                    <li>Author owns the copyright</li>
-                                    <li>Author volume discounts</li>
-                                    <li>Never go out-of-print</li>
-                                    <li>Free & Guided publishing plans</li>
-                                </ul>
-                                <center>
-                                    <br>
-                                    <a href="faq.html" class="button fa fa-file-o">Learn more</a>
-                                </center>
-                            </section>
-                        </div>
-                        <div class="4u">
-                            <!-- Box #2 -->
-                            <section>
-                                <header>
-                                    <h2>Publishing Process</h2>
-                                </header>
-                                <ul class="check-list1">
-                                    <li>Choose a Plan & Provide Book Details</li>
-                                    <li>Sign Agreement</li>
-                                    <li>Submit Manuscript</li>
-                                    <li>Book Composition done</li>
-                                    <li>Review the composed book</li>
-                                    <li>Get Your Printed Copies</li>
-                                    <li>Book Marketing done</li>
-                                    <li>Monitor Sales & Royalties</li>
-                                </ul>
-                                <center>
-                                    <br>
-                                    <a href="process.html" class="button fa fa-file-o">View Process</a>
-                                </center>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-                                <header>
-                                    <h2>Global Distribution</h2>
-                                </header>
-                                <center>
-                                    <img src="images/logos.png" width="100%" alt="" />
-                                </center>
-                                <br>
-                                We help authors in getting their books published through international self-publishing platforms which offer distribution services and make the titles available for buyers in India, USA, Canada, Europe, Australia, New Zealand and Japan.
-                                <br><br><br><br><br>
-                                <center>
-                                    <a href="distribution.html" class="button fa fa-file-o">View Channels</a>
-                                </center>
-                            </section>
-                        </div>
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-                                <header>
-                                    <h2>Free & Guided Publishing Plans</h2>
-                                </header>
-                                <center>
-                                    <a href="plans.html"><img src="images/plan_circles.png" width="100%" alt="" /></a>
-                                </center>
-                                <br> 
-                                Wondering how to self publish a book in india? You can review our publishing plans and choose the plan that best suits your requirements. To get an accurate estimate for existing plans, please provide us with your book details by completing the form on the plans page. You can also create your own custom plan. We only charge for the services you opt for and publishing the book through our print-on-demand self-publishing platform and other international platforms. Inventory management and order fulfillment is our responsibility. In all our guided plans, we do not require the author to purchase a certain minimum number of copies. 
-								<center>
-                                    <a href="plans.html" class="button fa fa-file-o">View Plans</a>
-                                </center>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-                                <header>
-                                    <h2>Self-Publish with White Falcon Publishing</h2>
-                                </header>
-                                <p>
-                                    White Falcon Publishing, is one of the fastest growing self-publishing companies in India which has built a one of its kind <a href="http://platform.self-publish.in/">Print-On-Demand Self-Publishing Platform</a> for publishing books. White Falcon Publishing assists authors in self-publishing their books for <a href="distribution.html">Global Distribution</a>. We provide free and guided <a href="plans.html">Self-Publishing Plans</a> and <a href="royaltycalculator.html">100% Profit Share</a> to authors. Authors can also create <a href="custom-plan.html">Custom Publishing Plans</a>, based on their requirements. We publish fiction, non-fiction, art, science, technology, poetry and regional books.  Through collaborations with a huge network of globally diverse print-on-demand providers and book distributors, we make the books available for sale in various countries like USA, Canada, UK, France, Italy, Spain, Denmark and Australia. In India, the books are sold on major eCommerce platforms such as Amazon.in, Flipkart, Paytm and ShopClues. Books published through our print-on-demand platform never go out-of-print. We provide the authors with the facility to view live sales/royalty reports through our POD platform, hence giving them complete transparency about the whole process. Authors can choose the optimal sale price for their books and estimate the royalty using our <a href="royaltycalculator.html">Royalty Calculator</a>.
-                                    <br> <br>
+                        <!-- ".carousel-fade" class is added with animation stylesheet to spice up Bootstrap Carousel with CSS3 Animation -->
+                        <div id="blog-grid-2-col" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="item active">
+                             <center>      
+                                        <img class="img-responsive" src="images/covers_small/VarendraJain.jpg" alt="">
+                                    </center>
+                                </div>
+
+                                <div class="item">
                                     <center>
-                                     <a href="self-publishing-india.html" class="button fa fa-file-o">Learn more</a>
-                                     </center>
-                                </p>
-                            </section>
+                                        <img class="img-responsive" src="images/covers_small/Neha.jpg" alt="">
+                                    </center>
+                                </div>
+
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/covers_small/Dhrupad.jpg" alt="">
+                                    </center>
+                                </div>
+
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/covers_small/NeelAruna.jpg" alt="">
+                                    </center>
+                                </div>
+
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/covers_small/Firdaus.jpg" alt="">
+                                    </center>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Controls -->
+                            
                         </div>
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-                                <header>
-                                    <h2>Print-on-Demand Self-Publishing</h2>
-                                </header>
-                                <p>
+                        <div class="news-v1-content">
+                        <center>
+                            <a href="http://store.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Books</button></a>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                <div class="masonry-grid-item col-3">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Premium Self-Publishing</a></h3>
+                        </div>
+                       
+                        <div class="news-v1-content">
+                        
+                            <ul>
+                            <li><h4>Print-on-Demand</h4></li>
+                                    <li><h4>Worldwide distribution</h4></li>
+                                    <li><h4>Author gets 100% profit</h4></li>
+                                    <li><h4>Track Sales & Royalties</h4></li>
+                                    <li><h4>Author decides the book list price</h4></li>
+                                    <li><h4>Author owns the copyright</h4></li>
+                                    <li><h4>Author volume discounts</h4></li>
+                                    <li><h4>Never go out-of-print</h4></li>
+                                    <li><h4>Free & Guided publishing plans</h4></li>
+                                </ul>
+<center><br><br>
+                            <a href="faq.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                            </center>
+                        </div>
+
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                <div class="masonry-grid-item col-3">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Publishing Process</a></h3>
+                        </div>
+                       
+                        <div class="news-v1-content">
+                        
+                            <ul>
+                            <li><h4>Choose a plan</h4></li>
+                            <li><h4>Submit your book details</h4></li>
+                                    <li><h4>Sign agreement</h4></li>
+                                    <li><h4>Submit manuscript</h4></li>
+                                    <li><h4>Book composition done</h4></li>
+                                    <li><h4>Review the composed book</h4></li>
+                                    <li><h4>Get your printed copies</h4></li>
+                                    <li><h4>Book marketing done</h4></li>
+                                    <li><h4>Monitor sales & royalties</h4></li>
+                                </ul>
+<center><br><br>
+                            <a href="process.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Process</button></a>
+                            </center>
+                        </div>
+
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                
+            </div>
+            <!-- End Masonry Grid -->
+
+            
+        </div>
+    </div>
+    <!-- End News v1 -->
+
+ <!-- News v1 -->
+    <div class="bg-color-tint-light">
+        <div class="content-md container">
+            <!-- Heading v1 -->
+            
+            <!-- End Heading v1 -->
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid ">
+                
+                <div class="masonry-grid-item col-2 bg-blue">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Self-Publish with White Falcon Publishing</a></h3>
+                        </div>
+                        <div class="news-v1-content">
+                        <p >
+                            White Falcon Publishing, is one of the fastest growing self-publishing companies in India which has built a one of its kind <a href="http://platform.self-publish.in/">Print-On-Demand Self-Publishing Platform</a> for publishing books. White Falcon Publishing assists authors in self-publishing their books for <a href="distribution.html">Global Distribution</a>. We provide free and guided <a href="plans.html">Self-Publishing Plans</a> and <a href="royaltycalculator.html">100% Profit Share</a> to authors. Authors can also create <a href="custom-plan.html">Custom Publishing Plans</a>, based on their requirements. We publish fiction, non-fiction, art, science, technology, poetry and regional books.  Through collaborations with a huge network of globally diverse print-on-demand providers and book distributors, we make the books available for sale in various countries like USA, Canada, UK, France, Italy, Spain, Denmark and Australia. In India, the books are sold on major eCommerce platforms such as Amazon.in, Flipkart, Paytm and ShopClues. Books published through our print-on-demand platform never go out-of-print. We provide the authors with the facility to view live sales/royalty reports through our POD platform, hence giving them complete transparency about the whole process. Authors can choose the optimal sale price for their books and estimate the royalty using our <a href="royaltycalculator.html">Royalty Calculator</a>.
+                                    <br> <br>
+                        </p>
+
+                        <center>
+                            <a href="self-publishing-india.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                <div class="masonry-grid-item col-2">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Print-on-Demand Self-Publishing</a></h3>
+                        </div>
+                       
+                        <div class="news-v1-content">
+                        
+                           <p>
                                    
                                     Print-on-Demand Self Publishing is a new model for book publishing. In print-on-demand (POD) publishing, new copies of a book are printed as and when the orders comes in or based on demand.
                                     Unlike traditional printing technologies in which printing single copies is not economical, POD publishing is enabled 
@@ -328,206 +343,361 @@
 
                                     
                                 </p>
-                                 <center>
-                                   
-                                    <a href="faq.html" class="button fa fa-file-o">Learn more</a>
-                                </center>
-                                
-                                 
-                            </section>
+<center><br>
+                            <a href="faq.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                            </center>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Features -->
-        <div id="features-wrapper">
-            <div id="features">
-                <center>
-                    <h1>Quality Publishing Services</h1>
-                    <br>
-                </center>
-                <div class="container">
-                    <div class="row">
-                        <div class="3u">
-                            <!-- Feature #1 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/self.jpg" alt="" /></a>
-                                <h2>Guided Self-Publishing</h2>
-                                <p>
-                                    We help you get your works published using international self-publishing platforms. We offer our services for all types of books – Textbooks, Novels, Short stories, Fiction/Non-fiction and Poetry, Articles, Journals compiled into a book
-                                </p>
-                            </section>
-                        </div>
-                        <div class="3u">
-                            <!-- Feature #2 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/interior.jpg" alt="" /></a>
-                                <h2>Interior Designing</h2>
-                                <p>
-                                    Our expert team would review your work and provide you with a variety of templates/layouts to choose from. Professional consultation would be associated along with template choice. After mutual consensus, we would format the content layout and enrich it with expert hands.
-                                </p>
-                            </section>
-                        </div>
-                        <div class="3u">
-                            <!-- Feature #3 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/covers.jpg" alt="" /></a>
-                                <h2>Cover Designing</h2>
-                                <p>
-                                    Our expert team would review your work and custom design the cover matching the work type. We would provide you with a variety of templates/designs to choose from. Professional consultation would be associated along with template choice. After mutual consensus, we would materialize the draft design for your book.
-                                </p>
-                            </section>
-                        </div>
-                        <div class="3u">
-                            <!-- Feature #4 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/proof.jpg" alt="" /></a>
-                                <h2>Copy Editing & Proof Reading</h2>
-                                <p>
-                                    We provide highly professional proofreading and editing services to provide immaculate, error-free content of best quality to the readers. The changes/ errors/typos found are discussed with the author, at his will. A couple of rounds of proofreading and editing service is also offered.
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="3u">
-                            <!-- Feature #1 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/ebook.jpg" alt="" /></a>
-                                <h2>eBook Conversion</h2>
-                                <p>
-                                    We can help you provide with a high-quality e-book. Special care would be taken to choose the format based on your needs.
-                                </p>
-                            </section>
-                        </div>
-                        <div class="3u">
-                            <!-- Feature #2 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/bookwebsite.jpg" alt="" /></a>
-                                <h2>Author & Book Website Designing</h2>
-                                <p>
-                                    We offer services for author & book website designing. Book websites help in engaging readers by providing supplementary information.
-                                </p>
-                            </section>
-                        </div>
-                        <div class="3u">
-                            <!-- Feature #3 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/marketing.jpg" alt="" /></a>
-                                <h2>Book Marketing</h2>
-                                <p>
-                                    We offer a wide range of marketing services for books including internet and social media marketing, book reviews, press interviews and media coverage, marketing kits, etc. 
-                                </p>
-                            </section>
-                        </div>
-                        <div class="3u">
-                            <!-- Feature #4 -->
-                            <section>
-                                <a href="services.html" class="bordered-feature-image"><img src="images/old-books.jpg" alt="" /></a>
-                                <h2>Re-composition of out of print books</h2>
-                                <p>
-                                    Authors who lost their books at the hands of their publishers years ago, can revive their precious books with us. 
-                                </p>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="content-wrapper">
-            <div id="content">
-                <div class="container">
-                    
-						
-						 <div class="row">
-						 
-                        
-                        
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-							 <center>
-                                <header>
-                                    <h2>Download our Android App</h2>
-                                </header>
-                                </center>
-								Tracking sales and royalties is now even easier with our new Android application.
-								<center>
-								<a href="https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en" target="_blank"><img width="80%" src="images/app.png" alt="Android App"></a>
 
-<a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width="40%"></a>
-                                </center>
-                            </section>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                
+                
+            </div>
+            <!-- End Masonry Grid -->
+
+            
+        </div>
+    </div>
+    <!-- End News v1 -->
+
+<!-- News v1 -->
+    <div class="bg-color-sky-light">
+        <div class="content-md container">
+            <!-- Heading v1 -->
+            
+            <!-- End Heading v1 -->
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid ">
+                
+                <div class="masonry-grid-item col-2 bg-blue">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Global Distribution</a></h3>
+                         
+                            
                         </div>
+                        <a class="image-popup-vertical-fit" href="images/logos.png" title="Slider Image">
+                            <img class="img-responsive" src="images/logos.png" alt="">
+                        </a>
+                        <div class="news-v1-content">
+                            <p>We help authors in getting their books published through international self-publishing platforms which offer distribution services and make the titles available for buyers in India, USA, Canada, Europe, Australia, New Zealand and Japan.
+                                <br><br><br><br><br><br>
+                            </p>
+                            <center><br>
+                            <a href="distribution.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Distribution Channels</button></a>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                <div class="masonry-grid-item col-2">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Free & Guided Publishing Plans</a></h3>
+                            
+                            
+                        </div>
+                        <a class="image-popup-vertical-fit" href="images/plan_circles.png" title="Slider Image">
+                            <img class="img-responsive" src="images/plan_circles.png" alt="">
+                        </a>
+                        <div class="news-v1-content">
+                            <p>Wondering how to self publish a book in india? You can review our publishing plans and choose the plan that best suits your requirements. To get an accurate estimate for existing plans, please provide us with your book details by completing the form on the plans page. You can also create your own custom plan. We only charge for the services you opt for and publishing the book through our print-on-demand self-publishing platform and other international platforms. Inventory management and order fulfillment is our responsibility. In all our guided plans, we do not require the author to purchase a certain minimum number of copies. 
+                            </p>
+                            <center><br>
+                            <a href="plans.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Plans</button></a>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                
+                
+            </div>
+            <!-- End Masonry Grid -->
+
+            
+        </div>
+    </div>
+    <!-- End News v1 -->
+
+        <!-- Testimonials v1 -->
+    <div class="bg-color-tint-light">
+        <div class="content-md container">
+            <!-- Heading v1 -->
+            <div class="heading-v1 text-center margin-b-80">
+                <h2 class="heading-v1-title">Quality Publishing Services</h2>
+            </div>
+            <!-- End Heading v1 -->
+
+            <!-- Owl Carousel Testimonials Three Item -->
+            <div class="owl-carousel-testimonials-four-item margin-b-30">
+                <div class="item">
+                    <!-- Testimonials v1 -->
+
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-book fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title">Guided Self-Publishing</h3>
+                            <p align="left">
+                                    We help you get your works published using international self-publishing platforms. We offer our services for all types of books – Textbooks, Novels, Short stories, Fiction/Non-fiction and Poetry, Articles, Journals compiled into a book.<br><br><br>
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+                <div class="item">
+                    <!-- Testimonials v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-file-text-o fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title"><a href="#">Interior Designing<br>&nbsp;</a></h3>
+                            <p align="left">
+                                    Our expert team would review your work and provide you with a variety of templates/layouts to choose from. Professional consultation would be associated along with template choice. After mutual consensus, we would format the content layout and enrich it with expert hands.<br><br>
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+                <div class="item">
+                    <!-- Testimonials v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-file-image-o fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title"><a href="#">Cover Designing<br>&nbsp;</a></h3>
+                            <p align="left">
+                                    Our expert team would review your work and custom design the cover matching the work type. We would provide you with a variety of designs to choose from. Professional consultation would be associated along with template choice. After mutual consensus, we would materialize the cover design for your book.
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+                 <div class="item">
+                    <!-- Testimonials v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title"><a href="#">Copy Editing<br>&nbsp;</a></h3>
+                            <p align="left">
+                                    We provide highly professional proofreading and editing services to provide immaculate, error-free content of best quality to the readers. The changes/ errors/typos found are discussed with the author, at his will. A couple of rounds of proofreading and editing service is also offered.<br><br>
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+                 <div class="item">
+                    <!-- Testimonials v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-tablet fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title"><a href="#">eBook Conversion<br>&nbsp;</a></h3>
+                            <p align="left">
+                                    We can help you provide with a high-quality e-book. Special care would be taken to choose the format based on your needs.<br><br><br><br><br><br><br>
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+                 <div class="item">
+                    <!-- Testimonials v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-globe fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title"><a href="#">Author Website<br>&nbsp;</a></h3>
+                            <p align="left">
+                                    We offer services for author & book website designing. Book websites help in engaging readers by providing supplementary information.<br><br><br><br><br><br>
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+                <div class="item">
+                    <!-- Testimonials v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-content text-center">
+                        <i class="fa fa-line-chart fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
+                        <br><br>
+                            <h3 class="news-v1-title"><a href="#">Book Marketing<br>&nbsp;</a></h3>
+                            <p align="left">
+                                   We offer a wide range of marketing services for books including internet and social media marketing, book reviews, press interviews and media coverage, marketing kits, etc. <br><br><br><br><br>
+                               </p>
+                        </div>
+                    </article>
+                    <!-- End Testimonials v1 -->
+                </div>
+
+            </div>
+            <!-- End Owl Carousel Testimonials Three Item -->
+            
+            <!-- Owl Controls Testimonials Three Item -->
+            <div class="owl-control-arrows-v1 owl-controls-testimonials-four-item text-center">
+                <span class="owl-controls-testimonials-four-item-next">
+                    <span class="owl-arrow radius-3 fa fa-angle-left"></span>
+                </span>
+                <span class="owl-controls-testimonials-four-item-prev">
+                    <span class="owl-arrow radius-3 fa fa-angle-right"></span>
+                </span>
+            </div>
+            <!-- End Owl Controls Testimonials Three Item -->
+            <!-- Button -->
+            <div class="center-block">
+            <br><br>
+                <a href="services.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Services</button></a>
+            </div>
+            <!-- Button -->
+        </div>
+    </div>
+    <!-- End Testimonials v1 -->
+
+<!-- News v1 -->
+    <div class="bg-color-sky-light">
+        <div class="content-md container">
+            <!-- Heading v1 -->
+            
+            <!-- End Heading v1 -->
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid ">
+                
+                <div class="masonry-grid-item col-2 bg-blue">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Download our Android App</a></h3>
+                        </div>
+                        <div class="news-v1-content">
+                        <p>Tracking sales and royalties is now even easier with our new Android app</p>
+                                <center>
+                                <a href="https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en" target="_blank"><img width="80%" src="images/app.png" alt="Android App"></a>
+
+<a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width="35%"></a>
+                                </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                <div class="masonry-grid-item col-2">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">Become a Best-Selling & Award-Winning Author</a></h3>
+                        </div>
+                       
+                        <div class="news-v1-content">
                         
-                         <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-                             <center>
-                                <header>
-                                    <h2>Become a Best-Selling & <br>Award-Winning Author</h2>
-                                </header>
-                                 </center>
-                                 White Falcon Publishing has helped hundreds of authors 
+                           <p>
+                                   
+                                     White Falcon Publishing has helped hundreds of authors 
                                 in publishing their books, many of which are now national bestsellers and award winners. 
                                 White Falcon Publishing is one of the select book publishing companies in India to be awarded the ISO 9001:2015 certification for providing quality publishing services. White Falcon Publishing has achieved this certification for consistently providing quality services which meet customer satisfaction and applicable regulatory requirements. We aim to be one of the best self publishing company in India by consistently providing quality publishing services. Through our ScholarGram and BooksFundr platforms, we offer free book publishing options to authors. Authors who want to avail premium self publishing services can choose one of our affordable publishing plans.                               
                                 Many emerging Indian authors have trusted White Falcon Publishing for transforming their manuscripts into best-selling and award-winning books. Through extensive book-marketing services, we help authors in increasing the visibility of their books on online selling channels, get reviews and become bestsellers. 
-                                
-                            </section>
-                        </div>
-                        
-                    </div>
-					
-					 <div class="row">
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-							 <center>
-                                <header>
-                                    <h2>Publish your Academic and Research Works for Free</h2>
-                                </header>
-								
-								<a href="http://scholargram.com" target="_blank"><img width="60%" src="images/sglogo1.png" alt="ScholarGram"></a>
-								 </center>
-								<br>
-                                <a href="http://scholargram.com" target="_blank">ScholarGram</a> is an open and free academic publishing platform developed by White Falcon Publishing. With ScholarGram you can publish your academic and research works such as 
-thesis, dissertations, research papers, project reports, conference proceedings and journals 
-into print and eBooks.  <br><br>
-                               <center>
-                                    <a href="http://scholargram.com" class="button fa fa-file-o" target="_blank">Learn more</a><br><br><br><br><br><br><br>
-                                </center>
-                            </section>
-                        </div>
-                        
-                        <div class="6u">
-                            <!-- Box #1 -->
-                            <section>
-							 <center>
-                                
-								
-								<a href="http://booksfundr.self-publish.in/" target="_blank"><img width="100%" src="images/BooksFundr-01.png" alt="BooksFundr"></a>
-								 </center>
-								
-                                BooksFundr is India's first crowd-funding platform for books. With BooksFundr, authors can create campaigns for their books and sell pre-orders. The books that meet pre-order goals are published by White Falcon Publishing, without any upfront costs to the author.
-                                  <br><br>
-                               <center>
-                                    <a href="http://booksfundr.self-publish.in/" class="button fa fa-file-o" target="_blank">Learn more</a>
-                                </center>
-                            </section>
-                        </div>
-                            
-                        					</div>
 
-                                            <div class="row">
-                        
-             <div class="12u">
-                        <center>
-                            <section>
-                                <header>
-                                
-                                    <h2>Featured on</h2> 
-                                </header>
+                                    
+                                </p>
+<center><br>
+                            <a href="faq.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                            </center>
+                        </div>
+
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                
+                
+            </div>
+            <!-- End Masonry Grid -->
+
+            
+        </div>
+    </div>
+    <!-- End News v1 -->
+
+    <!-- News v1 -->
+    <div class="bg-color-tint-light">
+        <div class="content-md container">
+            <!-- Heading v1 -->
+            
+            <!-- End Heading v1 -->
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid ">
+                
+                <div class="masonry-grid-item col-2 bg-blue">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">ScholarGram</a></h3>
+                            <span class="news-v1-element"><i class="news-v1-element-icon fa fa-circle"></i></span>
+                            <a class="news-v1-heading-tag" href="#">Publish your Academic and Research Works for Free</a>
+                            
+                        </div>
+                        <a class="image-popup-vertical-fit" href="images/Scholargram.png" title="Slider Image">
+                            <img class="img-responsive" src="images/Scholargram.png" alt="">
+                        </a>
+                        <div class="news-v1-content">
+                            <p>ScholarGram is an open and free academic publishing platform developed by White Falcon Publishing. With ScholarGram you can publish your academic and research works such as thesis, dissertations, research papers, project reports, conference proceedings and journals into print and eBooks. 
+                            </p>
+                            <center><br>
+                            <a href="http://scholargram.com/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                <div class="masonry-grid-item col-2">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                        <div class="news-v1-heading">
+                            <h3 class="news-v1-heading-title"><a href="#">BooksFundr</a></h3>
+                            <span class="news-v1-element"><i class="news-v1-element-icon fa fa-circle"></i></span>
+                            <a class="news-v1-heading-tag" href="#">Crowdfunding Platform for Books</a>
+                            
+                        </div>
+                        <a class="image-popup-vertical-fit" href="images/BooksFundr.png" title="Slider Image">
+                            <img class="img-responsive" src="images/BooksFundr.png" alt="">
+                        </a>
+                        <div class="news-v1-content">
+                            <p>BooksFundr is India's first crowd-funding platform for books. With BooksFundr, authors can create campaigns for their books and sell pre-orders. The books that meet pre-order goals are published by White Falcon Publishing, without any upfront costs to the author.
+                            </p>
+                            <center><br>
+                            <a href="http://booksfundr.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                            </center>
+                        </div>
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+                
+                
+            </div>
+            <!-- End Masonry Grid -->
+
+            
+        </div>
+    </div>
+    <!-- End News v1 -->
+
+    <!-- Process v3 -->
+    <div class="content-md container">
+        <!-- Heading v1 -->
+        <div class="heading-v1 text-center margin-b-80">
+            <h2 class="heading-v1-title">Featured on</h2>
+        </div>
+        <!-- End Heading v1 -->
                                 <ul class="quote-list">
                                     
                                     <a href="http://her.yourstory.com/navsangeet-kaur-0717" target="_blank"><img width="100px" src="images/channels/ys.png" alt="YourStory - White Falcon Publishing"></a>
@@ -561,48 +731,58 @@ into print and eBooks.  <br><br>
 
                 
                                 </ul>
-                            </section>
-                            </center>
-                        </div>
                   
-                       
-                        </div>
-						
-                </div>
-            </div>
-        </div>
-    
-    <!-- Pop-up --> 
-    <script src="js/alertify.min.js"></script>
-	<script>
-    /*
-		function reset () {
-			$("#toggleCSS").attr("href", "css/alertify.default.css");
-			alertify.set({
-				labels : {
-					ok     : "OK",
-					cancel : "Cancel"
-				},
-				delay : 5000,
-				buttonReverse : false,
-				buttonFocus   : "ok"
-			});
-		}
+        
+    </div>
+    <!-- End Process v3 -->
 
-		
-		
-		$( document ).ready(function() {
-			reset();
-			alertify.set({ delay: 30000 });
-			alertify.log("Call +91 - 911-589-2986 <img src=\"images/close.png\" align=\"right\" width=\"16px\"><br> to talk to our Publishing Consultant");
-			return false;
-		});*/
-		
-		
-	</script>
-        <!-- Footer -->
-        <script src="footer.js"></script> 
+    <!--========== END PAGE CONTENT ==========-->
 
+    <!--========== FOOTER V4 ==========-->
+     <script src="footer.js"></script> 
+    <!--========== END FOOTER V4 ==========-->
+</div>
+<!-- END WRAPPER -->
 
-    </body>
+<!-- Back To Top -->
+<a href="javascript:void(0);" class="js-back-to-top back-to-top-theme"></a>
+<!-- End Back To Top -->
+
+<!--========== JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) ==========-->
+<!-- CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="assets/plugins/html5shiv.js"></script>
+<script src="assets/plugins/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="assets/plugins/jquery.migrate.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- END CORE PLUGINS -->
+
+<!-- PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="assets/plugins/jquery.back-to-top.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.smooth-scroll.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.animsition.min.js"></script>
+<script type="text/javascript" src="assets/plugins/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.wow.min.js"></script>
+<script type="text/javascript" src="assets/plugins/counter/waypoints.min.js"></script>
+<script type="text/javascript" src="assets/plugins/counter/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.equal-height.js"></script>
+<script type="text/javascript" src="assets/plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+
+<!-- PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="assets/scripts/app.js"></script>
+<script type="text/javascript" src="assets/scripts/components/header-sticky.js"></script>
+<script type="text/javascript" src="assets/scripts/components/animsition.js"></script>
+<script type="text/javascript" src="assets/scripts/components/scrollbar.js"></script>
+<script type="text/javascript" src="assets/scripts/components/wow.js"></script>
+<script type="text/javascript" src="assets/scripts/components/form-modal.js"></script>
+<script type="text/javascript" src="assets/scripts/components/equal-height.js"></script>
+<script type="text/javascript" src="assets/scripts/components/owl-carousel.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!--========== END JAVASCRIPTS ==========-->
+</body>
+<!-- END BODY -->
+
 </html>

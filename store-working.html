@@ -1,0 +1,418 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-touch no-js"> <!--<![endif]-->
+<head>
+
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  {% if settings.favicon_enable %}
+  <link rel="shortcut icon" href="{{ 'favicon.png' | asset_url }}" type="image/png" />
+  {% endif %}
+
+  <!-- Title and description ================================================== -->
+  <title>
+  {{ page_title }}{% if current_tags %}{% assign current_tags_joined = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: current_tags_joined }}{% endif %}{% if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif %}{% unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless %}
+  </title>
+
+  {% if page_description %}
+  <meta name="description" content="{{ page_description | escape }}">
+  {% endif %}
+
+  <!-- Product meta ================================================== -->
+  {% include 'open-graph-tags' %}
+  {% include 'twitter-card' %}
+
+  <!-- Helpers ================================================== -->
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  {% if settings.ajax_cart_enable %}
+  <!-- Ajaxify Cart Plugin ================================================== -->
+  {{ 'ajaxify.scss.css' | asset_url | stylesheet_tag }}
+  {% endif %}
+
+  <!-- CSS ================================================== -->
+  {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
+  {% include 'google-fonts' %}
+
+  <!-- Header hook for plugins ================================================== -->
+  {{ content_for_header }}
+
+  {% include 'oldIE-js' %}
+
+  {% comment %}
+    If you store has customers disabled, you can remove the following JS file
+  {% endcomment %}
+  {% if template contains 'customers' %}
+    {{ 'shopify_common.js' | shopify_asset_url | script_tag }}
+    {{ 'customer_area.js'  | shopify_asset_url | script_tag }}
+  {% endif %}
+
+  {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' | script_tag }}
+  {{ 'modernizr.min.js' | asset_url | script_tag }}
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500,300,300italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href="http://www.cloudemy.io/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+  <link href="http://www.cloudemy.io/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="http://www.cloudemy.io/assets/plugins/themify/themify.css" rel="stylesheet" type="text/css"/>
+<link href="http://abahga.s3.amazonaws.com/assets/css/global.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="http://www.cloudemy.io/assets/plugins/jquery.min.js"></script>
+</head>
+
+<body id="{{ page_title | handle }}"  >
+
+   
+<!-- WRAPPER -->
+<div class="">        
+   <header class="header-transparent header-transparent-bb navbar-fixed-top header-sticky">    
+        <!-- Navbar -->
+        <nav class="navbar mega-menu" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="menu-container">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="toggle-icon"></span>
+                    </button>
+
+                    
+
+                    <!-- Logo -->
+                    <div class="navbar-logo">
+                        <a class="navbar-logo-wrap" href="index.html">
+                            <img class="navbar-logo-img navbar-logo-img-white" class="navbar-logo-img" src="http://self-publish.in/images/logo.png" alt="White Falcon Publishing">
+                            <img class="navbar-logo-img navbar-logo-img-dark" src="http://self-publish.in/images/logo.png" alt="Ark">
+
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse nav-collapse">
+                    <div class="menu-container">
+                        <ul class="nav navbar-nav">
+                            <!-- Home -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="index.html" >
+                                    Home
+                                </a>
+                            </li>
+
+                             <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="plans.html" >
+                                    Plans
+                                </a>
+                            </li>
+
+                             <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="services.html" >
+                                    Services
+                                </a>
+                            </li>
+
+
+                             <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="distribution.html" >
+                                    Distribution
+                                </a>
+                            </li>
+
+                             <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="http://store.self-publish.in">
+                                    Book Store
+                                </a>
+                            </li>
+
+                             <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="royaltycalculator.html">
+                                    Royalty Calculator
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-item-child dropdown-toggle radius-3" href="javascript:void(0);" data-toggle="dropdown">
+                                    Resources
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- Default -->
+                                 <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" href="process.html">Publishing Process</a></li>
+                                  <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" href="faq.html">FAQ</a></li>
+                                   <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" href="http://platform.self-publish.in/">Platform</a></li>
+                                   <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" href="http://booksfundr.self-publish.in/">BooksFundr</a></li>
+                                   <li class="dropdown-menu-item"><a class="dropdown-menu-item-child" href="http://scholargram.com/">ScholarGram</a></li>
+                                    
+                                    </ul>
+                                </a>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-item-child radius-3" href="contact.html">
+                                    Contact
+                                </a>
+                            </li>
+                            <!-- 
+                            End Home -->
+
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Navbar Collapse -->
+            </div>
+            <!--// End Container-->
+        </nav>
+        <!-- Navbar -->
+    </header>
+   <section class="breadcrumbs-v5 content">
+
+    </section>
+    <!--========== END BREADCRUMBS V5 ==========-->
+
+    <!--========== PAGE CONTENT ==========-->   
+     
+
+    <!-- Process v3 -->
+    <div class="content-xs container">
+  
+
+  
+  
+   
+<div class="grid--full">
+
+        <div class="grid-item">
+          {% if settings.header_message != blank or shop.customer_accounts_enabled %}
+            
+              
+
+              
+            
+
+            <br class="medium-down--hide">
+          {% endif %}
+
+          {% include 'search-bar' %}
+
+          <center>
+            
+            
+            {% if shop.customer_accounts_enabled %}
+                  <a href="/" >
+              <span class="header-cart-btn"> Store Home
+                    </span>
+            </a>
+                  {% if customer %}
+            <a href="/account" >
+              <span class="header-cart-btn"> 
+            {% capture first_name %}{{ customer.first_name }}{% endcapture %}
+                    {{ 'layout.customer.logged_in_as_html' | t: first_name: first_name }} 
+                
+             </span>
+           </a>
+            <a href="/account/logout" >
+            <span class="header-cart-btn"> 
+              {{ 'layout.customer.log_out' | t }}
+               </span>
+            </a>
+                  {% else %}
+            <a href="/account/login" >
+              <span class="header-cart-btn"> 
+                    {{ 'layout.customer.sign_in' | t }}
+            </span>
+            </a>
+                    {% if shop.customer_accounts_optional %}
+            <a href="/account/register" >
+                    <span class="header-cart-btn">  {{ 'layout.customer.create_account' | t }}</span>
+            </a>
+                    {% endif %}
+                  {% endif %}
+               
+              {% endif %}
+            <a href="/cart" class="header-cart-btn cart-toggle">
+            <span class="icon icon-cart"></span>
+            {{ 'layout.cart.cart' | t }} <span class="cart-count cart-badge--desktop {% if cart.item_count == 0 %}hidden-count{% endif %}">{{ cart.item_count }}</span>
+          </a>
+            
+          </center>
+          
+        </div>
+      </div>
+        
+    
+  
+
+
+  <main class="wrapper main-content" role="main">
+
+    {{ content_for_layout }}
+
+  </main>
+
+  {% capture theme_settings_link %}<a href="/admin/themes/{{ theme.id }}/settings">{{ 'layout.footer.theme_settings' | t }}</a>{% endcapture %}
+
+  <!--========== FOOTER V4 ==========-->
+  </div>
+  </div>
+  <footer id="footer" class="footer-v4">
+        <div class="container">
+            <!-- Logo -->
+            
+            <!-- End Logo -->
+
+            <!-- Content -->
+            <div class="footer-v4-content">
+                <div class="row">
+
+ <div class="col-md-3 col-xs-6 xs-full-width">
+                        <!-- Contacts -->
+                          
+                        <div class="margin-b-20">
+                            <h3 class="footer-v4-title">Links</h3>
+                          
+<a class="footer-v4-text" href="index.html">Home</a><br>
+<a class="footer-v4-text" href="plans.html">Plans</a><br>
+<a class="footer-v4-text" href="services.html">Services</a><br>
+<a class="footer-v4-text" href="process.html">Process</a><br>
+<a class="footer-v4-text" href="distribution.html">Distribution</a><br>
+<a class="footer-v4-text" href="http://store.self-publish.in/">Book Store</a><br>
+<a class="footer-v4-text" href="http://platform.self-publish.in/">Publishing Platform</a><br>
+<a class="footer-v4-text" href="royaltycalculator.html">Royalty Calculator</a><br>
+<a class="footer-v4-text" href="faq.html">FAQs</a><br>
+<a class="footer-v4-text" href="careers.html">Careers</a><br>
+<a class="footer-v4-text" href="http://scholargram.com" target="_blank">ScholarGram</a><br>
+<a class="footer-v4-text" href="http://booksfundr.self-publish.in">BooksFundr</a><br>
+<a class="footer-v4-text" href="http://blog.self-publish.in/">Blog</a><br>
+<a class="footer-v4-text" href="contact.html">Contact</a>
+
+                        </div>
+
+                        <!-- End Contacts -->
+                    </div>
+
+                     <div class="col-md-5 col-xs-6 xs-full-width">
+                        
+                        <div class="margin-b-20">
+                            <h3 class="footer-v4-title">Get in touch</h3>
+                            <p class="footer-v4-text">
+                                <strong>Email:</strong><br>
+contact@whitefalconpublishing.com<br>
+whitefalconpublish@gmail.com<br><br>
+<strong>Phone:</strong> +91-828-384-3446, +91-911-589-2986<br>
+
+                            </p>
+                        </div>
+                        <div class="margin-b-20">
+                            <p class="footer-v4-text">
+                                <strong>Registered Office:</strong>
+                                No. 335, Sector 48A, 
+                              Chandigarh - 160047, INDIA<br>
+                                <strong>Branch Office:</strong></strong>
+                                No. 8/ST1, Savitry Towers, Sector-91, 
+                            Mohali - 140307<br><br>
+                             <h4 class="footer-v4-text">
+                             <strong>Android App:</strong>
+                             </h4>
+                            <a href='https://play.google.com/store/apps/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ width='40%'></a>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-xs-6 xs-full-width">
+                        <!-- Contacts -->
+                        <center>
+                           <a href="index.html" class="image image-full"><img width="60%" src="images/logo.png" alt=""></a>
+                           </center>
+                        <div class="margin-b-20">
+                        <center>
+                            <h3 class="footer-v4-text"><br>White Falcon Publishing Solutions LLP</h3>
+                            <p class="footer-v4-text">An ISO 9001:2015 Certified Company</p><br>
+                            <img width="90%" src="images/iso.png" alt="">
+                            </center>
+                        </div>
+                        
+                        
+
+                        <!-- End Contacts -->
+                    </div>
+                </div>
+                <!--// end row -->
+            </div>
+            <!-- End Content -->
+
+            <!-- Copyright -->
+            <div class="footer-v4-copyright">
+                <div class="row">
+                    <div class="col-sm-5 sm-margin-b-30">
+                        <p class="footer-v4-copyright-text">Copyright &#169; 2016 White Falcon Publishing Solutions LLP. <br>
+                        All Rights Reserved.</p>
+                    </div>
+                    <div class="col-sm-3 sm-margin-b-30">
+                        <!-- Theme Icons White Background -->
+                        <ul class="list-inline text-center ul-li-lr-2 margin-b-0">
+                            <li class="theme-icons-wrap"><a href="http://facebook.com/whitefalconpublishing"><i class="theme-icons theme-icons-white-bg theme-icons-xs radius-circle fa fa-facebook"></i></a></li>
+                            <li class="theme-icons-wrap"><a href="https://twitter.com/WhiteFalconpub"><i class="theme-icons theme-icons-white-bg theme-icons-xs radius-circle fa fa-twitter"></i></a></li>
+                            <li class="theme-icons-wrap"><a href="https://plus.google.com/116649724837582317540/posts"><i class="theme-icons theme-icons-white-bg theme-icons-xs radius-circle fa fa-google-plus"></i></a></li>
+                        </ul>
+                        <!-- ENd Theme Icons White Background -->
+                    </div>
+                    <div class="col-sm-4">
+                        <!-- Terms List -->
+                        <ul class="list-inline footer-v4-terms-list">
+                            <li class="footer-v4-terms-item"><a class="footer-v4-terms-link" href="terms.html">Terms &amp; Conditions</a></li>
+                            <li class="footer-v4-terms-item"><a class="footer-v4-terms-link" href="privacy.html">Privacy &amp; Policy</a></li>
+                        </ul>
+                        <!-- End Terms List -->
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright -->
+    </footer>
+    <script type="text/javascript" src="http://www.cloudemy.io/assets/plugins/jquery.animsition.min.js"></script>
+<script type="text/javascript" src="http://www.cloudemy.io/assets/plugins/jquery.wow.min.js"></script>
+<script type="text/javascript" src="http://www.cloudemy.io/assets/plugins/jquery.appear.js"></script>
+<script type="text/javascript" src="http://www.cloudemy.io/assets/scripts/components/header-sticky.js"></script>
+<script type="text/javascript" src="http://www.cloudemy.io/assets/scripts/components/animsition.js"></script>
+<script type="text/javascript" src="http://www.cloudemy.io/assets/scripts/components/wow.js"></script>
+    <!--========== END FOOTER V4 ==========-->
+
+{% if settings.slider_home_enable %}
+  {{ 'jquery.flexslider.min.js' | asset_url | script_tag }}
+{% endif %}
+
+  {{ 'shop.js' | asset_url | script_tag }}
+  <script>
+  var moneyFormat = '{{ shop.money_format }}';
+  </script>
+
+{% if settings.ajax_cart_enable %}
+  {{ 'handlebars.min.js' | asset_url | script_tag }}
+  {% include 'ajax-cart-template' %}
+  {{ 'ajaxify.js' | asset_url | script_tag }}
+  <script>
+  jQuery(function($) {
+    ajaxifyShopify.init({
+      method: '{{ settings.ajax_cart_method }}',
+      wrapperClass: 'wrapper',
+      formSelector: '#addToCartForm',
+      addToCartSelector: '#addToCart',
+      cartCountSelector: '.cart-count',
+      toggleCartButton: '.cart-toggle',
+      useCartTemplate: true,
+      btnClass: 'btn',
+      moneyFormat: {{ shop.money_format | json }},
+      disableAjaxCart: false,
+      enableQtySelectors: true
+    });
+  });
+  </script>
+{% endif %}
+
+</body>
+</html>

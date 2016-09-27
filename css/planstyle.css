@@ -88,9 +88,10 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
     margin-bottom: 0.625rem;
 }
 .price span{ 
-    font-size: 4rem;
+    font-size: 8rem;
     letter-spacing: 4px;
-    font-weight: bold;        
+    font-weight: bold;  
+    color: #ffffff;      
 }
 .price sup{
     font-size: 0.8rem;    
@@ -108,10 +109,10 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
     text-align: left;
     color: #9C9C9C;
     padding:5px 5%;
-    font-size: 0.9rem;
+    font-size: 10px;
 }
 .features li{
-    padding:5px 0;
+    padding:0px 0;
     width: 100%;
 }
 .features hr{
@@ -119,8 +120,8 @@ Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pric
 }
 .features li span{
    padding-right: 0.1rem; 
-   color: #000000;
-    font-size: 0.8rem;
+   color: #504f4f;
+    font-size: 13px;
     letter-spacing: 0px; 
     font-weight: normal;     	
 }
