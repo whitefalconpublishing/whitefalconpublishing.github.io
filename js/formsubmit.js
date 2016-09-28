@@ -31,7 +31,7 @@ function postPublishingForm() {
 
     var dataStrEncoded = dataStr;
 
-    console.log(dataStrEncoded);
+    //console.log(dataStrEncoded);
 
     $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSe18QHkhhQcwAzd7SxTnhH3J2Ve3W8C5UKMYdETTIDbJTfilQ/formResponse",
@@ -106,7 +106,7 @@ function postCustomForm() {
 
     var dataStrEncoded = dataStr;
 
-    console.log(dataStrEncoded);
+    //console.log(dataStrEncoded);
 
     $.ajax({
         url: "https://docs.google.com/forms/d/e/1FAIpQLSf4NodD1z8DRFTRDAW5nlfhPiDgxPxQ7L1TpAs-J5wUx5hTqA/formResponse",
