@@ -74,6 +74,7 @@ document.write("                                  <li class=\"dropdown-menu-item
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/platform.self-publish.in\/\">Platform<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/booksfundr.self-publish.in\/\">BooksFundr<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/scholargram.com\/\">ScholarGram<\/a><\/li>");
+document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/self-publish.in\/giveaway.html\">Giveaway<\/a><\/li>");
 document.write("                                    ");
 document.write("                                    <\/ul>");
 document.write("                                <\/a>");
