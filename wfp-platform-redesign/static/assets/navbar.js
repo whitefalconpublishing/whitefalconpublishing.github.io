@@ -4,7 +4,7 @@ var authorimg = document.getElementById("authorimg").value;
 document.write("<!-- Main navbar -->");
 document.write("	<div class=\"navbar navbar-default header-highlight\">");
 document.write("		<div class=\"navbar-header\">");
-document.write("			<a class=\"navbar-brand\" href=\"\/\"><img src=\"\/static\/assets/images/logo_light.png\" alt=\"\"><\/a>");
+document.write("			<a class=\"navbar-brand\" href=\"\/\"><img src=\"http://www.self-publish.in/wfp-platform-redesign/static/assets/images/logo_light.png\" alt=\"\"><\/a>");
 document.write("");
 document.write("			<ul class=\"nav navbar-nav visible-xs-block\">");
 document.write("				<li><a data-toggle=\"collapse\" data-target=\"#navbar-mobile\"><i class=\"icon-tree5\"><\/i><\/a><\/li>");
