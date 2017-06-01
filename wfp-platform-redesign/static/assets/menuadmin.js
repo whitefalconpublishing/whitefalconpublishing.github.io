@@ -13,6 +13,8 @@ document.write("								<li id=\"income-menu\"><a href=\"\/income-report\"><i cl
 document.write("								<li id=\"expense-menu\"><a href=\"\/expense-report\"><i class=\"icon-cash2\"><\/i> <span>Expense Report Generator<\/span><\/a><\/li>");
 document.write("								<li id=\"royalty-update-checker-menu\"><a href=\"\/royalty-update-checker\"><i class=\"icon-download\"><\/i> <span>Royalty Update Checker<\/span><\/a><\/li>");
 document.write("								<li id=\"royalty-updater-menu\"><a href=\"\/royalty-updater\"><i class=\"icon-database-upload\"><\/i> <span>Royalty Updater Tool<\/span><\/a><\/li>");
+document.write("								<li id=\"return-update-checker-menu\"><a href=\"\/return-update-checker\"><i class=\"icon-download\"><\/i> <span>Return Update Checker<\/span><\/a><\/li>");
+document.write("								<li id=\"return-updater-menu\"><a href=\"\/return-updater\"><i class=\"icon-database-upload\"><\/i> <span>Return Updater Tool<\/span><\/a><\/li>");
 
 document.write("									<\/ul>");
 document.write("								<\/li>");
