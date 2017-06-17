@@ -76,6 +76,29 @@ function postContactForm() {
     });
 }
 
+function postSubscribeForm() {
+    var email = $('#entry_1640236631').val();
+    console.log(email);
+    $.ajax({
+        url: "https://docs.google.com/forms/d/e/1FAIpQLSdt5rg8TfFojYxPGXHkc8nsrSAhCZpExT6bou4OLUx0Q3DK_A/formResponse",
+        data: {
+            "entry.1640236631": email
+        },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+            0: function() {
+                console.log("Err");
+                $("#subscribeModal").modal();
+            },
+            200: function() {
+            console.log("OK");
+                $("#subscribeModal").modal();
+            }
+        }
+    });
+}
+
 function postCustomForm() {
 
     var dataStr =  'entry.990534186=' + encodeURIComponent($('#entry_990534186').val()) + 
@@ -127,6 +150,11 @@ function postCustomForm() {
 $(document).ready(function() {
     $('#contact-form').submit(function() {
         postContactForm();
+        return false;
+    });
+
+    $('#subscribe-form').submit(function() {
+        postSubscribeForm();
         return false;
     });
 
