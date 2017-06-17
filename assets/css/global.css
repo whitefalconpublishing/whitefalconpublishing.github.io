@@ -22529,7 +22529,9 @@ fieldset[disabled] .btn-ig-bg {
     [Newsletter v7]
 ----------------------------------------------------*/
 .newsletter-v7 {
-
+  background: #f7f8fa;
+  border-top: 1px solid #ebeef6;
+  border-bottom: 1px solid #ebeef6;
 }
 
 .newsletter-v7 .newsletter-heading {
@@ -22575,6 +22577,58 @@ fieldset[disabled] .btn-ig-bg {
     text-align: center;
   }
 }
+
+/*--------------------------------------------------
+    [Newsletter v7-sunscribe]
+----------------------------------------------------*/
+.newsletter-v7-subscribe {
+
+}
+
+.newsletter-v7-subscribe .newsletter-heading {
+  text-align: right;
+  padding-right: 30px;
+}
+
+.newsletter-v7-subscribe .newsletter-heading .newsletter-v7-subscribe-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.newsletter-v7-subscribe .newsletter-v7-subscribe-form {
+  width: 100%;
+  height: 39px;
+  color: #606060;
+  border-radius: 0;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 20px;
+}
+
+.newsletter-v7-subscribe .newsletter-v7-subscribe-form::-moz-placeholder {
+  color: #606060;
+}
+
+.newsletter-v7-subscribe .newsletter-v7-subscribe-form:-ms-input-placeholder {
+  color: #606060;
+}
+
+.newsletter-v7-subscribe .newsletter-v7-subscribe-form::-webkit-input-placeholder {
+  color: #606060;
+}
+
+.newsletter-v7-subscribe .newsletter-v7-subscribe-btn {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* Media Queries below 768px */
+@media (max-width: 768px) {
+  .newsletter-v7-subscribe .newsletter-v7-subscribe-title {
+    text-align: center;
+  }
+}
+
 
 /*------------------------------------------------------------------
     [Banner Image v1]

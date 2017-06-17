@@ -59,11 +59,11 @@ document.write("                             <strong>Android App:<\/strong>");
 document.write("                            <a href='https:\/\/play.google.com\/store\/apps\/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https:\/\/play.google.com\/intl\/en_us\/badges\/images\/generic\/en_badge_web_generic.png'\/ width='40%'><\/a>");
 document.write("                            ");
 
-document.write("<section class=\"newsletter-v7\"><div class=\"center-content-hor-align-sm\">");
+document.write("<section class=\"newsletter-v7-subscribe\"><div class=\"center-content-hor-align-sm\">");
 document.write("                            <form id=\"subscribe-form\" action=\"#\" method=\"get\" class=\"subscribe-form input-group\">");
-document.write("                                <input type=\"text\" class=\"form-control newsletter-v7-form\" placeholder=\"Email Address\" name=\"entry.1640236631\" value=\"\" id=\"entry_1640236631\" required>");
+document.write("                                <input type=\"text\" class=\"form-control newsletter-v7-subscribe-form\" placeholder=\"Email Address\" name=\"entry.1640236631\" value=\"\" id=\"entry_1640236631\" required>");
 document.write("                                <span class=\"input-group-btn\">");
-document.write("                                    <button class=\"btn-base-bg btn-base-sm newsletter-v7-btn\" type=\"submit\">Subscribe<\/button>");
+document.write("                                    <button class=\"btn-base-bg btn-base-sm newsletter-v7-subscribe-btn\" type=\"submit\">Subscribe<\/button>");
 document.write("                                <\/span>");
 document.write("                            <\/form>");
 document.write("                        <\/div></section>");
