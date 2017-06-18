@@ -20,12 +20,12 @@ document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/services
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/process.html\">Process<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/distribution.html\">Distribution<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/store.self-publish.in\/\">Book Store<\/a><br>");
-document.write("<a class=\"footer-v4-text\" href=\"\/\/platform.self-publish.in\/\">Publishing Platform<\/a><br>");
+document.write("<a class=\"footer-v4-text\" href=\"http:\/\/platform.self-publish.in\/\">Publishing Platform<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"royaltycalculator.html\">Royalty Calculator<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/faq.html\">FAQs<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/careers.html\">Careers<\/a><br>");
-document.write("<a class=\"footer-v4-text\" href=\"\/\/scholargram.com\" target=\"_blank\">ScholarGram<\/a><br>");
-document.write("<a class=\"footer-v4-text\" href=\"\/\/booksfundr.self-publish.in\">BooksFundr<\/a><br>");
+document.write("<a class=\"footer-v4-text\" href=\"http:\/\/scholargram.com\" target=\"_blank\">ScholarGram<\/a><br>");
+document.write("<a class=\"footer-v4-text\" href=\"http:\/\/booksfundr.self-publish.in\">BooksFundr<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/blog\/index.html\">Blog<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/giveaway.html\">Giveaway<\/a><br>"); 
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/contact.html\">Contact<\/a>");
