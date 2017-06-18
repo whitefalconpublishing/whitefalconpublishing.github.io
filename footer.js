@@ -140,4 +140,4 @@ document.write("                        <\/div>");
 document.write("                    <\/div>");
 document.write("                <\/div>");
 document.write("                <!-- End Modal -->");
-document.write("<script type=\"text\/javascript\" src=\"http:\/\/self-publish.in\/js\/formsubmit.js\"><\/script>");
+document.write("<script type=\"text\/javascript\" src=\"https:\/\/self-publish.in\/js\/formsubmit.js\"><\/script>");
