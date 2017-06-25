@@ -9,13 +9,13 @@
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			global:		{ range: '*', href: '/static/public/css/style.css', containers: '60em', grid: { gutters: ['2em', 0] } },
-			wide:		{ range: '-1680', href: '/static/public/css/style-wide.css' },
-			normal:		{ range: '-1280', href: '/static/public/css/style-normal.css', viewport: { scalable: false } },
-			narrow:		{ range: '-980', href: '/static/public/css/style-narrow.css', containers: '90%' },
-			narrower:	{ range: '-840', href: '/static/public/css/style-narrower.css', containers: '90%!' },
-			mobile:		{ range: '-736', href: '/static/public/css/style-mobile.css', containers: '100%!' },
-			mobilep:	{ range: '-480', href: '/static/public/css/style-mobilep.css' }
+			global:		{ range: '*', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style.css', containers: '60em', grid: { gutters: ['2em', 0] } },
+			wide:		{ range: '-1680', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style-wide.css' },
+			normal:		{ range: '-1280', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style-normal.css', viewport: { scalable: false } },
+			narrow:		{ range: '-980', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style-narrow.css', containers: '90%' },
+			narrower:	{ range: '-840', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style-narrower.css', containers: '90%!' },
+			mobile:		{ range: '-736', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style-mobile.css', containers: '100%!' },
+			mobilep:	{ range: '-480', href: 'https://www.self-publish.in/scholargram/staticfiles/public/css/style-mobilep.css' }
 		},
 		plugins: {
 			layers: {
