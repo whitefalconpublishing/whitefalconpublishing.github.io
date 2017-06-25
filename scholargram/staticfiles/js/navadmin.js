@@ -9,7 +9,7 @@ document.write('<nav class="navbar navbar-inverse navbar-fixed-top" role="naviga
  document.write('        <span class="icon-bar"></span>'); 
  document.write('        <span class="icon-bar"></span>'); 
  document.write('    </button>'); 
- document.write('    <a class="navbar-brand" href="/"><img src="http://www.self-publish.in/scholargram/staticfiles/images/sglogo.png" height="140%"></a>'); 
+ document.write('    <a class="navbar-brand" href="/"><img src="https://www.self-publish.in/scholargram/staticfiles/images/sglogo.png" height="140%"></a>'); 
  document.write('</div>'); 
  document.write('<!-- Top Menu Items -->'); 
  document.write('<ul class="nav navbar-right top-nav">'); 
