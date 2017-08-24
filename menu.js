@@ -69,6 +69,7 @@ document.write("                                    Resources");
 document.write("                                <\/a>");
 document.write("                                <ul class=\"dropdown-menu\">");
 document.write("                                    <!-- Default -->");
+document.write("                                 <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/portfolio.html\">Our Portfolio<\/a><\/li>");
 document.write("                                 <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/process.html\">Publishing Process<\/a><\/li>");
 document.write("                                  <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/faq.html\">FAQ<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/platform.self-publish.in\/\">Platform<\/a><\/li>");

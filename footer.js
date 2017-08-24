@@ -18,6 +18,7 @@ document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/index.ht
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/plans.html\">Plans<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/services.html\">Services<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/process.html\">Process<\/a><br>");
+document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/portfolio.html\">Portfolio<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/distribution.html\">Distribution<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/store.self-publish.in\/\">Book Store<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"http:\/\/platform.self-publish.in\/\">Publishing Platform<\/a><br>");
