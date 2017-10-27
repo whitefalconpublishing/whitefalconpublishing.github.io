@@ -60,7 +60,7 @@ document.write("                             <strong>Android App:<\/strong>");
 document.write("                            <a href='https:\/\/play.google.com\/store\/apps\/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https:\/\/play.google.com\/intl\/en_us\/badges\/images\/generic\/en_badge_web_generic.png'\/ width='40%'><\/a>");
 document.write("                            ");
 
-document.write("<section class=\"newsletter-v7-subscribe\"><div class=\"center-content-hor-align-sm\">");
+document.write("<br><br><section class=\"newsletter-v7-subscribe\"><div class=\"center-content-hor-align-sm\">");
 document.write("                            <form id=\"subscribe-form\" action=\"#\" method=\"get\" class=\"subscribe-form input-group\">");
 document.write("                                <input type=\"text\" class=\"form-control newsletter-v7-subscribe-form\" placeholder=\"Email Address\" name=\"entry.1640236631\" value=\"\" id=\"entry_1640236631\" required>");
 document.write("                                <span class=\"input-group-btn\">");
@@ -82,7 +82,7 @@ document.write("                        <center>");
 document.write("                            <h3 class=\"footer-v4-text\"><br>White Falcon Publishing Solutions LLP<\/h3>");
 document.write("                            <a href=\"\/\/self-publish.in\/white-falcon-publishing-iso-certificate.html\"><p class=\"footer-v4-text\">An ISO 9001:2015 Certified Company<\/p></a><br>");
 document.write("                            <a href=\"\/\/self-publish.in\/white-falcon-publishing-iso-certificate.html\"><img width=\"80%\" src=\"\/\/self-publish.in\/images\/iso.png\" alt=\"\"></a><br><br>");
-document.write("                            <a href=\"https:\/\/www.google.com\/partners\/#i_profile;idtf=109514991320547753767\" target=\"_blank\"><img width=\"50%\" src=\"\/\/self-publish.in\/images\/Partnerbadge.jpg\" alt=\"\"></a>");
+document.write("                            <a href=\"https:\/\/www.google.com\/partners\/#i_profile;idtf=109514991320547753767\" target=\"_blank\"><img width=\"40%\" src=\"\/\/self-publish.in\/images\/Partnerbadge.jpg\" alt=\"\"></a>");
 document.write("                            <\/center>");
 document.write("                        <\/div>");
 document.write("                        ");
