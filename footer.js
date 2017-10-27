@@ -82,7 +82,7 @@ document.write("                        <center>");
 document.write("                            <h3 class=\"footer-v4-text\"><br>White Falcon Publishing Solutions LLP<\/h3>");
 document.write("                            <a href=\"\/\/self-publish.in\/white-falcon-publishing-iso-certificate.html\"><p class=\"footer-v4-text\">An ISO 9001:2015 Certified Company<\/p></a><br>");
 document.write("                            <a href=\"\/\/self-publish.in\/white-falcon-publishing-iso-certificate.html\"><img width=\"90%\" src=\"\/\/self-publish.in\/images\/iso.png\" alt=\"\"></a><br>");
-document.write("                            <a href=\"https:\/\/www.google.com\/partners\/#i_profile;idtf=109514991320547753767\"><img width=\"90%\" src=\"\/\/self-publish.in\/images\/PartnerBadge.jpg\" alt=\"\"></a>");
+document.write("                            <a href=\"https:\/\/www.google.com\/partners\/#i_profile;idtf=109514991320547753767\" target=\"_blank\"><img width=\"50%\" src=\"\/\/self-publish.in\/images\/PartnerBadge.jpg\" alt=\"\"></a>");
 document.write("                            <\/center>");
 document.write("                        <\/div>");
 document.write("                        ");
