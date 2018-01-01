@@ -99,7 +99,7 @@ document.write("            <!-- Copyright -->");
 document.write("            <div class=\"footer-v4-copyright\">");
 document.write("                <div class=\"row\">");
 document.write("                    <div class=\"col-sm-5 sm-margin-b-30\">");
-document.write("                        <p class=\"footer-v4-copyright-text\">Copyright &#169; 2017 White Falcon Publishing Solutions LLP. <br>");
+document.write("                        <p class=\"footer-v4-copyright-text\">Copyright &#169; 2018 White Falcon Publishing Solutions LLP. <br>");
 document.write("                        All Rights Reserved.<\/p>");
 document.write("                    <\/div>");
 document.write("                    <div class=\"col-sm-3 sm-margin-b-30\">");
