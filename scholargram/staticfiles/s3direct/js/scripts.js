@@ -107,6 +107,8 @@
 
         request('POST', url, form, {}, el, true, function(status, xml){
             disableSubmit(false)
+            console.log(url)
+            console.log(form)
             if(status !== 201) return error(el, 'Sorry, failed to upload to S3.')
             update(el, xml)
         })
