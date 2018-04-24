@@ -16,6 +16,7 @@
 <!-- GLOBAL MANDATORY STYLES -->
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500,300,300italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/et-line/et-line.css" rel="stylesheet" type="text/css"/>
@@ -42,10 +43,7 @@
 <!-- END JQUERY -->
 
 <!-- BEGIN SLIDER REVOLUTION -->
-<script type="text/javascript" src="js/jssor.core.js"></script>
-<script type="text/javascript" src="js/jssor.utils.js"></script>
-<script type="text/javascript" src="js/jssor.slider.js"></script>
-<script src="js/banner.js"></script>
+
 
 <!-- FAVICON -->
 <link rel="shortcut icon" href="favicon.ico"/>
@@ -72,97 +70,41 @@ ga('send', 'pageview');
     <!--========== END HEADER ==========-->
 <!--========== BREADCRUMBS V5 ==========-->
 <div id="headdesk">
-    <section class="breadcrumbs-v5 content-top">
+    <section class="breadcrumbs-v7 content-top">
 
     </section>
     </div>
     <!--========== END BREADCRUMBS V5 ==========-->
 
-    <!--========== REVOLUTION SLIDER ==========-->
-    <div>
-        <!-- Jssor Slider Begin -->
-        <div id="slider1_container" style="position: relative; margin: 0 auto;
-            top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
-            <!-- Loading Screen -->
-            
-            <!-- Slides Container -->
-            <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1300px;
-                height: 500px; overflow: hidden;">
-                <div>
-                    <img u="image" src="images/Banner1.png" width="1300px" height="500px" />
-                </div>
-                <div>
-                    <img u="image" src="images/Banner2.png" width="1300px" height="500px" />
-                </div>
-                <div>
-                    <img u="image" src="images/Banner3.png" width="1300px" height="500px" />
-                </div>
-                
-            </div>
-            <!-- Bullet Navigator Skin Begin -->
-            <style>
-            /* jssor slider bullet navigator skin 17 css */
-            /*
-            .jssorb17 div           (normal)
-            .jssorb17 div:hover     (normal mouseover)
-            .jssorb17 .av           (active)
-            .jssorb17 .av:hover     (active mouseover)
-            .jssorb17 .dn           (mousedown)
-            */
-            .jssorb17 {
-                position: absolute;
-            }
-            .jssorb17 div, .jssorb17 div:hover, .jssorb17 .av {
-                position: absolute;
-                /* size of bullet elment */
-                width: 16px;
-                height: 16px;
-                background: url(images/b17.png) no-repeat;
-                overflow: hidden;
-                cursor: pointer;
-            }
-            .jssorb17 div { background-position: -7px -7px; }
-            .jssorb17 div:hover, .jssorb17 .av:hover { background-position: -37px -7px; }
-            .jssorb17 .av { background-position: -67px -7px; }
-            .jssorb17 .dn, .jssorb17 .dn:hover { background-position: -97px -7px; }
-        </style>
+    
 
-            <!-- bullet navigator container -->
-        <div u="navigator" class="jssorb17" style="bottom: 6px; right: 6px;">
-            <!-- bullet navigator item prototype -->
-            <div u="prototype"></div>
-        </div>
-        <!--#endregion Bullet Navigator Skin End -->
-
-            <!-- Arrow Navigator Skin Begin -->
-            <style>
-                .jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn
-                {
-                position: absolute;
-                cursor: pointer;
-                display: block;
-                background: url(images/a21.png) center center no-repeat;
-                overflow: hidden;
-                }
-                .jssora21l { background-position: -3px -33px; }
-                .jssora21r { background-position: -63px -33px; }
-                .jssora21l:hover { background-position: -123px -33px; }
-                .jssora21r:hover { background-position: -183px -33px; }
-                .jssora21ldn { background-position: -243px -33px; }
-                .jssora21rdn { background-position: -303px -33px; }
-            </style>
-            <!-- Arrow Left -->
-            <span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
-            </span>
-            <!-- Arrow Right -->
-            <span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
-            </span>
-            <!-- Arrow Navigator Skin End -->
-            
-        </div>
-        <!-- Jssor Slider End -->
+    <div class="banner-section">
+        <div class="text_banner">
+            <h1 class="header-1">Read More Write More</h1>
+            <h2 class="header-2">No one is <b>IMMORTAL</b> But <b>WORDS</b></h2>  <br><br><br>
+            <a href="plans.html"><button class="get_started_button"><b>Get Started</b></button></a>                
+        </div>        
     </div>
-    <!--========== END REVOLUTION SLIDER ==========-->
+    
+    <div class="front_sign_up">
+         <form id="contact-form" class="" action="#" method="get">
+            <h2 class="font-size-24" style="text-align: center;">Get in Touch to Start Publishing</h2>
+            <div class="row space-row-10 div_front_sign_up">
+                <div class="col-md-6 wd-25">
+                    <input type="text" class="form-control comment-form-v1-input" placeholder="First Name *" name="name" id="name" required>
+                </div>
+                <div class="col-md-6 wd-25">
+                    <input type="email" class="form-control comment-form-v1-input" placeholder="Email *" name="email" id="email" required>
+                </div>
+                <div class="col-md-6 wd-25">
+                    <input type="number" class="form-control comment-form-v1-input" placeholder="Mobile No. *" name="Mobile" id="Mobile" required>
+                </div>
+                <div class="col-md-6 wd-25">
+                    <button type="submit" class="btn-base-bg btn-base-sm radius-3 get-button submit-now radius-3">Get in Touch</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <!--========== PAGE CONTENT ==========-->   
      <!-- News v1 -->
@@ -178,64 +120,49 @@ ga('send', 'pageview');
                 <div class="masonry-grid-item col-3">
                     <!-- News v1 -->
                     <article class="news-v1">
-                        <div class="news-v1-heading">
-                            <h3 class="news-v1-heading-title"><a href="#">Recently Published Books</a></h3>
-                        </div>
+                       
                         <!-- ".carousel-fade" class is added with animation stylesheet to spice up Bootstrap Carousel with CSS3 Animation -->
                         <div id="blog-grid-2-col" class="carousel slide carousel-fade" data-ride="carousel">
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
 
-                                <div class="carousel-inner" role="listbox">
-								
-								<div class="item active">
-                             <center>      
-                                        <img class="img-responsive" src="images/covers_small/timetraveller.jpg" alt="">
+                               <div class="carousel-inner" role="listbox" style="height: 540px;">
+                                                            
+                                <div class="item active">
+                                    <center>      
+                                        <img class="img-responsive" src="images/new-book/sunnyjoshi.jpg" alt="">
                                     </center>
                                 </div>
-								
-								
-								<div class="item">
+                                 <div class="item">
                                     <center>
-                                        <img class="img-responsive" src="images/covers_small/secondchance.jpg" alt="">
+                                        <img class="img-responsive" src="images/new-book/khemlata.jpg" alt="">
                                     </center>
                                 </div>
-								
-								
-								
-								<div class="item">
+                                
+                                <div class="item">
                                     <center>
-                                        <img class="img-responsive" src="images/covers_small/ifihadcourage.jpg" alt="">
+                                        <img class="img-responsive" src="images/new-book/shefaali.jpg" alt="">
                                     </center>
                                 </div>
-								
-								<div class="item">
+
+                                <div class="item">
                                     <center>
-                                        <img class="img-responsive" src="images/covers_small/masquerade.jpg" alt="">
+                                        <img class="img-responsive" src="images/new-book/kanishk.jpg" alt="">
                                     </center>
-                                </div>
-								
-								<div class="item">
+                                </div> 
+
+                                <div class="item">
                                     <center>
-                                        <img class="img-responsive" src="images/covers_small/greatindiandillemma.jpg" alt="">
+                                        <img class="img-responsive" src="images/new-book/arun.jpg" alt="">
                                     </center>
                                 </div>
-								
-								
-								<div class="item">
-                             <center>      
-                                        <img class="img-responsive" src="images/covers_small/admirable.jpg" alt="">
+                                
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/new-book/journey.jpg" alt="">
                                     </center>
                                 </div>
-								
-								<div class="item">
-                             <center>      
-                                        <img class="img-responsive" src="images/covers_small/gst_new.jpg" alt="">
-                                    </center>
-                                </div>
-								
-								
-																			
+                                        
                             </div>
 
                             <!-- Controls -->
@@ -243,6 +170,7 @@ ga('send', 'pageview');
                         </div>
                         <div class="news-v1-content">
                         <center>
+                            <br>
                             <a href="http://store.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Books</button></a>
                             </center>
                         </div>
@@ -252,57 +180,63 @@ ga('send', 'pageview');
                 <div class="masonry-grid-item col-3">
                     <!-- News v1 -->
                     <article class="news-v1">
-                        <div class="news-v1-heading">
+                        <div style="box-sizing: border-box;">
+                            <img src="images/Premium-Self-Publishing.jpg" style="width: 100%;">
+                        </div>
+                        <div class="news-v1-heading" style="padding: 12px 20px;">
                             <h3 class="news-v1-heading-title"><a href="#">Premium Self-Publishing</a></h3>
                         </div>
                        
-                        <div class="news-v1-content">
+                        <div class="news-v1-content" style="padding: 0px 20px 20px;">
                         
                             <ul>
-                            <li><h4>Print-on-Demand</h4></li>
-                                    <li><h4>Worldwide distribution</h4></li>
-                                    <li><h4>Author gets 100% profit</h4></li>
-                                    <li><h4>Track Sales & Royalties</h4></li>
-                                    <li><h4>Author decides the book list price</h4></li>
-                                    <li><h4>Author owns the copyright</h4></li>
-                                    <li><h4>Author volume discounts</h4></li>
-                                    <li><h4>Never go out-of-print</h4></li>
-                                    <li><h4>Free & Guided publishing plans</h4></li>
+                            <li><h5>Print-on-Demand</h5></li>
+                                    <li><h5>Worldwide distribution</h5></li>
+                                    <li><h5>Author gets 100% profit</h5></li>
+                                    <li><h5>Track Sales & Royalties</h5></li>
+                                    <li><h5>Author decides the book list price</h5></li>
+                                    <li><h5>Author owns the copyright</h5></li>
+                                    <li><h5>Author volume discounts</h5></li>
+                                    <li><h5>Never go out-of-print</h5></li>
+                                    <li><h5>Free & Guided publishing plans</h5></li>
                                 </ul>
-<center><br><br>
-                            <a href="faq.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
-                            </center>
+                <center>
+                    <a href="faq.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
+                </center>
                         </div>
 
-                    </article>
+                    </article> 
                     <!-- End News v1 -->
                 </div>
                 <div class="masonry-grid-item col-3">
                     <!-- News v1 -->
                     <article class="news-v1">
-                        <div class="news-v1-heading">
+                        <div style="box-sizing: border-box;">
+                            <img src="images/Publishing-Process.jpg" style="width: 100%;">
+                        </div>
+                        <div class="news-v1-heading" style="padding: 12px 20px;">
                             <h3 class="news-v1-heading-title"><a href="#">Publishing Process</a></h3>
                         </div>
                        
-                        <div class="news-v1-content">
+                        <div class="news-v1-content" style="padding: 0px 20px 20px;">
                         
                             <ul>
-                            <li><h4>Choose a plan</h4></li>
-                            <li><h4>Submit your book details</h4></li>
-                                    <li><h4>Sign agreement</h4></li>
-                                    <li><h4>Submit manuscript</h4></li>
-                                    <li><h4>Book composition done</h4></li>
-                                    <li><h4>Review the composed book</h4></li>
-                                    <li><h4>Get your printed copies</h4></li>
-                                    <li><h4>Book marketing done</h4></li>
-                                    <li><h4>Monitor sales & royalties</h4></li>
+                            <li><h5>Choose a plan</h5></li>
+                            <li><h5>Submit your book details</h5></li>
+                                    <li><h5>Sign agreement</h5></li>
+                                    <li><h5>Submit manuscript</h5></li>
+                                    <li><h5>Book composition done</h5></li>
+                                    <li><h5>Review the composed book</h5></li>
+                                    <li><h5>Get your printed copies</h5></li>
+                                    <li><h5>Book marketing done</h5></li>
+                                    <li><h5>Monitor sales & royalties</h5></li>
                                 </ul>
-<center><br><br>
+                <center>
                             <a href="process.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Process</button></a>
                             </center>
                         </div>
 
-                    </article>
+                    </article> 
                     <!-- End News v1 -->
                 </div>
                 
@@ -433,7 +367,7 @@ Features of POD Self Publishing:<br>
                         </a>
                         <div class="news-v1-content">
                             <p>We help authors in getting their books published through international self-publishing platforms which offer distribution services and make the titles available for buyers in India, USA, Canada, Europe, Australia, New Zealand and Japan.
-                                <br><br><br><br><br><br>
+                                <br><br><br><br>
                             </p>
                             <center><br>
                             <a href="distribution.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Distribution Channels</button></a>
@@ -450,8 +384,8 @@ Features of POD Self Publishing:<br>
                             
                             
                         </div>
-                        <a class="image-popup-vertical-fit" href="images/Plans.png" title="Slider Image">
-                            <img class="img-responsive" src="images/Plans.png" alt="">
+                        <a class="image-popup-vertical-fit" href="images/Plans.jpg" title="Slider Image">
+                            <img class="img-responsive" src="images/Plans.jpg" alt="">
                         </a>
                         <div class="news-v1-content">
                             <p>Wondering how to self publish a book in india? You can review our publishing plans and choose the plan that best suits your requirements. To get an accurate estimate for existing plans, please provide us with your book details by completing the form on the plans page. You can also create your own custom plan. We only charge for the services you opt for and publishing the book through our print-on-demand self-publishing platform and other international platforms. Inventory management and order fulfillment is our responsibility. In all our guided plans, we do not require the author to purchase a certain minimum number of copies. 
@@ -474,7 +408,7 @@ Features of POD Self Publishing:<br>
     <!-- End News v1 -->
 
         <!-- Testimonials v1 -->
-    <div class="bg-color-tint-light">
+    
         <div class="content-md container">
             <!-- Heading v1 -->
             <div class="heading-v1 text-center margin-b-80">
@@ -487,14 +421,15 @@ Features of POD Self Publishing:<br>
                 <div class="item">
                     <!-- Testimonials v1 -->
 
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                        <div class="zoom_hidden" style="box-sizing: border-box;">
+                            <img src="images/guidence.jpg" class="img-responsive zoom_img" style="width: 80%;">
+                        </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-book fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
                             <h3 class="news-v1-title">Guided Self-Publishing</h3>
                             <p align="left">
-                                    We help you get your works published using international self-publishing platforms. We offer our services for all types of books – Textbooks, Novels, Short stories, Fiction/Non-fiction and Poetry, Articles, Journals compiled into a book.<br><br><br>
-                               </p>
+                                We help you get your works published using international self-publishing platforms. We offer our services for all types of books – Textbooks, Novels, Short stories, Fiction/Non-fiction and Poetry, Articles, Journals compiled into a book.<br>
+                             </p>
                         </div>
                     </article>
                     <!-- End Testimonials v1 -->
@@ -502,11 +437,12 @@ Features of POD Self Publishing:<br>
 
                 <div class="item">
                     <!-- Testimonials v1 -->
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                        <div class="zoom_hidden" style="box-sizing: border-box;">
+                            <img src="images/interior.jpg" Class="img-responsive zoom_img" style="width: 80%;">
+                        </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-file-text-o fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
-                            <h3 class="news-v1-title"><a href="#">Interior Designing<br>&nbsp;</a></h3>
+                            <h3 class="news-v1-title"><a href="#">Interior Designing</a></h3>
                             <p align="left">
                                     Our expert team would review your work and provide you with a variety of templates/layouts to choose from. Professional consultation would be associated along with template choice. After mutual consensus, we would format the content layout and enrich it with expert hands.<br><br>
                                </p>
@@ -517,11 +453,12 @@ Features of POD Self Publishing:<br>
 
                 <div class="item">
                     <!-- Testimonials v1 -->
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                        <div class="zoom_hidden" style="box-sizing: border-box;">
+                            <img src="images/Cover.jpg" Class="img-responsive zoom_img" style="width: 80%;">
+                        </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-file-image-o fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
-                            <h3 class="news-v1-title"><a href="#">Cover Designing<br>&nbsp;</a></h3>
+                            <h3 class="news-v1-title"><a href="#">Cover Designing</a></h3>
                             <p align="left">
                                     Our expert team would review your work and custom design the cover matching the work type. We would provide you with a variety of designs to choose from. Professional consultation would be associated along with template choice. After mutual consensus, we would materialize the cover design for your book.
                                </p>
@@ -532,11 +469,12 @@ Features of POD Self Publishing:<br>
 
                  <div class="item">
                     <!-- Testimonials v1 -->
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                        <div class="zoom_hidden" style="box-sizing: border-box;">
+                            <img src="images/editing.jpg" Class="img-responsive zoom_img" style="width: 80%;">
+                        </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
-                            <h3 class="news-v1-title"><a href="#">Copy Editing<br>&nbsp;</a></h3>
+                            <h3 class="news-v1-title"><a href="#">Copy Editing</a></h3>
                             <p align="left">
                                     We provide highly professional proofreading and editing services to provide immaculate, error-free content of best quality to the readers. The changes/ errors/typos found are discussed with the author, at his will. A couple of rounds of proofreading and editing service is also offered.<br><br>
                                </p>
@@ -547,14 +485,15 @@ Features of POD Self Publishing:<br>
 
                  <div class="item">
                     <!-- Testimonials v1 -->
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                            <div class="zoom_hidden" style="box-sizing: border-box;">
+                                <img src="images/ebook.jpg" Class="img-responsive zoom_img" style="width: 80%;">
+                            </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-tablet fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
-                            <h3 class="news-v1-title"><a href="#">eBook Conversion<br>&nbsp;</a></h3>
+                            <h3 class="news-v1-title"><a href="#">eBook Conversion</a></h3>
                             <p align="left">
-                                    We can help you provide with a high-quality e-book. Special care would be taken to choose the format based on your needs.<br><br><br><br><br><br><br>
-                               </p>
+                               We can help you provide with a high-quality e-book. Special care would be taken to choose the format based on your needs.<br><br><br><br><br><br>
+                             </p>
                         </div>
                     </article>
                     <!-- End Testimonials v1 -->
@@ -562,11 +501,12 @@ Features of POD Self Publishing:<br>
 
                  <div class="item">
                     <!-- Testimonials v1 -->
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                        <div class="zoom_hidden" style="box-sizing: border-box;">
+                            <img src="images/website.jpg" Class="img-responsive zoom_img" style="width: 80%;">
+                        </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-globe fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
-                            <h3 class="news-v1-title"><a href="#">Author Website<br>&nbsp;</a></h3>
+                            <h3 class="news-v1-title"><a href="#">Author Website</a></h3>
                             <p align="left">
                                     We offer services for author & book website designing. Book websites help in engaging readers by providing supplementary information.<br><br><br><br><br><br>
                                </p>
@@ -577,11 +517,12 @@ Features of POD Self Publishing:<br>
 
                 <div class="item">
                     <!-- Testimonials v1 -->
-                    <article class="news-v1">
+                    <article class="news-v1-new">
+                        <div class="zoom_hidden" style="box-sizing: border-box;">
+                            <img src="images/marketing.jpg" Class="img-responsive zoom_img" style="width: 80%;">
+                        </div>
                         <div class="news-v1-content text-center">
-                        <i class="fa fa-line-chart fa-3x" aria-hidden="true" style="color:#00bcd4;"></i>
-                        <br><br>
-                            <h3 class="news-v1-title"><a href="#">Book Marketing<br>&nbsp;</a></h3>
+                            <h3 class="news-v1-title"><a href="#">Book Marketing</a></h3>
                             <p align="left">
                                    We offer a wide range of marketing services for books including internet and social media marketing, book reviews, press interviews and media coverage, marketing kits, etc. <br><br><br><br><br>
                                </p>
@@ -610,7 +551,7 @@ Features of POD Self Publishing:<br>
             </div>
             <!-- Button -->
         </div>
-    </div>
+    
     <!-- End Testimonials v1 -->
 
 <!-- News v1 -->
@@ -785,6 +726,58 @@ Features of POD Self Publishing:<br>
     </div>
     <!-- End Process v3 -->
 
+    <div class="content-md-2 container" style="width: 97%; padding: 0px;">
+            <!-- Heading v1 -->
+                <div class="heading-v1 text-center margin-b-80">
+            <h2 class="heading-v1-title">Author Feedback</h2>
+        </div>
+
+            <!-- End Heading v1 -->
+
+            <!-- Masonry Grid -->
+            <div class="masonry-grid">
+                
+                <div class="masonry-grid-item" style="width: 100%; padding: 0 0px !important; margin-bottom: 0px !important;">
+                    <!-- News v1 -->
+                    <article class="news-v1">                       
+                    <div id="slider-block" class="carousel slide carousel-fade" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="img-responsive" src="images/author1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="images/author2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive" src="images/author3.jpg" alt="">
+                            </div>                            
+                        </div>
+                        <!-- End Wrapper for slides -->
+
+                        <!-- Controls -->
+                        <a class="left carousel-control theme-carousel-control-v1 radius-3" href="#slider-block" role="button" data-slide="prev">
+                            <span class="carousel-control-arrows-v1 radius-3 fa fa-angle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control theme-carousel-control-v1 radius-3" href="#slider-block" role="button" data-slide="next">
+                            <span class="carousel-control-arrows-v1 radius-3 fa fa-angle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- End Controls -->
+                        
+                    </div>
+                
+                    </article>
+                    <!-- End News v1 -->
+                </div>
+
+            </div>
+
+            <!-- End Masonry Grid -->
+        </div>
+
+
     <!--========== END PAGE CONTENT ==========-->
 
     <!--========== FOOTER V4 ==========-->
@@ -829,6 +822,13 @@ Features of POD Self Publishing:<br>
 <script type="text/javascript" src="assets/scripts/components/form-modal.js"></script>
 <script type="text/javascript" src="assets/scripts/components/equal-height.js"></script>
 <script type="text/javascript" src="assets/scripts/components/owl-carousel.js"></script>
+<script>
+    $('.carousel').carousel({
+    interval: 3000,
+    cycle: true,
+    pause: "null"
+})
+    </script>
 <!-- END PAGE LEVEL SCRIPTS -->
 <!--========== END JAVASCRIPTS ==========-->
 </body>

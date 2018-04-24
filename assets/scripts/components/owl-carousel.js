@@ -423,7 +423,7 @@ var OwlCarousel = function() {
                 nav: false,
                 margin: 30,
                 autoplay: false,
-                smartSpeed: 450,
+                smartSpeed: 450,                
                 responsive: {
                     // breakpoint from 0 up
                     0: {
