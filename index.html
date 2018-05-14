@@ -58,6 +58,42 @@ ga('create', 'UA-48537478-1', 'self-publish.in');
 ga('send', 'pageview');
 
 </script>
+<style type="text/css">
+    .carousel-fade-new .carousel-inner .item {
+  -webkit-transition: opacity 0.8s;
+  -moz-transition: opacity 0.8s;
+  transition: opacity 0.8s;
+  width: 100%;
+              margin: 0px;
+              background-color: #ffffff;               
+}
+
+.carousel-fade-new .carousel-inner .item,
+.carousel-fade-new .carousel-inner .active.left,
+.carousel-fade-new .carousel-inner .active.right {
+  opacity: 0;
+}
+
+.carousel-fade-new .carousel-inner .active,
+.carousel-fade-new .carousel-inner .next.left,
+.carousel-fade-new .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade-new .carousel-inner .next,
+.carousel-fade-new .carousel-inner .prev,
+.carousel-fade-new .carousel-inner .active.left,
+.carousel-fade-new .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade-new .carousel-control {
+  z-index: 2;
+}
+</style>>
 </head>
 <!-- END HEAD -->
 <!-- BODY -->
@@ -690,16 +726,16 @@ Features of POD Self Publishing:<br>
             <!-- End Heading v1 -->
 
             <!-- Masonry Grid -->
-            <div class="masonry-grid">
+           
                  
-                <div class="masonry-grid-item" style="width: 100%; text-align: center; padding: 0 0px !important; margin-bottom: 0px !important;">
+                
                     <!-- News v1 -->
                    
-                    <article class="news-v1" > 
+                    
                     <center>                      
-                    <div id="slider-block" class="carousel slide carousel-fade" data-ride="carousel" >
+                    <div id="slider-block" class="carousel slide carousel-fade-new" data-ride="carousel" >
                         <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox" style="width: 80%; text-align: center; padding: 0 0px !important; margin-bottom: 0px !important;">
+                        <div class="carousel-inner" role="listbox" style="width: 80%;">
                             <div class="item active">
                              <img class="img-responsive" src="images/Dashboard.jpg" alt="">
                             </div>
@@ -725,12 +761,12 @@ Features of POD Self Publishing:<br>
                         
                     </div>
                 </center>
-                    </article>
+                    
             
                     <!-- End News v1 -->
-                </div>
+                
 
-            </div>
+            
       
     </div>
             <!-- End Masonry Grid -->
@@ -790,14 +826,11 @@ Features of POD Self Publishing:<br>
 
             <!-- End Heading v1 -->
 
-            <!-- Masonry Grid -->
-            <div class="masonry-grid">
-                
-                <div class="masonry-grid-item" style="width: 100%; padding: 0 0px !important; margin-bottom: 0px !important;">
+            
                     <!-- News v1 -->
                     <center>
-                    <article class="news-v1">                       
-                    <div id="slider-block" class="carousel slide carousel-fade" data-ride="carousel">
+                     
+                    <div id="slider-block" class="carousel slide carousel-fade-new" data-ride="carousel">
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
@@ -825,12 +858,10 @@ Features of POD Self Publishing:<br>
                         
                     </div>
                 
-                    </article>
+                   
                 </center>
                     <!-- End News v1 -->
-                </div>
-
-            </div>
+             
 
             <!-- End Masonry Grid -->
         </div>
