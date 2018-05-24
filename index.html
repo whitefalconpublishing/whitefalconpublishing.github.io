@@ -988,14 +988,21 @@ Features of POD Self Publishing:<br>
 <script type="text/javascript" src="assets/scripts/components/equal-height.js"></script>
 <script type="text/javascript" src="assets/scripts/components/owl-carousel.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery.html5.video.vide.js"></script>
-<script>
+<script>    
+$(document).ready(resizevideobanner);
+$(window).on('resize',resizevideobanner);
+
+function resizevideobanner() {
     $('.carousel').carousel({
     interval: 3000,
     cycle: true,
     pause: "null"
-});
+    });
+    
+    $('#videobannercontainer').height($(window).height() - 100);
+}
 
-    $('#videobannercontainer').height($(window).height() - 100)
+    
 
     </script>
 <!-- END PAGE LEVEL SCRIPTS -->
