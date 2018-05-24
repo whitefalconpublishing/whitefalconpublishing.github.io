@@ -152,16 +152,15 @@ video {
 
 
 .header-1v{
-  font-size: 70px;
+  /*font-size: 70px;*/
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1.1;
     color: #fff;
   font-family: 'Muli', sans-serif;
-  margin-top:10%;
 }
 .header-2v{
-  font-size: 47px;
+  /*font-size: 47px;*/
     font-weight: 100;
     color: #fff;
     line-height: 1;
@@ -210,8 +209,8 @@ video {
         </div>
         <div id="blixbg"><div>
 <div class="text_banner">
-<h1 class="header-1v">Read More Write More</h1>
-<h2 class="header-2v">No one is <b>IMMORTAL</b> But <b>WORDS</b></h2> <br><br><br>
+<h1 class="header-1v" id="bannerhead1">Read More Write More</h1>
+<h2 class="header-2v" id="bannerhead2">No one is <b>IMMORTAL</b> But <b>WORDS</b></h2> <br><br><br>
 <a href="plans.html"><button class="get_started_button"><b>Get Started</b></button></a>
 </div>
 </div>
@@ -1058,7 +1057,18 @@ function resizevideobanner() {
     pause: "null"
     });
 
-    $('#videobannercontainer').height($(window).height() - 120);
+    if ($(window).width()>$(window).height()){
+        $('#videobannercontainer').height($(window).height() - 120);
+    }else{
+        $('#videobannercontainer').height($(window).height()/2);
+    }
+    var fsize1=$(window).width()/24;
+    var fsize2=$(window).width()/36;
+    var margin1=$(window).height()/60;
+    $("#bannerhead1").css("fontSize", fsize1); 
+    $("#bannerhead2").css("fontSize", fsize2); 
+
+    $("#bannerhead1").css("margin-top", margin1+"%"); 
 }
 
     
