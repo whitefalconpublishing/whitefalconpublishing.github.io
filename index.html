@@ -132,6 +132,26 @@ video {
   font-size: 1.2rem;
 }
 
+@media (max-width: 900px) {
+  .header-1v {
+  font-size: 40px!important;
+
+  }
+  .header-2v {
+    font-size: 30px!important;
+    padding: 3% 5%;
+    line-height: 1;
+  }
+  .text_banner{
+    text-align: center;
+    padding: 22% 0%;
+  }
+  .get_started_button{
+    margin-top: 5%;
+  }
+}
+
+
 .header-1v{
   font-size: 70px;
     font-weight: 700;
@@ -145,10 +165,28 @@ video {
   font-size: 47px;
     font-weight: 100;
     color: #fff;
-    line-height: 0.7;
+    line-height: 1;
   font-family: 'Muli', sans-serif;
 }
 
+@media only screen and (max-width: 900px) {
+  
+  .headvideodesk {
+  display : none;
+      visibility: hidden;
+    }
+  
+  .headvideomob {
+      visibility: visible;
+    }
+
+    .banner-section-mob{
+        height: 500px;
+    background-image: url('images/vid.jpg');
+    background-repeat: no-repeat;
+  }
+
+}
 
 </style>
 
@@ -165,7 +203,7 @@ video {
     <script src="menu.js"></script> 
     <!--========== END HEADER ==========-->
 
-
+<div class="headvideodesk">
 <div class="full-width-container">
         <div id="videobannercontainer" style="width: 100%;"
             data-vide-bg="mp4: images/vid.mp4, poster: images/vid.jpg"
@@ -179,6 +217,11 @@ video {
 </div>
 </div>
 </div>
+    </div>
+</div>
+
+<div class="headvideomob">
+    
     </div>
 
 
@@ -225,66 +268,7 @@ video {
             <!-- Masonry Grid -->
             <div class="masonry-grid ">
                 
-                <div class="masonry-grid-item col-3">
-                    <!-- News v1 -->
-                    <article class="news-v1">
-                       
-                        <!-- ".carousel-fade" class is added with animation stylesheet to spice up Bootstrap Carousel with CSS3 Animation -->
-                        <div id="blog-grid-2-col" class="carousel slide carousel-fade" data-ride="carousel">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-
-                               <div class="carousel-inner" role="listbox" style="height: 540px;">
-                                                            
-                                <div class="item active">
-                                    <center>      
-                                        <img class="img-responsive" src="images/new-book/sunnyjoshi.jpg" alt="">
-                                    </center>
-                                </div>
-                                 <div class="item">
-                                    <center>
-                                        <img class="img-responsive" src="images/new-book/khemlata.jpg" alt="">
-                                    </center>
-                                </div>
-                                
-                                <div class="item">
-                                    <center>
-                                        <img class="img-responsive" src="images/new-book/shefaali.jpg" alt="">
-                                    </center>
-                                </div>
-
-                                <div class="item">
-                                    <center>
-                                        <img class="img-responsive" src="images/new-book/kanishk.jpg" alt="">
-                                    </center>
-                                </div> 
-
-                                <div class="item">
-                                    <center>
-                                        <img class="img-responsive" src="images/new-book/arun.jpg" alt="">
-                                    </center>
-                                </div>
-                                
-                                <div class="item">
-                                    <center>
-                                        <img class="img-responsive" src="images/new-book/journey.jpg" alt="">
-                                    </center>
-                                </div>
-                                        
-                            </div>
-
-                            <!-- Controls -->
-                            
-                        </div>
-                        <div class="news-v1-content">
-                        <center>
-                            <br>
-                            <a href="http://store.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Books</button></a>
-                            </center>
-                        </div>
-                    </article>
-                    <!-- End News v1 -->
-                </div>
+                
                 <div class="masonry-grid-item col-3">
                     <!-- News v1 -->
                     <article class="news-v1">
@@ -345,6 +329,67 @@ video {
                         </div>
 
                     </article> 
+                    <!-- End News v1 -->
+                </div>
+
+                <div class="masonry-grid-item col-3">
+                    <!-- News v1 -->
+                    <article class="news-v1">
+                       
+                        <!-- ".carousel-fade" class is added with animation stylesheet to spice up Bootstrap Carousel with CSS3 Animation -->
+                        <div id="blog-grid-2-col" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+
+                               <div class="carousel-inner" role="listbox" style="height: 540px;">
+                                                            
+                                <div class="item active">
+                                    <center>      
+                                        <img class="img-responsive" src="images/new-book/sunnyjoshi.jpg" alt="">
+                                    </center>
+                                </div>
+                                 <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/new-book/khemlata.jpg" alt="">
+                                    </center>
+                                </div>
+                                
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/new-book/shefaali.jpg" alt="">
+                                    </center>
+                                </div>
+
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/new-book/kanishk.jpg" alt="">
+                                    </center>
+                                </div> 
+
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/new-book/arun.jpg" alt="">
+                                    </center>
+                                </div>
+                                
+                                <div class="item">
+                                    <center>
+                                        <img class="img-responsive" src="images/new-book/journey.jpg" alt="">
+                                    </center>
+                                </div>
+                                        
+                            </div>
+
+                            <!-- Controls -->
+                            
+                        </div>
+                        <div class="news-v1-content">
+                        <center>
+                            <br>
+                            <a href="http://store.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">View Books</button></a>
+                            </center>
+                        </div>
+                    </article>
                     <!-- End News v1 -->
                 </div>
                 
