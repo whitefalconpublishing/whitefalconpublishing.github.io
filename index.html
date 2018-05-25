@@ -195,19 +195,13 @@ video {
 <body>
 
 <!-- WRAPPER -->
-<div id="falconloading">
-    <center>
-        <br><br>
-    <img src="images/logo-black-small.jpg" width="200px"><br><br>
-    <h2>Loading...</h2>
-</center>
-</div>
-<div class="wrapper animsition">
+
+<div class="wrapper">
      
     <!--========== HEADER ==========-->
     <script src="menu.js"></script> 
     <!--========== END HEADER ==========-->
-
+<div class="animsition">
 <div class="headvideodesk">
 <div class="full-width-container">
         <div id="videobannercontainer" style="width: 100%;overflow:hidden;direction: rtl;"
@@ -228,6 +222,7 @@ video {
 <div class="headvideomob">
     
     </div>
+</div>
 
 
 
@@ -1079,9 +1074,7 @@ function resizevideobanner() {
     $("#bannerhead1").css("margin-top", margin1+"%");     
 }
 
-$(window).load(function(e) {
-    $('#falconloading').hide();
-});
+
 
     
 
