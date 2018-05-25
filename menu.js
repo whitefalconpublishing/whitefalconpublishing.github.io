@@ -14,7 +14,7 @@ document.write("");
 document.write("                    <!-- Logo -->");
 document.write("                    <div class=\"navbar-logo\">");
 document.write("                        <a class=\"navbar-logo-wrap\" href=\"\/\/self-publish.in\/index.html\">");
-document.write("                            <img class=\"navbar-logo-img navbar-logo-img-white\" class=\"navbar-logo-img\" src=\"\/\/self-publish.in\/images\/logo.png\" alt=\"White Falcon Publishing\">");
+document.write("                            <img class=\"navbar-logo-img navbar-logo-img-white\" class=\"navbar-logo-img\" src=\"\/\/www.self-publish.in\/images\/logo.png\" alt=\"White Falcon Publishing\">");
 document.write("                            <img class=\"navbar-logo-img navbar-logo-img-dark\" src=\"\/\/www.self-publish.in\/images\/logo-black.png\" alt=\"Ark\">");
 document.write("");
 document.write("                        <\/a>");
