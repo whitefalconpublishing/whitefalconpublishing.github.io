@@ -195,6 +195,13 @@ video {
 <body>
 
 <!-- WRAPPER -->
+<div id="falconloading">
+    <center>
+        <br><br>
+    <img src="images/logo-black-small.jpg" width="200px"><br><br>
+    <h2>Loading...</h2>
+</center>
+</div>
 <div class="wrapper animsition">
      
     <!--========== HEADER ==========-->
@@ -1047,10 +1054,11 @@ Features of POD Self Publishing:<br>
 <script type="text/javascript" src="assets/scripts/components/owl-carousel.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery.html5.video.vide.js"></script>
 <script>    
+    
 $(document).ready(resizevideobanner);
 $(window).on('resize',resizevideobanner);
 
-function resizevideobanner() {
+function resizevideobanner() {    
     $('.carousel').carousel({
     interval: 3000,
     cycle: true,
@@ -1068,8 +1076,12 @@ function resizevideobanner() {
     $("#bannerhead1").css("fontSize", fsize1); 
     $("#bannerhead2").css("fontSize", fsize2); 
 
-    $("#bannerhead1").css("margin-top", margin1+"%"); 
+    $("#bannerhead1").css("margin-top", margin1+"%");     
 }
+
+$(window).load(function(e) {
+    $('#falconloading').hide();
+});
 
     
 
