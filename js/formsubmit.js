@@ -147,6 +147,48 @@ function postCustomForm() {
     });
 }
 
+function postManuscriptForm() {
+    var myName = $('#myName').val();
+    var myEmail = $('#myEmail').val();
+    var bookTitle = $('#bookTitle').val();
+    var aboutBook = $('#aboutBook').val();
+    var aboutAuthor = $('#aboutAuthor').val();
+    var agreementFile = $('#agreementFile')[0].files[0];
+    var idFile = $('#idFile')[0].files[0];
+    var addressFile = $('#addressFile')[0].files[0];
+    var manuscriptFile = $('#manuscriptFile')[0].files[0];
+    var authorPhoto = $('#authorPhoto')[0].files[0];
+
+    var formData = new FormData();
+    formData.append('myName', myName);
+    formData.append('myEmail', myEmail);
+    formData.append('bookTitle', bookTitle);
+    formData.append('aboutBook', aboutBook);
+    formData.append('aboutAuthor', aboutAuthor);
+    formData.append('agreementFile', agreementFile);
+    formData.append('idFile', idFile);
+    formData.append('addressFile', addressFile);
+    formData.append('manuscriptFile', manuscriptFile);
+    formData.append('authorPhoto', authorPhoto);    
+    console.log(formData);
+    /*$.ajax({
+        url: "https://platform.self-publish.in/api/manuscript_submission/",
+        data: formData,
+        type: "POST",
+        //contentType: 'multipart/form-data',
+        crossDomain: true,
+        processData: false,  // tell jQuery not to process the data
+        contentType: false,  // tell jQuery not to set contentType
+        success: function(data){
+            $("#defaultModal").modal();
+            console.log("Manuscript submission successful");
+        }
+        error: function() {
+                console.log("Error in submitting manuscript");
+        }
+    });*/
+}
+
 $(document).ready(function() {
     $('#contact-form').submit(function() {
         postContactForm();
@@ -167,4 +209,9 @@ $(document).ready(function() {
         postCustomForm();
         return false;
     });
+
+   /* $('#manuscript-form').submit(function() {
+        postManuscriptForm();
+        return false;
+    });*/
 });
