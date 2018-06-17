@@ -98,43 +98,43 @@ ga('send', 'pageview');
     
       <div class="form-group">
       <label>Name:</label>
-     <input type="text" class="form-control" name="myName" id="myName" placeholder="Enter Author Name">
+     <input type="text" class="form-control" name="myName" id="myName" placeholder="Enter Author Name" required>
     </div>
   
   
     <div class="form-group">
       <label>Email:</label>
-      <input type="email" class="form-control" name="myEmail" id="myEmail" placeholder="Enter Email">
+      <input type="email" class="form-control" name="myEmail" id="myEmail" placeholder="Enter Email" required>
     </div>
     
     <div class="form-group">
       <label>Story Title:</label>
-     <input type="text" class="form-control" name="bookTitle" id="bookTitle" placeholder="Enter Story Title">
+     <input type="text" class="form-control" name="bookTitle" id="bookTitle" placeholder="Enter Story Title" required>
     </div>
     
     <div class="form-group">
       <label>Story Summary (upto 300 words):</label>
-     <textarea class="form-control" name="aboutBook" id="aboutBook" rows="3" placeholder="Enter short summary of your story"></textarea>
+     <textarea class="form-control" name="aboutBook" id="aboutBook" rows="3" placeholder="Enter short summary of your story" required></textarea>
     </div>
     
     <div class="form-group">
       <label>About the Author (upto 300 words):</label>
-     <textarea class="form-control" name="aboutAuthor" id="aboutAuthor" rows="3" placeholder="Enter short author bio"></textarea>
+     <textarea class="form-control" name="aboutAuthor" id="aboutAuthor" rows="3" placeholder="Enter short author bio"></textarea required>
     </div>
     
     <div class="form-group">
       <label>Address:</label>
-     <textarea class="form-control" name="address" id="address" rows="3" placeholder="Enter complete address with pin code"></textarea>
+     <textarea class="form-control" name="address" id="address" rows="3" placeholder="Enter complete address with pin code" required></textarea>
     </div>
             
     <div class="form-group">
       <label>Story File (submit as MS Word file):</label>
-    <input type="file" name="manuscriptFile" id="manuscriptFile">
+    <input type="file" name="manuscriptFile" id="manuscriptFile" required>
     </div>
     <br>
     <div class="form-group">
       <label>Author Photo:</label>
-    <input type="file" name="authorPhoto" id="authorPhoto">
+    <input type="file" name="authorPhoto" id="authorPhoto" required>
     </div>
        <br><br> 
         
@@ -252,10 +252,15 @@ ga('send', 'pageview');
 }
     $(document).ready(function() {   
     $("#load").hide(); 
-    $('#manuscript-form-btn').on('click', function(e) {
+    /*$('#manuscript-form-btn').on('click', function(e) {
             e.preventDefault();
             postManuscriptForm();
-        });  
+        });  */
+
+    $('#manuscript-form').on('submit', function(e) {
+            e.preventDefault();
+            postManuscriptForm();
+        });
 });
 
 </script>

@@ -98,60 +98,60 @@ ga('send', 'pageview');
     
       <div class="form-group">
       <label>Name:</label>
-     <input type="text" class="form-control" name="myName" id="myName" placeholder="Enter Author Name(s)">
+     <input type="text" class="form-control" name="myName" id="myName" placeholder="Enter Author Name(s)" required>
     </div>
   
   
   
     <div class="form-group">
       <label>Email:</label>
-      <input type="email" class="form-control" name="myEmail" id="myEmail" placeholder="Enter Email">
+      <input type="email" class="form-control" name="myEmail" id="myEmail" placeholder="Enter Email" required>
     </div>
     
     <div class="form-group">
       <label>Book Title:</label>
-     <input type="text" class="form-control" name="bookTitle" id="bookTitle" placeholder="Enter Book Title">
+     <input type="text" class="form-control" name="bookTitle" id="bookTitle" placeholder="Enter Book Title" required>
     </div>
     
     <div class="form-group">
       <label>About the Book (upto 300 words):</label>
-     <textarea class="form-control" name="aboutBook" id="aboutBook" rows="3" placeholder="Enter short blurb about the book, to be used for back cover and listing pages"></textarea>
+     <textarea class="form-control" name="aboutBook" id="aboutBook" rows="3" placeholder="Enter short blurb about the book, to be used for back cover and listing pages" required></textarea>
     </div>
     
     <div class="form-group">
       <label>About the Author (upto 300 words):</label>
-     <textarea class="form-control" name="aboutAuthor" id="aboutAuthor" rows="3" placeholder="Enter short author bio, to be used for back cover and listing pages"></textarea>
+     <textarea class="form-control" name="aboutAuthor" id="aboutAuthor" rows="3" placeholder="Enter short author bio, to be used for back cover and listing pages" required></textarea>
     </div>
     
     <div class="form-group">
       <label>Shipping Address:</label>
-     <textarea class="form-control" name="address" id="address" rows="3" placeholder="Enter complete address with pin code where complimentary copies need to be shipped"></textarea>
+     <textarea class="form-control" name="address" id="address" rows="3" placeholder="Enter complete address with pin code where complimentary copies need to be shipped" required></textarea>
     </div>
     
     
     <div class="form-group">
       <label>Signed Agreement File (submit either as PDF or zip file containing scanned images):</label>
-    <input type="file" name="agreementFile" id="agreementFile">
+    <input type="file" name="agreementFile" id="agreementFile" required>
     </div>
     <br>
     <div class="form-group">
       <label>Scanned ID Proof File:</label>
-    <input type="file" name="idFile" id="idFile">
+    <input type="file" name="idFile" id="idFile" required>
     </div>
     <br>
     <div class="form-group">
       <label>Scanned Address Proof File:</label>
-    <input type="file" name="addressFile" id="addressFile">
+    <input type="file" name="addressFile" id="addressFile" required>
     </div>
     <br>
     <div class="form-group">
       <label>Manuscript Files (submit as single zip file):</label>
-    <input type="file" name="manuscriptFile" id="manuscriptFile">
+    <input type="file" name="manuscriptFile" id="manuscriptFile" required>
     </div>
     <br>
     <div class="form-group">
-      <label>Author Photo (optional photo for back cover) :</label>
-    <input type="file" name="authorPhoto" id="authorPhoto">
+      <label>Author Photo (photo for back cover) :</label>
+    <input type="file" name="authorPhoto" id="authorPhoto" required>
     </div>
        <br><br> 
         
@@ -275,10 +275,16 @@ ga('send', 'pageview');
 }
     $(document).ready(function() {   
     $("#load").hide(); 
-    $('#manuscript-form-btn').on('click', function(e) {
+    /*$('#manuscript-form-btn').on('click', function(e) {
             e.preventDefault();
             postManuscriptForm();
-        });  
+        });  */
+
+        $('#manuscript-form').on('submit', function(e) {
+            e.preventDefault();
+            postManuscriptForm();
+        });
+
 });
 
 </script>
