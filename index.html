@@ -232,21 +232,59 @@ video {
 
 
     
-<!---------- OFFERS ------------>
-<div class="summer-banner" id="summer_banner" style="width: 100%; text-align: center; position: fixed; z-index: 1000; bottom: 0; background: linear-gradient(230deg,#eef767,#f5e30c,#a05900) 0 0/400% 200%">
-<a href="https://www.self-publish.in/plans.html" class="shake">
-<img src="images/summeroffer2.png" style="width: 72%;"></a>
+<!------------ Summer offer ----------->
+
+<style type="text/css">
+.summer-banner1{
+  width: 100%; 
+  line-height: 1;
+  text-align: center; 
+  position: fixed; 
+  z-index: 1000; 
+  bottom: 0; 
+  padding: 0.5% 0%;
+  background: linear-gradient(270deg, #ac1313, #36a0a1, #46b92c, #b4b722, #b78c22, #2267b7, #b75122);
+  background-size: 1400% 1400%;
+  -webkit-animation: summer-banner 10s ease infinite;
+  -moz-animation: summer-banner 10s ease infinite;
+  animation: summer-banner 10s ease infinite;
+}
+  @-webkit-keyframes summer-banner {
+    0%{background-position:0% 51%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 51%;}
+  }
+  @-moz-keyframes summer-banner {
+    0%{background-position:0% 51%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 51%;}
+  }
+  @keyframes summer-banner {
+    0%{background-position:0% 51%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 51%;}
+  }
+</style>
+<!------------ End Summer offer ----------->
+
+
+<!------------ OFFERS ------------>
+
+<div class="summer-banner1" id="summer_banner2">
+<div style="width: 49%; float: left;"><a href="https://www.self-publish.in/plans.html" style="color: #fff; font-size: 27px; font-family: century gothic; text-decoration: none;"> Call for LGBTQ Literature<br> <span style="font-size: 16px;">(Flat 15% Discount on Plans)</span></a></div><div style="float: right; width: 50%; border-left: 1px solid #fff;"><a href="https://www.self-publish.in/literati.html" style="color: #fff; font-size: 27px; font-family: century gothic; text-decoration: none;">Literati - South Asian Award for MircoFiction <br><span style="font-size: 16px;">(Submit your entries before 15 July'18)</span> </a></div>
+
 <a onclick="hide_div()" id="close_banner" style="float: right;">
 <span style="color: #fff; position: fixed; right: 0; padding: 10px;"><i class="fa fa-times"></i></span></a>
 </div>
 <script type="text/javascript" language="javascript">
-    $(document).ready(function(){
-        $("#close_banner").click(function(){
-            $("#summer_banner").hide();
-        });
-
+  $(document).ready(function(){
+    $("#close_banner").click(function(){
+      $("#summer_banner2").hide();
     });
+
+  });
 </script>
+
 <!--------- END OFFERS --------->
    
     
