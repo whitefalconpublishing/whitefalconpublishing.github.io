@@ -54,8 +54,8 @@ document.write("                                <strong>Registered Office:<\/str
 document.write("                                No. 335, Sector 48A, ");
 document.write("                              Chandigarh - 160047, INDIA<br>");
 document.write("                                <strong>Branch Office:<\/strong><\/strong>");
-document.write("                                No. 8\/ST1, Savitry Towers, Sector-91, ");
-document.write("                            Mohali - 140307<br>");
+document.write("                                SCO 110, Second Floor, Sector-47C, ");
+document.write("                            Chandigarh - 160047, INDIA<br>");
 document.write("                             <strong>Android App:<\/strong>");
 document.write("                            <a href='https:\/\/play.google.com\/store\/apps\/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https:\/\/play.google.com\/intl\/en_us\/badges\/images\/generic\/en_badge_web_generic.png'\/ width='40%'><\/a>");
 document.write("                            ");
