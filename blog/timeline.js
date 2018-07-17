@@ -2,7 +2,7 @@ document.write("<!--Timeline v2 -->");
 document.write("                            <ul class=\"timeline-v2\">");
 document.write("                                <li class=\"timeline-v2-list-item\">");
 document.write("                                    <i class=\"timeline-v2-badge-icon radius-circle fa fa-comments-o\"><\/i>");
-document.write("                                    <small class=\"timeline-v2-news-date\">Aug 24, 2017<\/small>");
+document.write("                                    <small class=\"timeline-v2-news-date\">Jul 16, 2018<\/small>");
 document.write("                                    <h5 class=\"timeline-v2-news-title\"><a href=\"Blog-Benefits-of-Self-Publishing-over-Traditional-Publishing.html\">Traditional Publishing Versus Self-Publishing<\/a><\/h5>");
 document.write("                                <\/li>");
 document.write("                                <li class=\"timeline-v2-list-item\">");
