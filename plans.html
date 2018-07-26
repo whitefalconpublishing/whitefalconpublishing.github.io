@@ -53,6 +53,272 @@ ga('create', 'UA-48537478-1', 'self-publish.in');
 ga('send', 'pageview');
 
 </script>
+
+<style type="text/css">
+  .comparison {
+  max-width:70%;
+  margin:0 auto;
+  font:14px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-align:center;
+  padding:10px;
+  font-size:14px;
+}
+
+.comparison table {
+  width:100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  border-bottom:1px solid #CCC;
+}
+
+.comparison td, .comparison th {
+  border-right:1px solid #CCC;
+  empty-cells: show;
+  padding:10px;
+}
+
+.compare-heading {
+  font-size:18px;
+  font-weight:bold !important;
+  border-bottom:0 !important;
+  padding-top:10px !important;
+}
+
+.comparison tbody tr:nth-child(odd) {
+  display:none;
+}
+
+.comparison .compare-row {
+  background:#F9F9F9;
+  font-size:14px;
+}
+
+.comparison .tickblue {
+  color:#0078C1;
+}
+
+.comparison .tickgreen {
+  color:#009E2C;
+}
+
+.comparison th {
+  font-weight:normal;
+  padding:0;
+  border-bottom:1px solid #CCC;
+}
+
+.comparison tr td:first-child {
+  text-align:left;
+}
+  
+.comparison .qbse, .comparison .qbo, .comparison .tl {
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:0;
+}
+
+.comparison .bronze {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#139b49;
+}
+
+.comparison .silver {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#979797;
+}
+
+.comparison .gold {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#fec00f;
+}
+
+.comparison .diamond {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#d2188e;
+}
+
+.comparison .platinum {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#28aee4;
+}
+
+.comparison .tl2 {
+  border-right:0;
+}
+
+.comparison .qbse {
+  background:#0078C1;
+  border-top-left-radius: 3px;
+  border-left:0px;
+}
+
+.comparison .qbo {
+  background:#009E2C;
+  border-top-right-radius: 3px;
+  border-right:0px;
+}
+
+.comparison .price-info {
+  padding:5px 15px 15px 15px;
+}
+
+.comparison .price-info-bronze {
+  padding:5px 15px 15px 15px;
+  background:#139b49;
+}
+
+.comparison .price-info-silver {
+  padding:5px 15px 15px 15px;
+  background:#979797;
+}
+
+.comparison .price-info-gold {
+  padding:5px 15px 15px 15px;
+  background:#fec00f;
+}
+
+.comparison .price-info-diamond {
+  padding:5px 15px 15px 15px;
+  background:#d2188e;
+}
+
+.comparison .price-info-platinum {
+  padding:5px 15px 15px 15px;
+  background:#28aee4;
+}
+
+.comparison .price-was {
+  color:#999;
+  text-decoration: line-through;
+}
+
+.comparison .price-now, .comparison .price-now span {
+  color:#ffffff;
+}
+
+.comparison .price-now span {
+  font-size:32px;
+}
+
+.comparison .price-small {
+    font-size: 18px !important;
+    position: relative;
+    top: -11px;
+    left: 2px;
+}
+
+.comparison .price-buy {
+  background:#ff5406;
+  padding:10px 20px;
+  font-size:12px;
+  display:inline-block;
+  color:#FFF;
+  text-decoration:none;
+  border-radius:3px;
+  text-transform:uppercase;
+  margin:5px 0 10px 0;
+}
+
+.comparison .price-try {
+  font-size:12px;
+}
+
+.comparison .price-try a {
+  color:#202020;
+}
+
+@media (max-width: 767px) {
+  .comparison td:first-child, .comparison th:first-child {
+    display: none;
+  }
+  .comparison tbody tr:nth-child(odd) {
+    display:table-row;
+    background:#F7F7F7;
+  }
+  .comparison .row {
+    background:#FFF;
+  }
+  .comparison td, .comparison th {
+    border:1px solid #CCC;
+  }
+  .price-info {
+  border-top:0 !important;
+  
+}
+  
+}
+
+@media (max-width: 639px) {
+  .comparison .price-buy {
+    padding:5px 10px;
+  }
+  .comparison td, .comparison th {
+    padding:10px 5px;
+  }
+  .comparison .hide-mobile {
+    display:none;
+  }
+  .comparison .price-now span {
+  font-size:16px;
+}
+
+.comparison .price-small {
+    font-size: 16px !important;
+    top: 0;
+    left: 0;
+}
+  .comparison .qbse, .comparison .qbo {
+    font-size:14px;
+    padding:10px 5px;
+  }
+  .comparison .price-buy {
+    margin-top:10px;
+  }
+  .compare-heading {
+  font-size:13px;
+}
+}
+</style>
 </head>
 <!-- END HEAD -->
 <!-- BODY -->
@@ -76,7 +342,7 @@ ga('send', 'pageview');
     <!--========== PAGE CONTENT ==========-->   
 
 
-<!---------- OFFERS ------------>
+<!---------- OFFERS 
 <div class="content-md-2 container" style="width: 100%; padding: 0px; margin-top: 15px;">
   <center>
     <div id="slider-block-testimonials" class="carousel slide carousel-fade-new" data-ride="carousel">
@@ -91,7 +357,7 @@ ga('send', 'pageview');
     </div>
   </center>
 </div>
-<!--------- END OFFERS --------->
+ END OFFERS --------->
 
     <!-- Process v3 -->
     <div class="content-xs container">
@@ -107,374 +373,678 @@ ga('send', 'pageview');
 </div>
 
 <!-- Pricing List v2 -->
-    <div class="bg-color-sky-light">
-       <div class="content-xs container">
+    <div class="comparison">
 
-       <div class="masonry-grid ">
-                
-                <div class="masonry-grid-item col-5 bg-blue">
+  <table>
+    <thead>
+      <tr>
+        <th class="tl tl2"></th>
+        <th class="bronze">
+          BRONZE
+        </th>
+        <th class="silver">
+          SILVER
+        </th>
+        <th class="gold">
+          GOLD
+        </th>
+        <th class="diamond">
+          DIAMOND
+        </th>
+        <th class="platinum">
+          PLATINUM
+        </th>
 
-<div class="pricing-list-v2 text-center">
-                        <div class="pricing-list-v2-header bg-color-dgreen">
-                            <h4 class="pricing-list-v2-header-title">Free Publishing</h4>
-                            <span class="pricing-list-v2-header-price-sign"><i class="fa fa-inr"></i></span>
-                            <span class="pricing-list-v2-header-price">0</span>
-                        </div>
-                        <div class="pricing-list-v2-content" style="background-color: #cbf3d8;">
-                            <ul class="list-unstyled pricing-list-v2-content-list">
-                                <li><span>Author provides print-ready Interior PDF</span></li>
-                                           <hr>
-                                           <li><span>Text-only Interior</span></li>
-                                           <hr>
-                                           <li><span>B&W Interior</span></li>
-                                           <hr>
-                                             <li><span>Full Color Cover</span></li>
-                                           <hr>
-                                           <li><span>Template-based Cover</span></li>
-                                           <hr>
-                                           <li><span>Paperback Binding</span></li>
-                                           <hr>
-                                           <li><span>ISBN & Barcode</span></li>
-                                           <hr>
-                                           <li><span>Digital Proof</span></li>
-                                           <hr>
-                                           <li><span>-</span></li>
-                                           <hr>
-                                           <li><span>Author Copies at Printing Cost</span></li>
-                                           <hr>
-                                           
-                                           <li><span>Print-On-Demand Publishing </span></li>
-                                           <hr>
-                                           <li><span>Non-Exclusive Agreement </span></li>
-                                           <hr>
-                                           <li><span>100% Author Profit Share</span></li>
-                                           <hr>
-                                           <li><span>Online Author Dashboard</span></li>
-                                           <hr>
-                                           <li><span>Sales/Royalty Reports</span></li>
-                                           <hr>
-                                           <li><span>WFP Store Distribution</span></li>
-                                           <hr>
-                                           <li><span>-</span></li>
-                                           <hr>
-                                           <br>
-                                           <center>
-                                     <a href="free-self-publishing.html"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Learn More</button></a>
-                                     <div id="headdesk">
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    </div>
-                                </center>
-                            </ul>
-                            
-                        </div>
-                    </div>
+      </tr>
+      
+      <tr>
+        <th></th>
 
-                </div>
+        <th class="price-info-bronze">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 9,990</span></div>
+          </center>
+        </th>
+        <th class="price-info-silver">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 15,990</span></div>
+          </center>
+        </th>
+        <th class="price-info-gold">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 29,990</span></div>
+          </center>
+        </th>
+        <th class="price-info-diamond">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 44,990</span></div>
+          </center>
+        </th>
+        <th class="price-info-platinum">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 59,990</span></div>
+          </center>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Book Binding</td>
+        <td>Paperback</td>
+        <td>Hardcover or Paperback</td>
+        <td>Hardcover or Paperback</td>
+        <td>Hardcover or Paperback</td>
+        <td>Hardcover or Paperback</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Interior</td>
+        <td>B/W</td>
+        <td>B/W</td>
+        <td>B/W or Full Color</td>
+        <td>B/W or Full Color</td>
+        <td>B/W or Full Color</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>Cover</td>
+        <td>Full Color</td>
+        <td>Full Color</td>
+        <td>Full Color</td>
+        <td>Full Color</td>
+        <td>Full Color</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>ISBN Allocation</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td>Copyright registration</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Online Sales Dashboard</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Mobile App for Sales Reports</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Author Profit Share</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Profit Payout</td>
+        <td>Monthly</td>
+        <td>Monthly</td>
+        <td>Monthly</td>
+        <td>Monthly</td>
+        <td>Monthly</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>Post-Publishing Support</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Copy Editing</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Free upto 45000 words (basic)</td>
+        <td>Free upto 50000 words (basic)</td>
+        <td>Free upto 55000 words (comprehensive)</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td>Proof Reading</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Free</td>
+        <td>Free</td>
+        <td>Free</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Dedicated Publishing Manager</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Guided Publishing</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>Non-Exclusive Agreement</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr >
+        <td>Cover Design</td>
+        <td>Basic</td>
+        <td>Premium</td>
+        <td>Premium</td>
+        <td>Premium</td>
+        <td>Premium</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr>
+        <td>Interior Design</td>
+        <td>Basic</td>
+        <td>Premium</td>
+        <td>Premium</td>
+        <td>Premium</td>
+        <td>Premium</td>
+      </tr>
 
-                <div class="masonry-grid-item col-5 bg-blue">
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Book Interior Revision</td>
+        <td>One Free Round</td>
+        <td>One Free Round</td>
+       <td>One Free Round</td>
+       <td>Two Free Rounds</td>
+       <td>Two Free Rounds</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr>
+        <td>Advanced Interior Design</td>
+        <td>Add-on</td>
+         <td>Add-on</td>
+          <td>Add-on</td>
+           <td>Add-on</td>
+            <td>Add-on</td>
+      </tr>
 
-<div class="pricing-list-v2 text-center">
-                        <div class="pricing-list-v2-header bg-color-grey">
-                            <h4 class="pricing-list-v2-header-title">Silver</h4>
-                            <span class="pricing-list-v2-header-price-sign"><i class="fa fa-inr"></i></span>
-                            <span class="pricing-list-v2-header-price">17,990</span>
-                        </div>
-                        <div class="pricing-list-v2-content" style="background-color: #eaeaea;">
-                            <ul class="list-unstyled pricing-list-v2-content-list">
-                                <li><span>Basic Book Interior <br>Design</span></li>
-                                           <hr>
-                                           <li><span>Text with images/tables </span></li>
-                                           <hr>
-                                           <li><span>B&W Interior</span></li>
-                                           <hr>
-                                            <li><span>Full Color Cover</span></li>
-                                           <hr>
-                                           <li><span>Basic Cover Design</span></li>
-                                           <hr>
-                                           <li><span>Paperback Binding</span></li>
-                                           <hr>
-                                           <li><span>ISBN & Barcode</span></li>
-                                           <hr>
-                                           <li><span>Digital Proof</span></li>
-                                           <hr>
-                                           <li><span>15  Complimentary Copies</span></li>
-                                           <hr>
-                                           <li><span>Author Copies at Printing Cost</span></li>
-                                           <hr>
-                                           
-                                           <li><span>Print-On-Demand Publishing </span></li>
-                                           <hr>
-                                           <li><span>Non-Exclusive Agreement </span></li>
-                                           <hr>
-                                           <li><span>100% Author Profit Share</span></li>
-                                           <hr>
-                                           <li><span>Online Author Dashboard</span></li>
-                                           <hr>
-                                           <li><span>Sales/Royalty Reports</span></li>
-                                           <hr>
-                                           <li><span>International Distribution</span></li>
-                                           <hr>
-                                           <li><span>Inventory Management</span></li>
-                                           <hr>
-										   <li><span>eBook conversion</span></li>
-                                           <hr>
-										   <li><span>Publish on Amazon Kindle</span></li>
-                                           <hr>
-                            </ul>
-                            <div id="headdesk">
-                            <br><br><br><br>
-                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    </div>
-                        </div>
-                    </div>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td>Illustrations</td>
+        <td>Add-on</td>
+         <td>Add-on</td>
+          <td>Add-on</td>
+           <td>Add-on</td>
+            <td>Add-on</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Digital proof</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Print proof</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
 
-                </div>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Inventory Management</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"><td>
+      </tr>
+      <tr class="compare-row">
+        <td>Author Copies</td>
+        <td>15</td>
+        <td>15</td>
+        <td>15 B/W or 5 Color copies</td>
+       <td>15 B/W or 5 Color copies</td>
+       <td>15 B/W or 5 Color copies</td>
+      </tr>
 
-                <div class="masonry-grid-item col-5 bg-blue">
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>Additional Author Copies</td>
+        <td>At discounted cost price</td>
+        <td>At discounted cost price</td>
+        <td>At discounted cost price</td>
+        <td>At discounted cost price</td>
+        <td>At discounted cost price</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>India Online Distribution</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
 
-<div class="pricing-list-v2 text-center">
-                        <div class="pricing-list-v2-header bg-color-orange">
-                            <h4 class="pricing-list-v2-header-title">Gold</h4>
-                            <span class="pricing-list-v2-header-price-sign"><i class="fa fa-inr"></i></span>
-                            <span class="pricing-list-v2-header-price">29,990</span>
-                        </div>
-                        <div class="pricing-list-v2-content" style="background-color: #fff3d2;">
-                            <ul class="list-unstyled pricing-list-v2-content-list">
-                                <li><span>Premium Book Interior <br>Design</span></li>
-                                           <hr>
-                                           <li><span>Text with images/tables </span></li>
-                                           <hr>
-                                           <li><span>B&W Interior</span></li>
-                                           <hr>
-                                            <li><span>Full Color Cover</span></li>
-                                           <hr>
-                                           <li><span>Premium Cover Design</span></li>
-                                           <hr>
-                                           <li><span>Paperback Binding</span></li>
-                                           <hr>
-                                           <li><span>ISBN & Barcode</span></li>
-                                           <hr>
-                                           <li><span>Print Proof Copy</span></li>
-                                           <hr>
-                                           <li><span>15  Complimentary Copies</span></li>
-                                           <hr>
-                                           <li><span>Author Copies at Printing Cost</span></li>
-                                           <hr>
-                                           
-                                           <li><span>Print-On-Demand Publishing </span></li>
-                                           <hr>
-                                           <li><span>Non-Exclusive Agreement </span></li>
-                                           <hr>
-                                           <li><span>100% Author Profit Share</span></li>
-                                           <hr>
-                                           <li><span>Online Author Dashboard</span></li>
-                                           <hr>
-                                           <li><span>Sales/Royalty Reports</span></li>
-                                           <hr>
-                                           <li><span>International Distribution</span></li>
-                                           <hr>
-                                           <li><span>Inventory Management</span></li>
-                                           <hr>
-                                           <li><span>Basic <br>Copy Editing </span></li>
-                                           <hr>
-                                           <li><span>Proof Reading </span></li>
-                                           <hr>
-                                           <li><span>Dedicated Publishing Consultant</span></li>
-                                           <hr>
-                                           <li><span>Post-Publishing Support</span></li>
-                                           <hr>
-                                           <li><span>eBook Conversion <br>(Print-Replica Layout)</span></li>
-                                           <hr>
-                                           <li><span>eBook Distribution</span></li>
-                                           <hr>
-                                           <li><span>Look-Inside Book Preview</span></li>
-                                           <hr>
-                                           <li>
-                                               <span>Google/Facebook Ad Campaign</span>
-                                               <hr>
-                            </ul>
-                            <div id="headdesk">
-                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                                    </div>
-                        </div>
-                    </div>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>International Distribution</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td>Ingram Distribution</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
 
-                </div>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>eBook Creation</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>eBook Distribution</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
 
-                <div class="masonry-grid-item col-5 bg-blue">
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Book Sales Page</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr>
+        <td>Look-Inside Book Preview</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
 
-<div class="pricing-list-v2 text-center">
-                        <div class="pricing-list-v2-header bg-color-dr">
-                            <h4 class="pricing-list-v2-header-title">Diamond</h4>
-                            <span class="pricing-list-v2-header-price-sign"><i class="fa fa-inr"></i></span>
-                            <span class="pricing-list-v2-header-price">44,990</span>
-                        </div>
-                        <div class="pricing-list-v2-content" style="background-color: #f8dee9;">
-                            <ul class="list-unstyled pricing-list-v2-content-list">
-                                <li><span>Premium Book Interior <br>Design</span></li>
-                                           <hr>
-                                           <li><span>Text with images/tables </span></li>
-                                           <hr>
-                                           <li><span>B&W or Color Interior</span></li>
-                                           <hr>
-                                            <li><span>Full Color Cover</span></li>
-                                           <hr>
-                                           <li><span>Premium Cover Design</span></li>
-                                           <hr>
-                                           <li><span>Paperback/Hardcover</span></li>
-                                           <hr>
-                                           <li><span>ISBN & Barcode</span></li>
-                                           <hr>
-                                           <li><span>Print Proof Copy</span></li>
-                                           <hr>
-                                           <li><span>15  Complimentary Copies</span></li>
-                                           <hr>
-                                           <li><span>Author Copies at Printing Cost</span></li>
-                                           <hr>
-                                           
-                                           <li><span>Print-On-Demand Publishing </span></li>
-                                           <hr>
-                                           <li><span>Non-Exclusive Agreement </span></li>
-                                           <hr>
-                                           <li><span>100% Author Profit Share</span></li>
-                                           <hr>
-                                           <li><span>Online Author Dashboard</span></li>
-                                           <hr>
-                                           <li><span>Sales/Royalty Reports</span></li>
-                                           <hr>
-                                           <li><span>INGRAM Distribution</span></li>
-                                           <hr>
-                                           <li><span>Inventory Management</span></li>
-                                           <hr>
-                                           <li><span>Basic <br>Copy Editing </span></li>
-                                           <hr>
-                                           <li><span>Proof Reading </span></li>
-                                           <hr>
-                                           <li><span>Dedicated Publishing Consultant</span></li>
-                                           <hr>
-                                           <li><span>Post-Publishing Support</span></li>
-                                           <hr>
-                                           <li><span>eBook Conversion (Flexible/Reflow Layout)</span></li>
-                                           <hr>
-                                           <li><span>eBook Distribution</span></li>
-                                           <hr>
-                                           <li><span>Look-Inside Book Preview</span></li>
-                                           <hr>
-                                           <li>
-                                               <span>Google/Facebook Ad Campaign</span>
-                                           <hr>
-                                           <li><span>Author Website Design</span></li>
-                                           <hr>
-                                           <li><span>Website Domain Registration & Hosting</span></li>
-                                           <hr>
-                                           <li><span>Bookmarks & Flyers</span></li>
-                                           <hr>
-                            </ul>
-                            <div id="headdesk">
-                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                            </div>
-                                    
-                        </div>
-                    </div>
+      
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td>WFP Coupon Codes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
 
-                </div>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Social Media Setup</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Complimentary</td>
+        <td>Complimentary</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr class="compare-row">
+        <td>Goodreads Account Setup</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Complimentary</td>
+        <td>Complimentary</td>
+      </tr>
 
-                <div class="masonry-grid-item col-5 bg-blue">
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>Amazon Author Page Setup</td>
+       <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Complimentary</td>
+        <td>Complimentary</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr>
+        <td>Online Press Release</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+      </tr>
 
-<div class="pricing-list-v2 text-center">
-                        <div class="pricing-list-v2-header bg-color-tw">
-                            <h4 class="pricing-list-v2-header-title">Platinum</h4>
-                            <span class="pricing-list-v2-header-price-sign"><i class="fa fa-inr"></i></span>
-                            <span class="pricing-list-v2-header-price">59,990</span>
-                        </div>
-                        <div class="pricing-list-v2-content" style="background-color: #d4ebfd;">
-                            <ul class="list-unstyled pricing-list-v2-content-list">
-                                <li><span>Premium Book Interior <br>Design</span></li>
-                                           <hr>
-                                           <li><span>Text with images/tables </span></li>
-                                           <hr>
-                                           <li><span>B&W or Color Interior</span></li>
-                                           <hr>
-                                            <li><span>Full Color Cover</span></li>
-                                           <hr>
-                                           <li><span>Premium Cover Design</span></li>
-                                           <hr>
-                                           <li><span>Paperback/Hardcover</span></li>
-                                           <hr>
-                                           <li><span>ISBN & Barcode</span></li>
-                                           <hr>
-                                           <li><span>Print Proof Copy</span></li>
-                                           <hr>
-                                           <li><span>15  Complimentary Copies</span></li>
-                                           <hr>
-                                           <li><span>Author Copies at Printing Cost</span></li>
-                                           <hr>
-                                           
-                                           <li><span>Print-On-Demand Publishing </span></li>
-                                           <hr>
-                                           <li><span>Non-Exclusive Agreement </span></li>
-                                           <hr>
-                                           <li><span>100% Author Profit Share</span></li>
-                                           <hr>
-                                           <li><span>Online Author Dashboard</span></li>
-                                           <hr>
-                                           <li><span>Sales/Royalty Reports</span></li>
-                                           <hr>
-                                           <li><span>INGRAM Distribution</span></li>
-                                           <hr>
-                                           <li><span>Inventory Management</span></li>
-                                           <hr>
-                                           <li><span>Comprehensive <br> Copy Editing </span></li>
-                                           <hr>
-                                           <li><span>Proof Reading </span></li>
-                                           <hr>
-                                           <li><span>Dedicated Publishing Consultant</span></li>
-                                           <hr>
-                                           <li><span>Post-Publishing Support</span></li>
-                                           <hr>
-                                           <li><span>eBook Conversion (Flexible/Reflow Layout)</span></li>
-                                           <hr>
-                                           <li><span>eBook Distribution</span></li>
-                                           <hr>
-                                           <li><span>Look-Inside Book Preview</span></li>
-                                           <hr>
-                                           <li>
-                                               <span>Google/Facebook Ad Campaign</span>
-                                               <hr>
-                                           <li><span>Author Website Design</span></li>
-                                           <hr>
-                                           <li><span>Website Domain Registration & Hosting</span></li>
-                                           <hr>
-                                           <li><span>Bookmarks & Flyers</span></li>
-                                           <hr>
-                                           <li><span>Online Press Release </span></li>
-                                           <hr>
-                                           <li><span>Email Marketing</span></li>
-                                           <hr>
-                                           <li><span>Book Pre-Orders  (Amazon & WFP Store)</span></li>
-                                           <hr>
-                                           <li><span>Social Media Setup </span></li>
-                                           <hr>
-										   <li><span>Amazon Prime Availability </span></li> 
-                                           <hr>
-										   <li><span>Goodreads Giveaway</span></li>
-                                           <hr>
-                            </ul>
-                            
-                        </div>
-                    </div>
+      
 
-                </div>
-                </div>
-        </div>
-    </div>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Google/Facebook Ad Campaign</td>
+         <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      
+
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td>Book Video Trailer</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr>
+        <td>Basic Author Website</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr >
+        <td>Website Domain Registration & Hosting</td>
+        <td>No</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Free for 1 Year</td>
+        <td>Free for 1 Year</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr >
+        <td>Social Media Posts & Banners</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td>Bookmarks & Flyers</td>
+         <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Amazon Prime Placement</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr class="compare-row">
+        <td>Amazon Pre-orders</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+       <tr class="compare-row">
+        <td>Amazon Coupon Codes</td>
+        <td>No</td>
+        <td>No</td>
+        <td>50</td>
+        <td>50</td>
+        <td>50</td>
+      </tr>
+
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Amazon Sponsored Ads</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>        
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4"></td>
+      </tr>
+      <tr class="compare-row">
+        <td>Amazon Kindle Promotions</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>        
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="4">/td>
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td>Premium Retail Display</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+        <td>Add-on</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
     <!-- End Pricing List v2 -->
 
 <div class="content-md container">
