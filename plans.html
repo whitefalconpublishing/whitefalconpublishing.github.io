@@ -362,8 +362,49 @@ ga('send', 'pageview');
    background:#28aee4;
 }
 
+.bronze_section{
+	display: none;
+}
+}
+
+
+@media (min-width: 768px){
+	.mobile_plans{
+		display: none;
+	}
+}
+
+@media (max-width: 767px){
+	.comparison{
+		display: none;
+	}
+}
+.plan_col1{
+	float: left; text-align: left; width: 50%; border-right: 0.2px solid; padding-left: 8px;
+}
+.plan_col1_new{
+	float: left; text-align: left; width: 50%; solid; padding-left: 8px;
+}
+.plan_col2{
+	float: right; width: 50%; text-align: center; 
+}
+.plans_content{
+	border: 0.5px solid; float: left; width: 100%; border-bottom: none;
+}
+.color_columns{
+	background-color: #efefef;
+}
+.border_col2{
+	border-left: 0.2px solid;
 }
 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#show_bronze").click(function(){
+			$("#bronze_sec").toggle();
+		});
+	});
+</script>
 </head>
 <!-- END HEAD -->
 <!-- BODY -->
@@ -409,7 +450,7 @@ ga('send', 'pageview');
         <div class="row">
                         
                             <!-- Main Content -->
-                            <p>
+                            <p style="padding: 0px 10px; text-align: justify;">
                                     You can review our publishing plans and choose the plan that best suits your requirements. To get an accurate estimate for existing plans, please provide us with your book details by completing the form <a href="#form">here</a>. You can also create your own custom plan <a href="custom-plan.html">here</a>. 
                                     We only charge for the services you opt for and publishing the book through our print-on-demand self-publishing <a href="http://platform.self-publish.in" target="_blank">platform</a> and other international platforms. Inventory management and order fulfilment is our responsibility. In all our guided plans, we do not require the author to purchase a certain minimum number of copies. Complimentary copies are provided to the author (which vary in different plans). Author can purchase any number of copies at the author cost price. 
                                 </p>
@@ -1041,6 +1082,577 @@ ga('send', 'pageview');
   </table>
 
 </div>
+
+<!--------- Mobile-Plans-Section ---------->
+
+	<!-- Accordions v1 & 2 -->
+    <div class="content-md container mobile_plans">
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Add ".accordion-v2-active-left" class next to ".accordion-v2" to change the active position of the item to the left (the default is right) -->
+                <!-- Accordrion v2 -->
+                <div class="accordion-v2">
+                    <div class="panel-group" id="accordion-v2" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne" style="background-color: #139B49;">
+                                <h2 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseOne" aria-expanded="true" aria-controls="accordionV2CollapseOne" style="color: #fff; font-size: 24px;">
+                                        Bronze - <i class="fa fa-inr"></i> 9,990
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="accordionV2CollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1">Book Binding</span><span class="plan_col2">Paperback</span></span>		
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Cover</span><span class="plan_col2">Full Color</span></span>
+<span class="plans_content">
+	<span class="plan_col1">ISBN Allocation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copyright registration</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copy Editing</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Proof Reading</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Dedicated Publishing Manager</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Guided Publishing</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Non-Exclusive Agreement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Cover Design</span><span class="plan_col2">Basic</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Interior Design</span><span class="plan_col2">Basic</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Book Interior Revision</span><span class="plan_col2">One Free Round</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Advanced Interior Design</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Illustrations</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Digital proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Print proof</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Copies</span><span class="plan_col2">15</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Additional Author Copies</span><span class="plan_col2">At discounted cost price	
+	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">International Distribution</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Ingram Distribution</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Creation</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Distribution</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Look-Inside Book Preview</span><span class="plan_col2">No</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">WFP Coupon Codes</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Social Media Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Goodreads Account Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Author Page Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Online Press Release</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Google/Facebook Ad Campaign</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Video Trailer</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Basic Author Website</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Website Domain Registration & Hosting</span><span class="plan_col2">No</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Social Media Posts & Banners</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Bookmarks & Flyers</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Prime Placement</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Pre-orders</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Coupon Codes</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Sponsored Ads</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Kindle Promotions</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns" style="border-bottom: 0.2px solid #9e9e9e !important;">	
+	<span class="plan_col1">Premium Retail Display</span><span class="plan_col2">Add-on</span></span>
+</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #979797">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseTwo" aria-expanded="false" aria-controls="accordionV2CollapseTwo" style="color: #fff; font-size: 24px;">
+                                        Silver  - <i class="fa fa-inr"></i> 15,990
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordionV2CollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new">Book Binding</span><span class="plan_col2 border_col2">Hardcover or Paperback</span></span>		
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Cover</span><span class="plan_col2">Full Color</span></span>
+<span class="plans_content">
+	<span class="plan_col1">ISBN Allocation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copyright registration</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copy Editing</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Proof Reading</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Dedicated Publishing Manager</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Guided Publishing</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Non-Exclusive Agreement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Cover Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Interior Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Book Interior Revision</span><span class="plan_col2">One Free Round</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Advanced Interior Design</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Illustrations</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Digital proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Print proof</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Copies</span><span class="plan_col2">15</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Additional Author Copies</span><span class="plan_col2">At discounted cost price	
+	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">International Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Ingram Distribution</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Creation</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Distribution</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Look-Inside Book Preview</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">WFP Coupon Codes</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Social Media Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Goodreads Account Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Author Page Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Online Press Release</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Google/Facebook Ad Campaign</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Video Trailer</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Basic Author Website</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Website Domain Registration & Hosting</span><span class="plan_col2">No</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Social Media Posts & Banners</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Bookmarks & Flyers</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Prime Placement</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Pre-orders</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Coupon Codes</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Sponsored Ads</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Kindle Promotions</span><span class="plan_col2">No</span></span>
+<span class="plans_content color_columns" style="border-bottom: 0.2px solid #9e9e9e !important;">	
+	<span class="plan_col1">Premium Retail Display</span><span class="plan_col2">Add-on</span></span>
+</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree" style="background-color: #FEC00F">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseThree" aria-expanded="false" aria-controls="accordionV2CollapseThree" style="color: #fff; font-size: 24px;">
+                                        Gold  - <i class="fa fa-inr"></i> 29,990
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordionV2CollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new">Book Binding</span><span class="plan_col2 border_col2">Hardcover or Paperback</span></span>		
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W or Full Color</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Cover</span><span class="plan_col2">Full Color</span></span>
+<span class="plans_content">
+	<span class="plan_col1">ISBN Allocation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copyright registration</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1_new">Copy Editing</span><span class="plan_col2 border_col2">Free upto 45000 words(Basic)</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Proof Reading</span><span class="plan_col2">Free</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Dedicated Publishing Manager</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Guided Publishing</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Non-Exclusive Agreement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Cover Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Interior Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Book Interior Revision</span><span class="plan_col2">One Free Round</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Advanced Interior Design</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Illustrations</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Digital proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Print proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1_new">Author Copies</span><span class="plan_col2 border_col2">15 B/W or 5 Color copies</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Additional Author Copies</span><span class="plan_col2">At discounted cost price	
+	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">International Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Ingram Distribution</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Creation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Look-Inside Book Preview</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">WFP Coupon Codes</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Social Media Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Goodreads Account Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Author Page Setup</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Online Press Release</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Google/Facebook Ad Campaign</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Video Trailer</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Basic Author Website</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Website Domain Registration & Hosting</span><span class="plan_col2">No</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Social Media Posts & Banners</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Bookmarks & Flyers</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Prime Placement</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Pre-orders</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Coupon Codes</span><span class="plan_col2">50</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Sponsored Ads</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Kindle Promotions</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns" style="border-bottom: 0.2px solid #9e9e9e !important;">	
+	<span class="plan_col1">Premium Retail Display</span><span class="plan_col2">Add-on</span></span>
+</div>
+                            </div>
+                        </div>
+						<div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour" style="background-color: #D2188E">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseFour" aria-expanded="false" aria-controls="accordionV2CollapseFour" style="color: #fff; font-size: 24px;">
+                                        Diamond  - <i class="fa fa-inr"></i> 49,990
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordionV2CollapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new">Book Binding</span><span class="plan_col2 border_col2">Hardcover or Paperback</span></span>		
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W or Full Color</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Cover</span><span class="plan_col2">Full Color</span></span>
+<span class="plans_content">
+	<span class="plan_col1">ISBN Allocation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copyright registration</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1_new">Copy Editing</span><span class="plan_col2 border_col2">Free upto 50000 words(Basic)</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Proof Reading</span><span class="plan_col2">Free</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Dedicated Publishing Manager</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Guided Publishing</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Non-Exclusive Agreement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Cover Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Interior Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Book Interior Revision</span><span class="plan_col2">Two Free Round</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Advanced Interior Design</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Illustrations</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Digital proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Print proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1_new">Author Copies</span><span class="plan_col2 border_col2">15 B/W or 5 Color copies</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Additional Author Copies</span><span class="plan_col2">At discounted cost price	
+	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">International Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Ingram Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Creation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Look-Inside Book Preview</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">WFP Coupon Codes</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Social Media Setup</span><span class="plan_col2">Complimentary</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Goodreads Account Setup</span><span class="plan_col2">Complimentary</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Author Page Setup</span><span class="plan_col2">Complimentary</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Online Press Release</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Google/Facebook Ad Campaign</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Video Trailer</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Basic Author Website</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Website Domain Registration & Hosting</span><span class="plan_col2">Free for 1 Year</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Social Media Posts & Banners</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Bookmarks & Flyers</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Prime Placement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Pre-orders</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Coupon Codes</span><span class="plan_col2">50</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Sponsored Ads</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Kindle Promotions</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns" style="border-bottom: 0.2px solid #9e9e9e !important;">	
+	<span class="plan_col1">Premium Retail Display</span><span class="plan_col2">Add-on</span></span>
+</div>
+                            </div>
+                        </div>
+						<div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive" style="background-color: #28AEE4">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseFive" aria-expanded="false" aria-controls="accordionV2CollapseFive" style="color: #fff; font-size: 24px;">
+                                        Platinum  - <i class="fa fa-inr"></i> 59,990
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordionV2CollapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new">Book Binding</span><span class="plan_col2 border_col2">Hardcover or Paperback</span></span>		
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W or Full Color</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Cover</span><span class="plan_col2">Full Color</span></span>
+<span class="plans_content">
+	<span class="plan_col1">ISBN Allocation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Copyright registration</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1_new">Copy Editing</span><span class="plan_col2 border_col2">Free upto 55000 words(Comprehensive)</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Proof Reading</span><span class="plan_col2">Free</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Dedicated Publishing Manager</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Guided Publishing</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Non-Exclusive Agreement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Cover Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Interior Design</span><span class="plan_col2">Premium</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Book Interior Revision</span><span class="plan_col2">Two Free Round</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Advanced Interior Design</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content">
+	<span class="plan_col1">Illustrations</span><span class="plan_col2">Add-on</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Digital proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Print proof</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1_new">Author Copies</span><span class="plan_col2 border_col2">15 B/W or 5 Color copies</span></span>
+<span class="plans_content color_columns">
+	<span class="plan_col1">Additional Author Copies</span><span class="plan_col2">At discounted cost price	
+	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes	</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">International Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Ingram Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Creation</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">eBook Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Look-Inside Book Preview</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">WFP Coupon Codes</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Social Media Setup</span><span class="plan_col2">Complimentary</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Goodreads Account Setup</span><span class="plan_col2">Complimentary</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Author Page Setup</span><span class="plan_col2">Complimentary</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Online Press Release</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Google/Facebook Ad Campaign</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Book Video Trailer</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Basic Author Website</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Website Domain Registration & Hosting</span><span class="plan_col2">Free for 1 Year</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Social Media Posts & Banners</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">	
+	<span class="plan_col1">Bookmarks & Flyers</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Prime Placement</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Pre-orders</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Coupon Codes</span><span class="plan_col2">50</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Sponsored Ads</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">	
+	<span class="plan_col1">Amazon Kindle Promotions</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns" style="border-bottom: 0.2px solid #9e9e9e !important;">	
+	<span class="plan_col1">Premium Retail Display</span><span class="plan_col2">Add-on</span></span>
+</div>
+                            </div>
+                        </div>
+						
+                    </div>
+                </div>
+                <!-- End Accordrion v2 -->
+            </div>
+        </div>
+        <!--// end row -->
+    </div>
+    <!-- End Accordions v1 & 2 -->
+    <!--------- Mobile-Plans-Section ---------->
     <!-- End Pricing List v2 -->
 
 <div class="content-md container">
