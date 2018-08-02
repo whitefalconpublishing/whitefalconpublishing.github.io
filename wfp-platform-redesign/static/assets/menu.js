@@ -10,7 +10,7 @@ document.write("");
 document.write("								<!-- Main -->");
 document.write("								<li id=\"home-menu\"><a href=\"\/\"><i class=\"icon-home4\"><\/i> <span>Dashboard<\/span><\/a><\/li>");
 document.write("								<li >");
-document.write("									<a href=\"#\"><i class=\"icon-books\"><\/i> <span>Books<\/span><\/a>");
+document.write("									<a href=\"#\"><i class=\"icon-books\"><\/i> <span>Published Books<\/span><\/a>");
 document.write("									<ul>");
 document.write("										<li id=\"viewbooks-menu\" ><a href=\"\/all-book\"><i class=\"icon-folder-open\"><\/i> View Books<\/a><\/li>");
 document.write("									<\/ul>");
