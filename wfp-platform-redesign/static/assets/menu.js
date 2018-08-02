@@ -17,15 +17,23 @@ document.write("									<\/ul>");
 document.write("								<\/li>");
 
 document.write("                                <li >");
-document.write("                                    <a href=\"#\"><i class=\"icon-books\"><\/i> <span>Free Publishing<\/span><\/a>");
+document.write("                                    <a href=\"#\"><i class=\"icon-stack\"><\/i> <span>Free Publishing<\/span><\/a>");
 document.write("                                    <ul>");
 document.write("                                        <li id=\"addbook-menu\" ><a href=\"\/add-book\"><i class=\"icon-book\"><\/i> Add Book<\/a><\/li>");
 document.write("                                        <li id=\"viewsubmittedbooks-menu\" ><a href=\"\/view-books\"><i class=\"icon-folder-open\"><\/i> View Submitted Books<\/a><\/li>");
 document.write("                                <li id=\"covercreator-menu\"><a href=\"\/cover-creator\"><i class=\"icon-book3\"><\/i> <span>Cover Creator<\/span><\/a><\/li>");
 document.write("                                <li id=\"covertemplate-menu\"><a href=\"\/cover-template\"><i class=\"icon-book2\"><\/i> <span>Cover Template Generator<\/span><\/a><\/li>");
-
 document.write("                                    <\/ul>");
 document.write("                                <\/li>");
+
+document.write("                                <li >");
+document.write("                                    <a href=\"#\"><i class=\"icon-stack2\"><\/i> <span>Guided Publishing<\/span><\/a>");
+document.write("                                    <ul>");
+document.write("                                        <li id=\"guidedplan-menu\" ><a href=\"\/submit-book-details\"><i class=\"icon-book2\"><\/i> Submit Book Details<\/a><\/li>");
+document.write("                                        <li id=\"guidedsubmitbook-menu\" ><a href=\"\/submit-manuscript\"><i class=\"icon-book3\"><\/i> Submit Manuscript<\/a><\/li>");
+document.write("                                    <\/ul>");
+document.write("                                <\/li>");
+
 
 document.write("								<li>");
 document.write("									<a href=\"#\"><i class=\"icon-coins\"><\/i> <span>Sales & Royalty<\/span><\/a>");
