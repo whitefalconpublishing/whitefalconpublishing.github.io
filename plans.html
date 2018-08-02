@@ -17,6 +17,7 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,400,700,500,300,300italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/bootstrap-switch.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/et-line/et-line.css" rel="stylesheet" type="text/css"/>
 <link href="assets/plugins/themify/themify.css" rel="stylesheet" type="text/css"/>
@@ -38,6 +39,8 @@
 
 <!-- BEGIN JQUERY -->
 <script type="text/javascript" src="assets/plugins/jquery.min.js"></script>
+<script type="text/javascript" src="assets/scripts/bootstrap-switch.js"></script>
+
 <!-- END JQUERY -->
 
 <!-- FAVICON -->
@@ -55,6 +58,10 @@ ga('send', 'pageview');
 </script>
 
 <style type="text/css">
+
+
+
+
   .comparison {
   max-width:80%;
   margin:0 auto;
@@ -186,6 +193,43 @@ ga('send', 'pageview');
    background:#28aee4;
 }
 
+.comparison .free {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#009c88;
+}
+
+.comparison .starter {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#fe0058;
+}
+
+
+.comparison .standard {
+  font:13px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#7d00b4;
+}
+
 .comparison .tl2 {
   border-right:0;
 }
@@ -201,6 +245,7 @@ ga('send', 'pageview');
   border-top-right-radius: 3px;
   border-right:0px;
 }
+
 
 .comparison .price-info {
   padding:5px 15px 15px 15px;
@@ -229,6 +274,21 @@ ga('send', 'pageview');
 .comparison .price-info-platinum {
   padding:5px 15px 15px 15px;
   background:#28aee4;
+}
+
+.comparison .price-info-free {
+  padding:5px 15px 15px 15px;
+  background:#009c88;
+}
+
+.comparison .price-info-starter {
+  padding:5px 15px 15px 15px;
+  background:#fe0058; 
+}
+
+.comparison .price-info-standard {
+  padding:5px 15px 15px 15px;
+  background:#7d00b4;
 }
 
 .comparison .price-was {
@@ -270,6 +330,8 @@ ga('send', 'pageview');
 .comparison .price-try a {
   color:#202020;
 }
+
+
 
 
 @media (max-width: 1000px) {
@@ -362,10 +424,50 @@ ga('send', 'pageview');
    background:#28aee4;
 }
 
+.comparison .free {
+  font:11px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:12px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#b200ac; 
+}
+
+.comparison .starter {
+  font:11px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:12px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#fecb00;
+}
+
+
+.comparison .standard {
+  font:11px/1.4 "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#FFF;
+  padding:10px;
+  font-size:12px;
+  font-weight:bold;
+  text-align: center;
+  border-right:1px solid #CCC;
+  border-bottom:10px;
+   background:#00bf55;
+}
+
+
+
 .bronze_section{
 	display: none;
 }
 }
+
 
 
 @media (min-width: 768px){
@@ -378,7 +480,12 @@ ga('send', 'pageview');
 	.comparison{
 		display: none;
 	}
+
+  
+
 }
+
+
 .plan_col1{
 	float: left; text-align: left; width: 50%; border-right: 0.2px solid #CCC; padding-left: 8px;
 }
@@ -407,14 +514,11 @@ ga('send', 'pageview');
 .border_col2{
 	border-left: 0.2px solid #CCC;
 }
+
+
+
 </style>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("#show_bronze").click(function(){
-			$("#bronze_sec").toggle();
-		});
-	});
-</script>
+
 </head>
 <!-- END HEAD -->
 <!-- BODY -->
@@ -464,13 +568,272 @@ ga('send', 'pageview');
                                     You can review our publishing plans and choose the plan that best suits your requirements. To get an accurate estimate for existing plans, please provide us with your book details by completing the form <a href="#form">here</a>. You can also create your own custom plan <a href="custom-plan.html">here</a>. 
                                     We only charge for the services you opt for and publishing the book through our print-on-demand self-publishing <a href="http://platform.self-publish.in" target="_blank">platform</a> and other international platforms. Inventory management and order fulfilment is our responsibility. In all our guided plans, we do not require the author to purchase a certain minimum number of copies. Complimentary copies are provided to the author (which vary in different plans). Author can purchase any number of copies at the author cost price. 
                                 </p>
-                        
+                        <center>
+                        <span id="free-pub-heading" style="font-size:14px">Free Publishing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><div class="make-switch switch-large" id="mySwitch" data-on="info" data-off="success" data-on-label="&nbsp;&nbsp;FREE&nbsp;&nbsp;" data-off-label="&nbsp;&nbsp;GUIDED&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+                          <input type="checkbox" checked>
+</div><span id="guided-pub-heading" style="font-size:14px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Guided Publishing</span>
+</center>
+
                     </div>
 </div>
 
-<!-- Pricing List v2 -->
-    <div class="comparison">
+<!-- Pricing Free -->
+    <div class="comparison" id="free-plans">
+<h1 class="breadcrumbs-v5-title">Free Publishing Plans</h1>
+  <table>
+    <thead>
+      <tr>
+        <th class="tl tl2"></th>
+        <th class="free">
+          FREE
+        </th>
+        <th class="starter">
+          STARTER
+        </th>
+        <th class="standard">
+          STANDARD
+        </th>
 
+      </tr>
+      
+      <tr>
+        <th></th>
+
+        <th class="price-info-free">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 0</span></div>
+          </center>
+        </th>
+        <th class="price-info-starter">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 2,500</span></div>
+          </center>
+        </th>
+        <th class="price-info-standard">
+          <center>
+          <div class="price-was"></div>
+          <div class="price-now"><span><i class="fa fa-inr"></i> 5,000</span></div>
+          </center>
+        </th>       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        
+      </tr>
+      <tr class="compare-row">
+        <td class="headcol">Book Binding</td>
+        <td>Paperback</td>
+        <td>Paperback</td>
+        <td>Paperback</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr class="compare-row">
+        <td class="headcol">Interior</td>
+        <td>B/W or Full Color</td>
+        <td>B/W or Full Color</td>
+        <td>B/W or Full Color</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td class="headcol">Cover</td>
+        <td>Full Color</td>
+        <td>Full Color</td>
+        <td>Full Color</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td class="headcol" >ISBN Allocation</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      
+      
+      <tr class="compare-row">
+        <td class="headcol">Online Sales Dashboard</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr class="compare-row">
+        <td class="headcol">Mobile App for Sales Reports</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr class="compare-row">
+        <td class="headcol">Author Profit Share</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr class="compare-row">
+        <td class="headcol">Profit Payout</td>
+        <td>Monthly</td>
+        <td>Monthly</td>
+        <td>Monthly</td>
+      </tr>
+      <tr>
+        
+      </tr>
+     
+     
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td class="headcol">Non-Exclusive Agreement</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr >
+        <td class="headcol">Cover Design</td>
+        <td>Do it Yourself</td>
+        <td>Do it Yourself</td>
+        <td>Do it Yourself</td>
+      </tr>
+      <tr>
+       
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td class="headcol">Interior Design</td>
+        <td>Do it Yourself</td>
+        <td>Do it Yourself</td>
+        <td>Do it Yourself</td>
+      </tr>
+
+      <tr>
+       
+      </tr>
+      
+      
+        
+      </tr>
+      <tr class="compare-row">
+        <td class="headcol">Inventory Management</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+        <td>Unlimited</td>
+      </tr>
+      <tr>
+       
+      </tr>
+      
+        
+      </tr>
+      <tr class="compare-row" style="border-bottom: 1px solid #ccc;">
+        <td class="headcol">Author Copies</td>
+        <td>At cost price</td>
+        <td>At cost price</td>
+        <td>At cost price</td>
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr>
+        <td class="headcol">WFP Store Distribution</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+
+      </tr>
+
+      <tr>
+
+      <tr>
+        <td class="headcol">India Online Distribution</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Yes</td>
+
+      </tr>
+
+      <tr>
+       
+      </tr>
+      <tr>
+        <td class="headcol">International Distribution</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+
+      </tr>
+      <tr>
+        
+      </tr>
+      
+        
+      
+      <tr>
+        <td class="headcol">Book Sales Page</td>
+        <td>Yes</td>
+        <td>Yes</td>
+        <td>Yes</td>
+  
+      </tr>
+      <tr>
+        
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td class="headcol" >Look-Inside Book Preview</td>
+        <td>No</td>
+        <td>No</td>
+        <td>Yes</td>
+
+      </tr>
+
+      
+      <tr>
+        
+      </tr>
+
+      <tr>
+        <td class="headcol" ></td>
+        <td><a href="http://platform.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+         <td><a href="http://platform.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+          <td><a href="http://platform.self-publish.in/"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+
+      </tr>
+
+      
+      <tr>
+        
+      </tr>      
+      
+      
+    </tbody>
+  </table>
+  <br><br><br><br>
+
+</div>
+
+<!-- End Pricing Free -->
+
+<!-- Pricing Guided -->
+    <div class="comparison" id="guided-plans">
+<h1 class="breadcrumbs-v5-title">Guided Publishing Plans</h1>
   <table>
     <thead>
       <tr>
@@ -1088,15 +1451,200 @@ ga('send', 'pageview');
         <td>Add-on</td>
         <td>Add-on</td>
       </tr>
+      <tr>
+        
+      </tr>
+      <tr style="border-bottom: 1px solid #ccc;">
+        <td class="headcol"></td>
+        <td><a href="#form"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+        <td><a href="#form"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+        <td><a href="#form"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+        <td><a href="#form"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+        <td><a href="#form"><button type="button" class="btn-base-bg-slide btn-slide btn-slide-top btn-base-sm radius-3">Get Started</button></a></td>
+      </tr>
+      <tr>
+        
+      </tr>
+
     </tbody>
   </table>
 
 </div>
 
 <!--------- Mobile-Plans-Section ---------->
+<!-- Start Free Mobile Plans -->
+    <div class="content-md container mobile_plans" id="free-plans-mobile">
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- Add ".accordion-v2-active-left" class next to ".accordion-v2" to change the active position of the item to the left (the default is right) -->
+                <!-- Accordrion v2 -->
+                <div class="accordion-v2">
+                    <div class="panel-group" id="accordion-v2" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne" style="background-color: #009c88;">
+                                <h2 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseOne" aria-expanded="true" aria-controls="accordionV2CollapseOne" style="color: #fff; font-size: 24px;">
+                                        Free - <i class="fa fa-inr"></i> 0
+                                    </a>
+                                </h2>
+                            </div>
+                            <div id="accordionV2CollapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new" style="border-top: 0.2px solid #CCC;">Book Binding</span><span class="plan_col2 border_col2" style="border-top: 0.2px solid #CCC;">Hardcover or Paperback</span></span>   
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W or Full Color</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Cover</span><span class="plan_col2a">Full Color</span></span>
+<span class="plans_content">
+  <span class="plan_col1a">ISBN Allocation</span><span class="plan_col2a">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Non-Exclusive Agreement</span><span class="plan_col2a">Yes</span></span>
+<span class="plans_content">
+  <span class="plan_col1">Cover Design</span><span class="plan_col2">Do it Yourself</span></span>
+<span class="plans_content">
+  <span class="plan_col1a">Interior Design</span><span class="plan_col2a">Do it Yourself</span></span>
+<span class="plans_content">
+<span class="plans_content color_columns">
+  <span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Author Copies</span><span class="plan_col2a">At cost price 
+  </span></span>
+<span class="plans_content">  
+  <span class="plan_col1">WFP Store Distribution</span><span class="plan_col2">Yes </span></span>
+<span class="plans_content">  
+  <span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">  
+  <span class="plan_col1">International Distribution</span><span class="plan_col2">Add-on</span></span>
+  <span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">  
+  <span class="plan_col1a">Look-Inside Book Preview</span><span class="plan_col2a">Yes</span></span>
 
-	<!-- Accordions v1 & 2 -->
-    <div class="content-md container mobile_plans">
+</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo" style="background-color: #fe0058">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseTwo" aria-expanded="false" aria-controls="accordionV2CollapseTwo" style="color: #fff; font-size: 24px;">
+                                        Starter  - <i class="fa fa-inr"></i> 2,500
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordionV2CollapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new" style="border-top: 0.2px solid #CCC;">Book Binding</span><span class="plan_col2 border_col2" style="border-top: 0.2px solid #CCC;">Hardcover or Paperback</span></span>   
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W or Full Color</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Cover</span><span class="plan_col2a">Full Color</span></span>
+<span class="plans_content">
+  <span class="plan_col1a">ISBN Allocation</span><span class="plan_col2a">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Non-Exclusive Agreement</span><span class="plan_col2a">Yes</span></span>
+<span class="plans_content">
+  <span class="plan_col1">Cover Design</span><span class="plan_col2">Do it Yourself</span></span>
+<span class="plans_content">
+  <span class="plan_col1a">Interior Design</span><span class="plan_col2a">Do it Yourself</span></span>
+<span class="plans_content">
+<span class="plans_content color_columns">
+  <span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Author Copies</span><span class="plan_col2a">At cost price 
+  </span></span>
+<span class="plans_content">  
+  <span class="plan_col1">WFP Store Distribution</span><span class="plan_col2">Yes </span></span>
+<span class="plans_content">  
+  <span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">  
+  <span class="plan_col1">International Distribution</span><span class="plan_col2">Add-on</span></span>
+  <span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">  
+  <span class="plan_col1a">Look-Inside Book Preview</span><span class="plan_col2a">Yes</span></span>
+
+</div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree" style="background-color: #7d00b4">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion-v2" href="#accordionV2CollapseThree" aria-expanded="false" aria-controls="accordionV2CollapseThree" style="color: #fff; font-size: 24px;">
+                                        Standard  - <i class="fa fa-inr"></i> 5,000
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="accordionV2CollapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+<div class="panel-body">
+<span class="plans_content color_columns"><span class="plan_col1_new" style="border-top: 0.2px solid #CCC;">Book Binding</span><span class="plan_col2 border_col2" style="border-top: 0.2px solid #CCC;">Hardcover or Paperback</span></span>   
+<span class="plans_content color_columns"><span class="plan_col1">Interior</span><span class="plan_col2">B/W or Full Color</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Cover</span><span class="plan_col2a">Full Color</span></span>
+<span class="plans_content">
+  <span class="plan_col1a">ISBN Allocation</span><span class="plan_col2a">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Online Sales Dashboard</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Mobile App for Sales Reports</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Author Profit Share</span><span class="plan_col2">100%</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Profit Payout</span><span class="plan_col2">Monthly</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1">Post-Publishing Support</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Non-Exclusive Agreement</span><span class="plan_col2a">Yes</span></span>
+<span class="plans_content">
+  <span class="plan_col1">Cover Design</span><span class="plan_col2">Do it Yourself</span></span>
+<span class="plans_content">
+  <span class="plan_col1a">Interior Design</span><span class="plan_col2a">Do it Yourself</span></span>
+<span class="plans_content">
+<span class="plans_content color_columns">
+  <span class="plan_col1">Inventory Management</span><span class="plan_col2">Unlimited</span></span>
+<span class="plans_content color_columns">
+  <span class="plan_col1a">Author Copies</span><span class="plan_col2a">At cost price 
+  </span></span>
+<span class="plans_content">  
+  <span class="plan_col1">WFP Store Distribution</span><span class="plan_col2">Yes </span></span>
+<span class="plans_content">  
+  <span class="plan_col1">India Online Distribution</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">  
+  <span class="plan_col1">International Distribution</span><span class="plan_col2">Add-on</span></span>
+  <span class="plan_col1">Book Sales Page</span><span class="plan_col2">Yes</span></span>
+<span class="plans_content">  
+  <span class="plan_col1a">Look-Inside Book Preview</span><span class="plan_col2a">Yes</span></span>
+
+</div>
+                            </div>
+                        </div>            
+            
+                    </div>
+                </div>
+                <!-- End Accordrion v2 -->
+            </div>
+        </div>
+        <!--// end row -->
+    </div>
+    <!-- End Guided Mobile Plans -->
+
+	<!-- Start Guided Mobile Plans -->
+    <div class="content-md container mobile_plans" id="guided-plans-mobile">
         <div class="row">
             <div class="col-sm-6">
                 <!-- Add ".accordion-v2-active-left" class next to ".accordion-v2" to change the active position of the item to the left (the default is right) -->
@@ -1661,11 +2209,11 @@ ga('send', 'pageview');
         </div>
         <!--// end row -->
     </div>
-    <!-- End Accordions v1 & 2 -->
+    <!-- End Guided Mobile Plans -->
     <!--------- Mobile-Plans-Section ---------->
     <!-- End Pricing List v2 -->
 
-<div class="content-md container">
+<div class="content-md container" id="guided-plans-detail">
 
                    <div class="masonry-grid ">
                 
@@ -1875,6 +2423,53 @@ into print and eBooks, for free. </p>
                 <!-- End Modal -->
 
 <!-- END PAGE LEVEL SCRIPTS -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(window).resize(function(){location.reload();});
+    
+    $("#show_bronze").click(function(){
+      $("#bronze_sec").toggle();
+    });
+
+$("#free-plans").hide();
+$("#free-plans-mobile").hide();
+$('#mySwitch').bootstrapSwitch('setState', false);
+
+$('#mySwitch').on('switch-change', function (e, data) {
+    //var $el = $(data.el)
+    //  , value = data.value;
+    //console.log(e, $el, value);
+    if(data.value==false){
+      $("#free-plans").hide();
+      $("#free-plans-mobile").hide();
+      if(screen.width>768){
+        $("#guided-plans").show();
+        $("#guided-plans-detail").show();
+      }
+      else{
+        $("#guided-plans-mobile").show();
+        $("#guided-plans-detail").show();
+      }
+    }else{
+      $("#guided-plans").hide();
+      $("#guided-plans-mobile").hide();
+      $("#guided-plans-detail").hide();
+      if(screen.width>768){
+        $("#free-plans").show();
+      }
+      else{
+        $("#free-plans-mobile").show();
+      }
+    }
+});
+
+
+
+});
+
+
+
+</script>
 <!--========== END JAVASCRIPTS ==========-->
 </body>
 <!-- END BODY -->
