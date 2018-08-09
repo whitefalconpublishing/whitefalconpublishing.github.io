@@ -1,7 +1,7 @@
 function postPublishingForm() {
 
     var dataStr = 'entry.1435449569=' + encodeURIComponent($('#entry_1435449569').val()) + '&entry.689278842=' + encodeURIComponent($('#entry_689278842').val()) + '&entry.794830973=' + encodeURIComponent($('#entry_794830973').val()) + '&entry.28753899=' + encodeURIComponent($('#entry_28753899').val()) +
-        '&entry.1085289810=' + encodeURIComponent($('#entry_1085289810').val()) + '&entry.1649662356=' + encodeURIComponent($('#entry_1649662356').val());
+        '&entry.1085289810=' + encodeURIComponent($('#entry_1085289810').val()) + '&entry.1649662356=' + encodeURIComponent($('#entry_1649662356').val()) + '&entry.1854161052=' + encodeURIComponent($('#entry_1854161052').val());
 
 
     var entry2131609516 = $('input[name="entry.2131609516"]:checked');
