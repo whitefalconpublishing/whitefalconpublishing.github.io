@@ -77,7 +77,7 @@ document.write("                                   <li class=\"dropdown-menu-ite
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/scholargram.com\/\">ScholarGram<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/blog\/index.html\">Blog<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/giveaway.html\">Giveaway<\/a><\/li>");
-document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/literati.html\">Literati Award<\/a><\/li>");
+document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/wfpywa.html\">Young Writers Award<\/a><\/li>");
 document.write("                                    ");
 document.write("                                    <\/ul>");
 document.write("                                <\/a>");
