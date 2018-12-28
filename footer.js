@@ -57,8 +57,8 @@ document.write("                                <strong>Branch Office:<\/strong>
 document.write("                                SCO 110, Second Floor, Sector-47C, ");
 document.write("                            Chandigarh - 160047, INDIA<br><br>");
 document.write("                             <strong>Mobile Apps:<\/strong>");
-document.write("                            <a href='https:\/\/play.google.com\/store\/apps\/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target='_blank'><img alt='Get it on Google Play' src='images\/playstore.png'\/ width='30%'><\/a>");
-document.write("<a href='https:\/\/itunes.apple.com\/us/app\/white-falcon-publishing\/id1440008980?mt=8' target=\"_blank\"><img alt='Download on the App Store' src='images\/appstore.png' width=\"30%\"><\/a>");
+document.write("                            <a href='https:\/\/play.google.com\/store\/apps\/details?id=io.cordova.whitefalcon&hl=en&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target='_blank'><img alt='Get it on Google Play' src='https:\/\/www.self-publish.in\/images\/playstore.png'\/ width='30%'><\/a>");
+document.write("<a href='https:\/\/itunes.apple.com\/us/app\/white-falcon-publishing\/id1440008980?mt=8' target=\"_blank\"><img alt='Download on the App Store' src='https:\/\/www.self-publish.in\/images\/appstore.png' width=\"30%\"><\/a>");
 document.write("                            ");
 
 document.write("<br><br><section class=\"newsletter-v7-subscribe\"><div class=\"center-content-hor-align-sm\">");
