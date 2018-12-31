@@ -84,7 +84,7 @@ document.write("                            <h3 class=\"footer-v4-text\"><br>Whi
 document.write("                            <a href=\"\/\/self-publish.in\/white-falcon-publishing-iso-certificate.html\"><p class=\"footer-v4-text\">An ISO 9001:2015 Certified Company<\/p></a><br>");
 document.write("                            <a href=\"\/\/self-publish.in\/white-falcon-publishing-iso-certificate.html\"><img width=\"80%\" src=\"\/\/www.self-publish.in\/images\/iso.png\" alt=\"\"></a><br><br>");
 //document.write("                            <a href=\"https:\/\/www.google.com\/partners\/#i_profile;idtf=109514991320547753767\" target=\"_blank\"><img width=\"40%\" src=\"\/\/www.self-publish.in\/images\/Partnerbadge.jpg\" alt=\"\"></a>");
-document.write("                            <a href=\"https:\/\/enterprise-services.siliconindiamagazine.com\/ranking\/20-most-promising-publishing-service-providers-2018-rid-531.html\"><img width=\"55%\" target=\"_blank\" src=\"images\/siproviders.jpg\" alt=\"\"></a>");
+document.write("                            <a href=\"https:\/\/enterprise-services.siliconindiamagazine.com\/ranking\/20-most-promising-publishing-service-providers-2018-rid-531.html\" target=\"_blank\"><img width=\"55%\" src=\"images\/siproviders.jpg\" alt=\"\"></a>");
 document.write("                            <\/center>");
 document.write("                        <\/div>");
 document.write("                        ");
