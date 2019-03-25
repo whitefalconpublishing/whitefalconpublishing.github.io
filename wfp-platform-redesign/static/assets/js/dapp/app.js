@@ -181,9 +181,9 @@ function getDocumentByHashGenerate(){
       console.log(publisher);   
       if(blockTimestamp>0){
         $("#myModal").modal();
-        codeurl="http://wfps.in/"+code; 
+        //codeurl="http://wfps.in/"+code; 
         $("#myModalTitle").html("Book found by hash");
-        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
+        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher);   
      }else{
         $("#myModal").modal();
         $("#myModalTitle").html("Book not found");
@@ -213,9 +213,9 @@ function getDocumentByHash(){
       console.log(publisher);   
       if(blockTimestamp>0){
         $("#myModal").modal();
-        codeurl="http://wfps.in/"+code;  
+        //codeurl="http://wfps.in/"+code;  
         $("#myModalTitle").html("Book found by hash");
-        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
+        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher);   
      }else{
         $("#myModal").modal();
         $("#myModalTitle").html("Book not found");
