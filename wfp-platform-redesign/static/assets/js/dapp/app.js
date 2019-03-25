@@ -33,7 +33,7 @@ function refreshDataNew() {
       if(owner==account){
       
       }else{
-        //$("#admincontainer").hide();
+        $("#admincontainer").hide();
         $("#statuscontainer").html("<h4>You are not authorized to perform admin actions</h4>");
       }
     });
@@ -181,8 +181,9 @@ function getDocumentByHashGenerate(){
       console.log(publisher);   
       if(blockTimestamp>0){
         $("#myModal").modal();
+        codeurl="http://wfps.in/"+code; 
         $("#myModalTitle").html("Book found by hash");
-        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher);   
+        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
      }else{
         $("#myModal").modal();
         $("#myModalTitle").html("Book not found");
@@ -212,8 +213,9 @@ function getDocumentByHash(){
       console.log(publisher);   
       if(blockTimestamp>0){
         $("#myModal").modal();
+        codeurl="http://wfps.in/"+code;  
         $("#myModalTitle").html("Book found by hash");
-        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher);   
+        $("#myModalText").html("Code: " + code + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
      }else{
         $("#myModal").modal();
         $("#myModalTitle").html("Book not found");
@@ -244,7 +246,8 @@ function getDocumentByCode(){
       if(blockTimestamp>0){
         $("#myModal").modal();
         $("#myModalTitle").html("Book found by code");
-        $("#myModalText").html("Hash: " + hash + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher);   
+        codeurl="http://wfps.in/"+shortcode;  
+        $("#myModalText").html("Hash: " + hash + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
      }else{
         $("#myModal").modal();
         $("#myModalTitle").html("Book not found");
