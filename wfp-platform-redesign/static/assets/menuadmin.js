@@ -18,7 +18,7 @@ document.write("								<li id=\"return-updater-menu\"><a href=\"\/return-update
 document.write("								<li id=\"isbngenerator-menu\"><a href=\"\/isbn-generator\"><i class=\"icon-book\"><\/i> <span>ISBN Generator<\/span><\/a><\/li>");
 document.write("								<li id=\"covertemplate-menu\"><a href=\"\/cover-template\"><i class=\"icon-book\"><\/i> <span>Cover Template Generator<\/span><\/a><\/li>");
 document.write("								<li id=\"pdffixer-menu\"><a href=\"\/pdf-fixer\"><i class=\"icon-book\"><\/i> <span>PDF Fixer for Duplex Print<\/span><\/a><\/li>");
-document.write("                                <li id=\"blockchain-dapp\"><a href=\"\/pdf-fixer\"><i class=\"icon-book\"><\/i> <span>Blockchain Certify Dapp<\/span><\/a><\/li>");
+document.write("                                <li id=\"blockchain-dapp\"><a href=\"\/blockchain-dapp\"><i class=\"icon-download\"><\/i> <span>Blockchain Certify Dapp<\/span><\/a><\/li>");
 
 document.write("									<\/ul>");
 document.write("								<\/li>");
