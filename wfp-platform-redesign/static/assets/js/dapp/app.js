@@ -17,7 +17,7 @@ function initializeContract() {
   $("#cf_address").html(contract_address);
   $("#cb_address").html(account);
   refreshDataNew();
-  $("#homeload").hide();  
+  $("#homeload").hide();
 }
 
 
