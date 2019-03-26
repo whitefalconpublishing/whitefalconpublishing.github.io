@@ -360,7 +360,8 @@ function putTxRecord(shortcode, txhash, blockNumber, title, author, isbn, publis
   
 }
 
-function newDocument() {  
+function newDocument() {
+  $("#homeload").show();  
   //calculateHash();
   var bookTitle = $("#bookTitle").val();
   var authorNames = $("#authorNames").val();
@@ -389,6 +390,7 @@ function newDocument() {
         getTransactionReceiptMined(result).then(
           function(receipt) {
             console.log(receipt.transactionHash);
+            $("#homeload").hide();  
             $("#myModal").modal();
             $("#myModalTitle").html("Transaction Successful");
             codeurl="http://wfps.in/"+shortcode;            
