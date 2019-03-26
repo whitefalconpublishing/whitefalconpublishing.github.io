@@ -2,6 +2,13 @@ document.write("<!--Timeline v2 -->");
 document.write("                            <ul class=\"timeline-v2\">");
 document.write("                                <li class=\"timeline-v2-list-item\">");
 document.write("                                    <i class=\"timeline-v2-badge-icon radius-circle fa fa-comments-o\"><\/i>");
+document.write("                                    <small class=\"timeline-v2-news-date\">Mar 26, 2019<\/small>");
+document.write("                                    <h5 class=\"timeline-v2-news-title\"><a href=\"Blog-blockchain-timestamping-for-books.html\">White Falcon Publishing Introduces Blockchain Timestamping for Books<\/a><\/h5>");
+document.write("                                <\/li>");
+
+document.write("                            <ul class=\"timeline-v2\">");
+document.write("                                <li class=\"timeline-v2-list-item\">");
+document.write("                                    <i class=\"timeline-v2-badge-icon radius-circle fa fa-comments-o\"><\/i>");
 document.write("                                    <small class=\"timeline-v2-news-date\">Feb 15, 2019<\/small>");
 document.write("                                    <h5 class=\"timeline-v2-news-title\"><a href=\"Blog-hybrid-publishing.html\">Hybrid Publishing<\/a><\/h5>");
 document.write("                                <\/li>");
