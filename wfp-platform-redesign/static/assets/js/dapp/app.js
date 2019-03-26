@@ -256,12 +256,49 @@ function getDocumentByCode(){
     });
 }
 
-function putTxRecord(shortcode, txhash, blockNumber){
+function putTxRecord(shortcode, txhash, blockNumber, title, author, isbn, publisher, hash){
   console.log("Putting tx record");
   console.log(shortcode);
   console.log(txhash);
   console.log(blockNumber);
-  getDataPromiseWithArgs(myContractInstance.getDocumentByCode, shortcode).then(
+  web3.eth.getBlock(blockNumber, (error, result) => {
+      if (error) {
+        reject(error);
+      } else {
+          console.log("======================");
+          console.log(result.timestamp);
+          blockTimestamp=result.timestamp;
+
+          var datadir = {
+            code: shortcode,
+            publisher: publisher,
+            hash: hash,
+            title: title,
+            timestamp: blockTimestamp,
+            author: author,
+            blockNumber: blockNumber,
+            txhash: txhash,
+            isbn: isbn
+            };
+
+    $.ajax({
+              url: 'http://platform.self-publish.in/record-tx-receipt',
+              method: 'POST',
+              crossDomain: true,
+              dataType: 'json',
+              contentType: "application/json; charset=utf-8",
+              success: function(data) {
+                console.log(data);                    
+              },
+              error: function(data) {
+                  console.log(data);  
+              },
+              data: JSON.stringify(datadir)
+          });
+      }
+    });
+
+  /*getDataPromiseWithArgs(myContractInstance.getDocumentByCode, shortcode).then(
     function(result) {      
       console.log(result);
       hash=result[0];
@@ -303,7 +340,7 @@ function putTxRecord(shortcode, txhash, blockNumber){
         console.log("Error");
      }
     });
-
+*/
   
 }
 
@@ -340,7 +377,7 @@ function newDocument() {
             $("#myModalTitle").html("Transaction Successful");
             codeurl="http://wfps.in/"+shortcode;            
             $("#myModalText").html("Your transaction to certify a book has been processed successfully.<br><br>Transaction hash: " + receipt.transactionHash+"<br>Code: "+shortcode + "<br>Code Hash: "+code +"<br>Document Hash: "+hash +"<br>Title: "+bookTitle+"<br>Author: "+authorNames+"<br>ISBN: "+isbn+"<br>Publisher: "+publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");
-            putTxRecord(shortcode, receipt.transactionHash, receipt.blockNumber);
+            putTxRecord(shortcode, receipt.transactionHash, receipt.blockNumber, bookTitle, authorNames, isbn, publisher, hash);
           });
   //    }
     });
