@@ -256,6 +256,52 @@ function getDocumentByCode(){
     });
 }
 
+function putTxRecord(shortcode, txhash, blockNumber){
+  getDataPromiseWithArgs(myContractInstance.getDocumentByCode, shortcode).then(
+    function(result) {      
+      hash=result[0];
+      owner=result[1];
+      blockTimestamp=result[2].toNumber();
+      title=result[3];
+      author=result[4];
+      isbn=result[5];
+      publisher=result[6];
+  
+      if(blockTimestamp>0){
+        var datadir = {
+        code: shortcode,
+        publisher: publisher,
+        hash: hash,
+        title: title,
+        timestamp: blockTimestamp,
+        author: author,
+        blockNumber: blockNumber,
+        txhash: txhash,
+        isbn: isbn
+    };
+
+  $.ajax({
+            url: 'http://platform.self-publish.in/record-tx-receipt',
+            method: 'POST',
+            crossDomain: true,
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+            success: function(data) {
+              console.log(data);                    
+            },
+            error: function(data) {
+                console.log(data);  
+            },
+            data: JSON.stringify(datadir)
+        });
+     }else{
+        console.log("Error");
+     }
+    });
+
+  
+}
+
 function newDocument() {  
   //calculateHash();
   var bookTitle = $("#bookTitle").val();
@@ -289,6 +335,7 @@ function newDocument() {
             $("#myModalTitle").html("Transaction Successful");
             codeurl="http://wfps.in/"+shortcode;            
             $("#myModalText").html("Your transaction to certify a book has been processed successfully.<br><br>Transaction hash: " + receipt.transactionHash+"<br>Code: "+shortcode + "<br>Code Hash: "+code +"<br>Document Hash: "+hash +"<br>Title: "+bookTitle+"<br>Author: "+authorNames+"<br>ISBN: "+isbn+"<br>Publisher: "+publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");
+            putTxRecord(code, receipt.transactionHash, receipt.blockNumber);
           });
   //    }
     });
