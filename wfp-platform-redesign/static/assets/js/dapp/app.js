@@ -247,8 +247,8 @@ function getDocumentByCode(){
       if(blockTimestamp>0){
         $("#myModal").modal();
         $("#myModalTitle").html("Book found by code");
-        codeurl="http://wfps.in/"+shortcode;  
-        $("#myModalText").html("Hash: " + hash + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
+        codeurl="http://wfps.in/?"+shortcode;  
+        $("#myModalText").html("<br>Code: <a target=\"_blank\" href=\""+codeurl+"\">"+shortcode + "</a><br>Hash: " + hash + "<br>Timestamp: " + blockTimestamp + "<br>Title: " + title + "<br>Author: " + author + "<br>ISBN: " + isbn + "<br>Publisher: " + publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");   
      }else{
         $("#myModal").modal();
         $("#myModalTitle").html("Book not found");
