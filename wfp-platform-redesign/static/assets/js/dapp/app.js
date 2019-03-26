@@ -257,8 +257,13 @@ function getDocumentByCode(){
 }
 
 function putTxRecord(shortcode, txhash, blockNumber){
+  console.log("Putting tx record");
+  console.log(shortcode);
+  console.log(txhash);
+  console.log(blockNumber);
   getDataPromiseWithArgs(myContractInstance.getDocumentByCode, shortcode).then(
     function(result) {      
+      console.log(result);
       hash=result[0];
       owner=result[1];
       blockTimestamp=result[2].toNumber();
