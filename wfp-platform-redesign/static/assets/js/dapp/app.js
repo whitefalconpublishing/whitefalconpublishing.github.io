@@ -394,8 +394,8 @@ function newDocument() {
             $("#homeload").hide();  
             $("#myModal").modal();
             $("#myModalTitle").html("Transaction Successful");
-            codeurl="http://wfps.in/"+shortcode;            
-            $("#myModalText").html("Your transaction to certify a book has been processed successfully.<br><br>Transaction hash: " + receipt.transactionHash+"<br>Code: <a target=\"_blank\" href=\""+codeurl+"\">"+shortcode + "<br>Code Hash: "+code +"<br>Document Hash: "+hash +"<br>Title: "+bookTitle+"<br>Author: "+authorNames+"<br>ISBN: "+isbn+"<br>Publisher: "+publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");
+            codeurl="http://wfps.in/?"+shortcode;            
+            $("#myModalText").html("Your transaction to certify a book has been processed successfully.<br><br>Transaction hash: " + receipt.transactionHash+"<br>Code: <a target=\"_blank\" href=\""+codeurl+"\">"+shortcode + "</a><br>Code Hash: "+code +"<br>Document Hash: "+hash +"<br>Title: "+bookTitle+"<br>Author: "+authorNames+"<br>ISBN: "+isbn+"<br>Publisher: "+publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");
             putTxRecord(shortcode, receipt.transactionHash, receipt.blockNumber, bookTitle, authorNames, isbn, publisher, hash);
           });
   //    }
