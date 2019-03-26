@@ -340,7 +340,7 @@ function newDocument() {
             $("#myModalTitle").html("Transaction Successful");
             codeurl="http://wfps.in/"+shortcode;            
             $("#myModalText").html("Your transaction to certify a book has been processed successfully.<br><br>Transaction hash: " + receipt.transactionHash+"<br>Code: "+shortcode + "<br>Code Hash: "+code +"<br>Document Hash: "+hash +"<br>Title: "+bookTitle+"<br>Author: "+authorNames+"<br>ISBN: "+isbn+"<br>Publisher: "+publisher+"<br>"+"<img src=\"https://chart.googleapis.com/chart?cht=qr&chs=350&chl="+codeurl+"\" height=\"350\"/>");
-            putTxRecord(code, receipt.transactionHash, receipt.blockNumber);
+            putTxRecord(shortcode, receipt.transactionHash, receipt.blockNumber);
           });
   //    }
     });
