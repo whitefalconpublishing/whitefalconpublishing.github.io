@@ -261,7 +261,36 @@ function putTxRecord(shortcode, txhash, blockNumber, title, author, isbn, publis
   console.log(shortcode);
   console.log(txhash);
   console.log(blockNumber);
-  web3.eth.getBlock(blockNumber, (error, result) => {
+  blockTimestamp=Math.floor(Date.now() / 1000);
+
+  var datadir = {
+    code: shortcode,
+    publisher: publisher,
+    hash: hash,
+    title: title,
+    timestamp: blockTimestamp,
+    author: author,
+    blockNumber: blockNumber,
+    txhash: txhash,
+    isbn: isbn
+    };
+            
+  $.ajax({
+              url: 'http://platform.self-publish.in/record-tx-receipt',
+              method: 'POST',
+              crossDomain: true,
+              dataType: 'json',
+              contentType: "application/json; charset=utf-8",
+              success: function(data) {
+                console.log(data);                    
+              },
+              error: function(data) {
+                  console.log(data);  
+              },
+              data: JSON.stringify(datadir)
+          });
+
+  /*web3.eth.getBlock(blockNumber, (error, result) => {
       if (error) {
         reject(error);
       } else {
@@ -281,20 +310,7 @@ function putTxRecord(shortcode, txhash, blockNumber, title, author, isbn, publis
             isbn: isbn
             };
 
-    $.ajax({
-              url: 'http://platform.self-publish.in/record-tx-receipt',
-              method: 'POST',
-              crossDomain: true,
-              dataType: 'json',
-              contentType: "application/json; charset=utf-8",
-              success: function(data) {
-                console.log(data);                    
-              },
-              error: function(data) {
-                  console.log(data);  
-              },
-              data: JSON.stringify(datadir)
-          });
+    
       }
     });
 
