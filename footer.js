@@ -28,7 +28,7 @@ document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/careers.
 document.write("<a class=\"footer-v4-text\" href=\"http:\/\/scholargram.com\" target=\"_blank\">ScholarGram<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"http:\/\/booksfundr.self-publish.in\">BooksFundr<\/a><br>");
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/blog\/index.html\">Blog<\/a><br>");
-document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/giveaway.html\">Giveaway<\/a><br>"); 
+document.write("<a class=\"footer-v4-text\" href=\"https:\/\/www.self-publish.in\/blog/Blog-blockchain-timestamping-for-books.html\">Blockchain Certification<\/a><br>"); 
 document.write("<a class=\"footer-v4-text\" href=\"\/\/self-publish.in\/contact.html\">Contact<\/a>");
 document.write("");
 document.write("                        <\/div>");

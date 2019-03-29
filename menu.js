@@ -76,8 +76,8 @@ document.write("                                   <li class=\"dropdown-menu-ite
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/booksfundr.self-publish.in\/\">BooksFundr<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"http:\/\/scholargram.com\/\">ScholarGram<\/a><\/li>");
 document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/blog\/index.html\">Blog<\/a><\/li>");
-document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/giveaway.html\">Giveaway<\/a><\/li>");
-document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/wfpywa.html\">Young Writers Award<\/a><\/li>");
+document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"https:\/\/www.self-publish.in\/blog\/Blog-blockchain-timestamping-for-books.html\">Blockchain Certification<\/a><\/li>");
+//document.write("                                   <li class=\"dropdown-menu-item\"><a class=\"dropdown-menu-item-child\" href=\"\/\/self-publish.in\/wfpywa.html\">Young Writers Award<\/a><\/li>");
 document.write("                                    ");
 document.write("                                    <\/ul>");
 document.write("                                <\/a>");
