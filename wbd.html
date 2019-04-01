@@ -79,7 +79,7 @@ ga('send', 'pageview');
     <!--========== BREADCRUMBS V5 ==========-->
     <section class="breadcrumbs-v5" style="padding-top: 0; padding-bottom: 0;">
 
-        <div class="content-header" style="padding-bottom: 0;">
+        <div class="content-header" id="wbdbanner" style="padding-bottom: 0;">
             <img src="images/wbd-banner.jpg" width="100%">
            
         </div>
@@ -231,6 +231,9 @@ ga('send', 'pageview');
             postManuscriptForm();
         });  */
 
+ if($(window).width()<1200){
+    $("#wbdbanner").css("padding-top", "0");
+    }
     $('#manuscript-form').on('submit', function(e) {
             e.preventDefault();
             postManuscriptForm();
