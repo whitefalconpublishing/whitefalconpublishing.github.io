@@ -31,7 +31,7 @@
     $('.slider-active').owlCarousel({
         smartSpeed: 1000,
         margin: 0,
-        autoplay: false,
+        autoplay: true,
         nav: true,
         dots: true,
         loop: true,
