@@ -69,7 +69,7 @@ document.write("                                    <button class=\"btn-base-bg 
 document.write("                                <\/span>");
 document.write("                            <\/form>");
 document.write("                        <\/div></section>");
-document.write("                            <br><a href=\"https:\/\/self-publish.in\/wbd.html\" target=\"_blank\"><img width=\"30%\" src=\"https:\/\/self-publish.in\/images\/wbd-menu.png\" alt=\"\"></a>");
+//document.write("                            <br><a href=\"https:\/\/self-publish.in\/wbd.html\" target=\"_blank\"><img width=\"30%\" src=\"https:\/\/self-publish.in\/images\/wbd-menu.png\" alt=\"\"></a>");
 document.write("                        <\/div>");
 document.write("                    <\/div>");
 document.write("");
