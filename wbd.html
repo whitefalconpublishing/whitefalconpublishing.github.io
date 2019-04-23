@@ -186,8 +186,11 @@ ga('send', 'pageview');
     var name = $('#name').val();
     var email = $('#email').val();
     var phone = $('#phone').val();
-   
-    var formData = new FormData();
+    $("#load").hide();
+    $("#manuscriptErrorModal").modal();            
+    $("#errorMsg").html("Token issue period has ended");
+
+    /*var formData = new FormData();
     formData.append('name', name);
     formData.append('email', email);
     formData.append('phone', phone); 
@@ -222,7 +225,7 @@ ga('send', 'pageview');
             $("#errorMsg").html("Token could not be issued");
             console.log("Error");
         }
-    });
+    });*/
 }
     $(document).ready(function() {   
     $("#load").hide(); 
