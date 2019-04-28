@@ -15,8 +15,8 @@ document.write("								<li id=\"royalty-update-checker-menu\"><a href=\"\/royal
 document.write("								<li id=\"royalty-updater-menu\"><a href=\"\/royalty-updater\"><i class=\"icon-database-upload\"><\/i> <span>Royalty Updater Tool<\/span><\/a><\/li>");
 document.write("								<li id=\"return-update-checker-menu\"><a href=\"\/return-update-checker\"><i class=\"icon-download\"><\/i> <span>Return Update Checker<\/span><\/a><\/li>");
 document.write("								<li id=\"return-updater-menu\"><a href=\"\/return-updater\"><i class=\"icon-database-upload\"><\/i> <span>Return Updater Tool<\/span><\/a><\/li>");
-document.write("                                <li id=\"order-mailer-checker-menu\"><a href=\"\/order-mailer-checker\"><i class=\"icon-download\"><\/i> <span>Weekly Order Mailer Checker<\/span><\/a><\/li>");
-document.write("                                <li id=\"order-mailer-menu\"><a href=\"\/order-mailer\"><i class=\"icon-database-upload\"><\/i> <span>Weekly Order Mailer Tool<\/span><\/a><\/li>");
+document.write("                                <li id=\"order-mailer-checker-menu\"><a href=\"\/order-mailer-checker\"><i class=\"icon-stack-down\"><\/i> <span>Weekly Order Mailer Checker<\/span><\/a><\/li>");
+document.write("                                <li id=\"order-mailer-menu\"><a href=\"\/order-mailer\"><i class=\"icon-mail5\"><\/i> <span>Weekly Order Mailer Tool<\/span><\/a><\/li>");
 document.write("								<li id=\"isbngenerator-menu\"><a href=\"\/isbn-generator\"><i class=\"icon-book\"><\/i> <span>ISBN Generator<\/span><\/a><\/li>");
 document.write("								<li id=\"covertemplate-menu\"><a href=\"\/cover-template\"><i class=\"icon-book\"><\/i> <span>Cover Template Generator<\/span><\/a><\/li>");
 document.write("								<li id=\"pdffixer-menu\"><a href=\"\/pdf-fixer\"><i class=\"icon-book\"><\/i> <span>PDF Fixer for Duplex Print<\/span><\/a><\/li>");
